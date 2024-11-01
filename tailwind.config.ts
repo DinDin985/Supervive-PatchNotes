@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   darkMode: ["class"],
@@ -152,13 +154,15 @@ const config: Config = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
-    function ({ addUtilities, theme }) {
-      const newUtilities = {};
+    tailwindcssAnimate,
+    function ({ addUtilities, theme }: PluginAPI) {
+      const newUtilities: Record<string, { clipPath: string }> = {};
       Object.keys(theme("clipPath")).forEach((key) => {
-        newUtilities[`.clip-${key}`] = { clipPath: theme(`clipPath.${key}`) };
+        newUtilities[`.clip-${key}`] = {
+          clipPath: theme(`clipPath.${key}`) as string,
+        };
       });
-      addUtilities(newUtilities, ["responsive"]);
+      addUtilities(newUtilities);
     },
   ],
 };
