@@ -10,10 +10,13 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useAtom } from "jotai";
 import Image from "next/image";
+import { toggleMenuAtom } from "../atoms/globalState";
 
 export function WorldLanguageDropDownMenu() {
   const [position, setPosition] = React.useState("English (US)");
+  const [toggleMenu] = useAtom(toggleMenuAtom);
 
   return (
     <DropdownMenu>
@@ -27,7 +30,7 @@ export function WorldLanguageDropDownMenu() {
             alt="world language button"
             width={32}
             height={32}
-            className="object-contain group-hover:hidden"
+            className={`${toggleMenu ? "opacity-0" : "opacity-100"} object-contain transition-all duration-700 ease-in-out group-hover:hidden`}
           />
           <Image
             src="/nav-bar/world-language-green.svg"
@@ -46,67 +49,67 @@ export function WorldLanguageDropDownMenu() {
         >
           <DropdownMenuRadioItem
             value="English (UK)"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             English (UK)
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="English (US)"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             English (US)
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Deutsch"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Deutsch
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Français"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Français
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Español (España)"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Español (España)
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Español (Latinoamérica)"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Español (Latinoamérica)
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Italiano"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Italiano
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Polski"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Polski
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Türkçe"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Türkçe
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="Português (Brasil)"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             Português (Brasil)
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem
             value="简体中文"
-            className="hover:text-neon-mint text-[.775rem]"
+            className="text-[.775rem] hover:text-neon-mint"
           >
             简体中文
           </DropdownMenuRadioItem>

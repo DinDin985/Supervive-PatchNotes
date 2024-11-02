@@ -27,6 +27,7 @@ const config: Config = {
         reverseRotateMiddleBar:
           "reverseRotateMiddleBar .25s ease-in-out forwards",
         shine: "shine 3s ease-in-out infinite",
+        slideIn: "slideIn .25s ease-in-out forwards"
       },
       keyframes: {
         fadeOut: {
@@ -89,6 +90,14 @@ const config: Config = {
             left: "100%",
           },
         },
+        slideIn: {
+          "0%": {
+            
+          },
+          "100%": {
+            
+          }
+        }
       },
       clipPath: {
         header:
