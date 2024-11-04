@@ -27,7 +27,9 @@ const config: Config = {
         reverseRotateMiddleBar:
           "reverseRotateMiddleBar .25s ease-in-out forwards",
         shine: "shine 3s ease-in-out infinite",
-        slideIn: "slideIn .25s ease-in-out forwards"
+        slideLeft: "slideLeft 500ms ease-in-out forwards",
+        slideRight: "slideRight 500ms ease-in-out forwards",
+        slideUp: "slideUp .17s ease-out forwards",
       },
       keyframes: {
         fadeOut: {
@@ -90,14 +92,32 @@ const config: Config = {
             left: "100%",
           },
         },
-        slideIn: {
+        slideLeft: {
           "0%": {
-            
+            transform: "translateX(100%)",
           },
           "100%": {
-            
-          }
-        }
+            transform: "translateX(0%)",
+          },
+        },
+        slideRight: {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+        slideUp: {
+          "0%": {
+            transform: "translate(0%,200%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translate(0%,0%)",
+            opacity: "1",
+          },
+        },
       },
       clipPath: {
         header:
