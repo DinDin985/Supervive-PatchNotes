@@ -12,3 +12,38 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Hunter {
+  id                String @id @default(cuid())
+  name              String?
+  baseMaxHealth     Int?
+  maxHealthPerlevel Float?
+  moveSpeed         Int?
+  attackPowerRating Int?
+  toughness         Float?
+  abilities         Ability[]
+}
+
+model Ability{
+  id           String @id @default(cuid())
+  name         String
+  baseDamage   Int?
+  cost         Int?
+  cooldown     Int?
+  conditionalEffect String?
+  charges      Int?
+  chargeTime   Int?
+  description  String
+  levelTwoUpgrade String?
+  levelThreeUpgrade String?
+  hunter       Hunter @relation(fields: [hunterId], references: [id])
+  hunterId     String
+}
+
+// model AbilityUpgrade{
+//   id          String @id @default(cuid()) 
+//   level       Int
+//   bonusEffect String
+//   ability     Ability @relation(fields: [abilityId], references: [id])
+//   abilityId   String
+// }
