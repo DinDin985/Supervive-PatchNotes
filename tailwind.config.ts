@@ -119,6 +119,9 @@ const config: Config = {
           },
         },
       },
+      backgroundImage: {
+        "footer-texture": "url('/footer/footer_gradient_noblack.png')",
+      },
       clipPath: {
         header:
           "polygon(0 0, 0 calc(100% - 15px), 190px 100%, 250px calc(100% - 40px), 290px calc(100% - 20px), 100% calc(100% - 20px), 100% 0)",
@@ -167,6 +170,8 @@ const config: Config = {
         pink: "#F934D0",
         "neon-mint": "#29E7B1",
         "neon-purple": "#9724f0",
+        "neon-purple-lighter": "#9724f0",
+        "ui-light-grey": "#555555",
       },
       fontFamily: {
         "tusker-5700": ["Tusker-5700", "sans-serif"],
