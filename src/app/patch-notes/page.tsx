@@ -1,6 +1,5 @@
-import React from "react";
-import Post from "./components/Post";
 import Link from "next/link";
+import Post from "./components/Post";
 
 export default function PatchNotes() {
   const blogPosts = [
@@ -48,15 +47,15 @@ export default function PatchNotes() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex h-40 items-center bg-[#9724F0]">
+      <div className="bg-ui-light-purple flex h-40 items-center">
         <span className="ml-10 font-tusker-5700 text-5xl italic text-white">
           Patch Notes
         </span>
       </div>
-      <ul className="bg-[#34025B]">
-        {tempLength.map(({ title, date, img, description, slug }) => {
+      <ul className="bg-ui-dark-purple">
+        {tempLength.map(({ title, date, img, description, slug }, i) => {
           return (
-            <li>
+            <li key={i}>
               <Link href={`/patch-notes/${slug}`}>
                 <Post
                   title={title}

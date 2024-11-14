@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 @font-face {
   font-family: "Tusker-5700";
   src: url("./fonts/TuskerGrotesk-5700Bold.ttf") format("truetype");
@@ -93,12 +95,26 @@ body {
 @layer base {
   * {
     @apply border-border;
+    @apply text-white;
   }
   body {
     @apply bg-background text-foreground;
   }
 }
 
+.patch-notes-subtitle {
+  @apply mb-1 ml-3 font-tusker-6700 text-3xl uppercase italic tracking-wider;
+}
+
+.btn:before {
+  content: "";
+}
+
+.btn:hover:before {
+  animation: shine 3s ease-in-out infinite;
+}
+
+.btn:before,
 .shine-shim {
   position: absolute;
   width: 200px;

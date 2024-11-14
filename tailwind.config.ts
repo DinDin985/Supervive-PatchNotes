@@ -172,10 +172,13 @@ const config: Config = {
         "neon-purple": "#9724f0",
         "neon-purple-lighter": "#9724f0",
         "ui-light-grey": "#555555",
+        "ui-light-purple": "#9724F0",
+        "ui-dark-purple": "#34025B",
       },
       fontFamily: {
         "tusker-5700": ["Tusker-5700", "sans-serif"],
         "tusker-6700": ["Tusker-6700", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       screens: {
         xs: "360px",
