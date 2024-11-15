@@ -106,6 +106,15 @@ body {
   @apply mb-1 ml-3 font-tusker-6700 text-3xl uppercase italic tracking-wider;
 }
 
+.clip-angled {
+  clip-path: polygon(0 0, 95.75% 0, 100% 3%, 100% 100%, 5% 100%, 0 97%);
+}
+
+.clip-angled-container {
+  clip-path: polygon(0 0, 95.75% 0, 100% 3%, 100% 100%, 5% 100%, 0 97%);
+  background-color: black;
+}
+
 .btn:before {
   content: "";
 }

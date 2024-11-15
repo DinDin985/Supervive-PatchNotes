@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Summary() {
   return (
-    <div className="mb-10 w-10/12 space-y-4">
+    <div className="mb-10 w-10/12 max-w-[800px] space-y-4">
       <p>
         &#34; Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut sodales
         molestie tellus, ac laoreet metus placerat blandit.

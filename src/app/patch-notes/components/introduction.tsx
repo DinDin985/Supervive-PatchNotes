@@ -3,7 +3,7 @@ import Hr from "./hr";
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex max-w-[800px] flex-col items-center md:mt-12">
       <div className="flex h-fit w-full flex-col items-center justify-center overflow-hidden">
         <Image
           src={"/patch-notes/supervive-wallpaper.png"}
@@ -23,7 +23,7 @@ export default function Introduction() {
         </h2>
 
         <div className="mb-4 flex text-sm tracking-wider">
-          <h2 className="font-quicksand mr-1">Author | </h2>
+          <h2 className="mr-1 font-quicksand">Author | </h2>
           <h2 className="font-quicksand">Date</h2>
         </div>
 
