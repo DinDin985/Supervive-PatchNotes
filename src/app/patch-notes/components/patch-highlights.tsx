@@ -1,10 +1,14 @@
 import Image from "next/image";
+import CutCorners from "./ui/cut-corners";
 
 export default function PatchHighlights() {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Patch Highlights</h1>
-      <div className="rounded-md border-2 border-ui-light-grey p-4">
+
+      <div className="relative flex flex-col border-4 p-8">
+        <CutCorners />
+
         <Image
           src={"/patch-notes/patch-notes-highlight.png"}
           className="mb-4 w-full"

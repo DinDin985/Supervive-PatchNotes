@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Hr from "./hr";
+import CutCorners from "./ui/cut-corners";
 
 export default function HunterChanges() {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Hunter Changes</h1>
-      <div className="flex flex-col rounded-md border-2 border-ui-light-grey p-4">
+
+      <div className="relative flex flex-col border-4 p-4">
+        <CutCorners />
         <div className="mb-8 flex">
           <div className="relative mr-5 w-fit p-1">
             <div className="absolute inset-0 z-0 h-full w-full bg-white blur-sm"></div>

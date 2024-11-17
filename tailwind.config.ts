@@ -3,6 +3,7 @@ import tailwindcssAnimate from "tailwindcss-animate";
 import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
+  mode: 'jit',
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

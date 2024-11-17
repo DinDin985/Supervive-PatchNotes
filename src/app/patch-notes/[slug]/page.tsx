@@ -13,17 +13,20 @@ export default async function BlogPostPage({ params }) {
   const { slug } = await params;
 
   return (
-    <div className="flex flex-col items-center bg-ui-dark-purple">
+    <div className="mx-auto flex w-full max-w-[1000px] flex-col items-center bg-ui-dark-purple">
       <Introduction />
-      <Summary />
-      <MidPatchUpdates />
-      <PatchHighlights />
-      <Custom />
-      <HunterChange />
-      <HunterChangesUnique />
-      <EquipmentChanges />
-      <SystemChanges />
-      <BugFixes />
+      <div className="flex max-w-[800px] flex-col items-center">
+        <Summary />
+        <MidPatchUpdates />
+        <PatchHighlights />
+        <Custom />
+        <HunterChange />
+        <HunterChangesUnique />
+        <EquipmentChanges />
+        <SystemChanges />
+        <BugFixes />
+      </div>
+
       <h1>Blog Post: {slug}</h1>
       <p>This is a blog post with the dynamic slug: {slug}</p>
     </div>

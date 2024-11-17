@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Hr from "./hr";
+import CutCorners from "./ui/cut-corners";
 
 export default function SystemChanges() {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">System Changes</h1>
-      <div className="flex flex-col rounded-md border-2 border-ui-light-grey p-4">
+
+      <div className="relative flex flex-col border-4 p-4">
+        <CutCorners />
+
         <div>
           <div className="mb-5 space-y-2">
             <h2 className="text-2xl font-bold">Gliders</h2>
