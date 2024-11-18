@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hr from "./hr";
 
-export default function Introduction() {
+export default function Introduction({ title, description, author, date }) {
   return (
     <div className="w-full">
       <div className="flex flex-col items-center md:mt-12">
@@ -28,19 +28,17 @@ export default function Introduction() {
             alt="introduction image"
           />
 
-          {/* <div className="absolute h-[300px] w-full bg-black"></div> */}
-
           <h1 className="mb-4 font-tusker-6700 text-4xl italic tracking-wider">
-            Patch Notes 1.00
+            {title}
           </h1>
 
           <h2 className="mb-1 font-tusker-6700 text-xl tracking-wider">
-            Description
+            {description}
           </h2>
 
           <div className="mb-6 flex text-sm tracking-wider">
-            <h2 className="mr-1 font-quicksand">Author | </h2>
-            <h2 className="font-quicksand">Date</h2>
+            <h2 className="mr-1 font-quicksand">{author} | </h2>
+            <h2 className="font-quicksand">{date}</h2>
           </div>
 
           <Hr className="mb-20" />

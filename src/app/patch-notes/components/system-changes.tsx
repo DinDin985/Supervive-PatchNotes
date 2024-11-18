@@ -2,7 +2,7 @@ import Image from "next/image";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
-export default function SystemChanges() {
+export default function SystemChanges({ title }) {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">System Changes</h1>
@@ -13,10 +13,10 @@ export default function SystemChanges() {
         <div>
           <div className="mb-5 space-y-2">
             <h2 className="text-2xl font-bold">Gliders</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              amet neque velit. Nam tempus tincidunt purus vitae posuere.
-              Aliquam ultricies vulputate cursus.
+            <p> n n
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              sit amet neque velit. Nam tempus tincidunt purus vitae posuere.
+              Aliquam ultricies vulputate cursus.&ldquo;
             </p>
           </div>
 
@@ -46,9 +46,9 @@ export default function SystemChanges() {
           <div className="mb-5 space-y-2">
             <h2 className="text-2xl font-bold">Monsters</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              amet neque velit. Nam tempus tincidunt purus vitae posuere.
-              Aliquam ultricies vulputate cursus.
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              sit amet neque velit. Nam tempus tincidunt purus vitae posuere.
+              Aliquam ultricies vulputate cursus.&ldquo;
             </p>
           </div>
 

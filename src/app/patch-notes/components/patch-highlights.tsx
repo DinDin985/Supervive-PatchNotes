@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
-export default function PatchHighlights() {
+export default function PatchHighlights({ img, notes }) {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Patch Highlights</h1>
@@ -10,19 +11,18 @@ export default function PatchHighlights() {
         <CutCorners />
 
         <Image
-          src={"/patch-notes/patch-notes-highlight.png"}
+          src={img}
           className="mb-4 w-full"
           width={500}
           height={500}
           layout="intrinsic"
           alt="patch hightlight"
         />
+
+        <Hr className="mb-4 self-center" />
+
         <p>
-          &#34; Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-          amet neque velit. Nam tempus tincidunt purus vitae posuere. Aliquam
-          ultricies vulputate cursus. Curabitur non odio accumsan, sagittis
-          ligula et, lobortis tellus. In pulvinar libero magna, quis tristique
-          turpis maximus ac. &#34;
+        {/* {notes} */}
         </p>
       </div>
     </div>

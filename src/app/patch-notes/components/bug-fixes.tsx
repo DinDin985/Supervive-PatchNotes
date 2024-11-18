@@ -1,9 +1,9 @@
 import CutCorners from "./ui/cut-corners";
 
-export default function BugFixes() {
+export default function BugFixes({ bugFixesList }) {
   return (
     <div className="mb-8 w-10/12">
-      <h1 className="patch-notes-subtitle">Bug-Fixes</h1>
+      <h1 className="patch-notes-subtitle">Other Bugfixes/QoL</h1>
 
       <div className="relative flex flex-col border-4 p-4">
         <CutCorners />
