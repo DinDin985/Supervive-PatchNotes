@@ -13,10 +13,10 @@
           "date": "11/20/2024",
           "author": "DinDin"
         },
-        "summary": { "summary": "", "author": "", "authorImg": "" },
+        "summary": { "message": [], "author": "", "authorImg": "" },
         "midPatchUpdates": {},
         "patchHighlights": {
-          "img": "/patch-notes/patch-notes-highlight.png",
+          "video": "https://www.youtube.com/embed/9TPBdxoZe0E",
           "notes": "WELCOME TO THE SUPERVIVE OPEN BETA PATCH NOTES! There are a LOT of patch notes to read but if you (like much of the world) are declining in literacy rates, maybe you’d prefer to watch a fireside chat. We won’t judge, but books are pretty fun to read too."
         },
         "custom": [
@@ -28,330 +28,7 @@
               "Earn even more points for playing together with those friends",
               "Earn enough points to earn exclusive cosmetic rewards!"
             ]
-          }
-        ],
-        "hunterChanges": [
-          {
-            "name": "",
-            "imgSmall": "",
-            "imgBig": "",
-            "description": "",
-            "notes": "",
-            "changes": [
-              { "type": "newEffect", "changes": ["", ""] },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          }
-        ],
-        "equipmentChanges": [
-          {
-            "name": "",
-            "img": "",
-            "description": "",
-            "notes": "",
-            "changes": [
-              { "type": "newEffect", "changes": ["", ""] },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          }
-        ],
-        "systemChanges": [
-          {
-            "title": "[!!!] AFK Detection",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Has been added to the game. When a player is detected as AFK, they will be automatically killed/unable to be respawned",
-                  "Players on the team of a disconnected or AFK player are allowed to leave the game without penalty"
-                ]
-              }
-            ]
           },
-          {
-            "title": "Run It Back",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "A new “Run It Back” button has been added on the team screen of Match Summary",
-                  "Pressing this button will send a party invite to everyone on your team"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "New Player Experience",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Added further improvements to “Welcome to Skylands” Stormshift for newer players, including the introduction of Resurgence",
-                  "Resurgence: During the first 3 days, when a teammate is killed, a timer starts on remaining teammates. When the timer expires, the dead teammate is revived.",
-                  "Added updated tutorial videos in the Learn tab",
-                  "The Controls Tutorial now has Voiceover"
-                ]
-              },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          },
-          {
-            "title": "Quests",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": ["", ""]
-              },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          },
-          {
-            "title": "Circle Tunings",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "BR games now start with an initial Death Circle. Gold zones and Major Objectives will not spawn in the initial death circle",
-                  "For Squad games: Day 1 circle duration lowered by 60s. Subsequent days lowered slightly"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Most Wanted",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Dying while Most Wanted now sends you straight to Deathbox",
-                  "Kill credit from spikes will always go to the player who hit the spike, and won't be stolen by damaging a player after the spike starts",
-                  "Last hit leniency - if the most wanted player has an assist within 0.5 seconds of a kill, they'll get full kill time reduction instead of assist reduction"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Health/damage reduction clarity",
-            "notes": "This change shouldn’t feel like a change. In a previous playtest, we gave all hunters some passive damage reduction as an experiment to increase time-to-kill. We liked the change, so we’re swapping the invisible damage-reduction with health to get the same effect with better clarity.",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Hidden 3% damage reduction and 5% healing reduction removed from all hunters",
-                  "All hunters are given +30 base Health (and a small amount of scaling Health per Level) to compensate for the above removals"
-                ]
-              },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          },
-          {
-            "title": "Other Stuff",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "As a reminder, all inventory and progression has been reset for Open Beta",
-                  "The glider “Soft Ceiling” pulls you down less harshly, and should generally feel better",
-                  "The \"Out of Bounds\" Buffer does not regenerate until you're on the ground again (thank you zzkknn for showing us that we need this…)",
-                  "All hunters have received a third Hunter Mastery mission. Some existing Hunter Mastery missions have been modified.",
-                  "You are now Vulnerable while repairing armor at a Basecamp (same as brewing Vive)",
-                  "You can now mute your teammates’ Emotes and Pings in Settings",
-                  "When you are dead, you can only hear sound that your living teammates can hear"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Environment/Map",
-            "notes": "These look like small notes, but they’re doing a lot of heavy lifting. Big environmental upgrades! And some context on random chests: given how much of SUPERVIVE relies on teammates to do efficiently (vaults, monster packs, etc) we wanted to add something that is easily solo-able and has good rewards to encourage teams breaking up to efficiently farm out a biome. Obviously this has its own risks, but it definitely adds ~ t e x t u r e ~ to your gaming experience. If you see a chest, you should probably open it.",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "[!!!] Random Chests now spawn in the outskirts of most biomes: they contain goodies!",
-                  "[!!!] Kaiju Water now anti-heals for a short duration",
-                  "[!!!] Explosive barrels now have a slight delay before exploding, and they now apply anti-heal",
-                  "Environment looks nicer :^)",
-                  "Chaos Steppes has an updated layout, including a new Boss arena",
-                  "Prisma Falls has a secret area!"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "PvE",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Several minions have updated loot/XP adjustments to match their density/danger",
-                  "Creeps now ignore you if you sneak around them (unless you’re really really close to them)",
-                  "Wavemaker Boss: Projectile orbs are now destructible by melee attacks",
-                  "Town Guards now change color when they attack you",
-                  "Several minions have updated art"
-                ]
-              },
-              {
-                "type": "adjustment",
-                "changes": [
-                  { "old": "", "new": "" },
-                  { "old": "", "new": "" }
-                ]
-              },
-              { "type": "removedEffect", "changes": ["", ""] }
-            ]
-          },
-          {
-            "title": "Powers",
-            "notes": "",
-            "changes": [
-              {
-                "type": "newEffect",
-                "changes": [
-                  "Several powers have received visual updates",
-                  {
-                    "systemSpecificName": "AoE Teleport",
-                    "changeList": [
-                      "Now lets you teleport everything into Abyss, including Revive Beacons and Base Camps",
-                      "Now no longer lets you target inside of mountains / invalid terrain"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Grapple Hook",
-                    "changeList": [
-                      {
-                        "part1": "Bonus root duration on enemies lowered from 0.5",
-                        "part2": "0.1 second"
-                      },
-                      "No longer has a minimum hit distance"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Hover Wings",
-                    "changeList": [
-                      {
-                        "part1": "Duration reduced from 3.5",
-                        "part2": "3 seconds"
-                      },
-                      {
-                        "part1": "Cooldown increased from 20",
-                        "part2": "30 seconds"
-                      }
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Icarus Glide",
-                    "changeList": [
-                      "Pulls you up more gently",
-                      "Burns you less",
-                      "Fixed a bug where you instantly start burning when gliding in Academy"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Mana Cloud",
-                    "changeList": ["Follows you better"]
-                  },
-                  {
-                    "systemSpecificName": "Mortar",
-                    "changeList": [
-                      {
-                        "part1": "Cooldown increased from 3",
-                        "part2": "4 seconds"
-                      },
-                      "Cooldown starts on mortar launch, instead of on initial cast"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Replicator",
-                    "changeList": [
-                      "Replicated Armor retains the value it had when cloned"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Tactical Nuke",
-                    "changeList": [
-                      {
-                        "part1": "Base explosion damage increased from 2700",
-                        "part2": "5000"
-                      },
-                      "Exotic Tactical Nuke does 10x the explosion damage of regular Tactical Nuke"
-                    ]
-                  },
-                  {
-                    "systemSpecificName": "Wisp Vacuum",
-                    "changeList": [
-                      "Now also pulls living enemies while they are airborne",
-                      "Now applies a heal over time to you when pulling allies or enemies. The heal scales with targets pulled"
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "bugFixes": ["", "", ""]
-      }
-    },
-    {
-      "title": "Patch 1.01 Notes",
-      "date": "11/23/2024",
-      "img": "/patch-notes/duos.png",
-      "description": "Knock down your foes in Patch 1.01",
-      "slug": "patch-1-01-notes",
-      "data": {
-        "introduction": {
-          "title": "",
-          "description": "",
-          "date": "",
-          "author": ""
-        },
-        "summary": { "summary": "", "author": "", "authorImg": "" },
-        "midPatchUpdates": {},
-        "patchHighlights": {},
-        "custom": [
           {
             "title": "Art/Sound/UI Updates",
             "description": "",
@@ -382,8 +59,8 @@
         "hunterChanges": [
           {
             "name": "Bishop",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/bishop.png",
+            "imgBig": "/patch-notes/hunter-portraits/bishop-full-body-cropped.png",
             "description": "",
             "notes": "Bishop was strong during Steam Next Fest, especially at higher MMRs.",
             "changes": [
@@ -397,15 +74,15 @@
               },
               {
                 "type": "adjustment",
-                "abilityName": "(Shift) Rocket Jump",
+                "abilityName": "(Shift) - Rocket Jump",
                 "abilityImg": "",
                 "changes": [
                   { "part1": "Charge time increased from 10s", "part2": "11s" }
                 ]
               },
               {
-                "type": "newEffect&Adjustment",
-                "abilityName": "(Shift) Rocket Jump",
+                "type": "adjustmentAndNewEffect",
+                "abilityName": "(Shift) - Rocket Jump",
                 "abilityImg": "",
                 "changes": [
                   "Turn rate lowered by ~10%",
@@ -421,8 +98,8 @@
           },
           {
             "name": "Brall",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/brall.png",
+            "imgBig": "/patch-notes/hunter-portraits/brall-full-body-cropped.png",
             "description": "",
             "notes": "This is intended to be both a quality-of-life change (hitbox matches the animation), but also a buff especially to lower-skill Brall players who are having a hard time landing their LMB hits",
             "changes": [
@@ -438,8 +115,8 @@
           },
           {
             "name": "Elluna",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/elluna.png",
+            "imgBig": "/patch-notes/hunter-portraits/elluna-full-body-cropped.png",
             "description": "",
             "notes": "Elluna is disproportionately strong at lower MMRs. We’re trading off offensive and defensive power to even out the discrepancy.",
             "changes": [
@@ -472,13 +149,13 @@
           },
           {
             "name": "Felix",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/felix.png",
+            "imgBig": "/patch-notes/hunter-portraits/felix-full-body-cropped.png",
             "description": "",
             "notes": "Removing an unwanted optimization, which should also be a minor nerf",
             "changes": [
               {
-                "type": "newEffect&Adjustment",
+                "type": "adjustmentAndNewEffect",
                 "abilityName": "(LMB) - Flamethrower",
                 "abilityImg": "",
                 "changes": [
@@ -494,8 +171,8 @@
           },
           {
             "name": "Ghost",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/ghost.png",
+            "imgBig": "/patch-notes/hunter-portraits/ghost-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -511,8 +188,8 @@
           },
           {
             "name": "Hudson",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/hudson.png",
+            "imgBig": "/patch-notes/hunter-portraits/hudson-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -531,18 +208,16 @@
                 "abilityName": "(RMB) - Overclock",
                 "abilityImg": "",
                 "changes": [
-                  {
-                    "part1": "Also has bloom, but less than non-Overclocked Minigun",
-                    "part2": "Improved visuals"
-                  }
+                  "Also has bloom, but less than non-Overclocked Minigun",
+                  "Improved visuals"
                 ]
               }
             ]
           },
           {
             "name": "Jin",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/jin.png",
+            "imgBig": "/patch-notes/hunter-portraits/jin-full-body-cropped.png",
             "description": "In-game model, VFX, and animations updated",
             "notes": "Oh no he’s hot (in-game)",
             "changes": [
@@ -559,8 +234,8 @@
           },
           {
             "name": "Joule",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/joule.png",
+            "imgBig": "/patch-notes/hunter-portraits/joule-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -579,8 +254,8 @@
           },
           {
             "name": "Kingpin",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/kingpin.png",
+            "imgBig": "/patch-notes/hunter-portraits/kingpin-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -611,8 +286,8 @@
           },
           {
             "name": "Myth",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/myth.png",
+            "imgBig": "/patch-notes/hunter-portraits/myth-full-body-cropped.png",
             "description": "Myth has received a VFX update on most things!",
             "notes": "After multiple rounds of nerfs to sharpen her identity, Myth finally has some room for buffs!",
             "changes": [
@@ -626,7 +301,7 @@
                 ]
               },
               {
-                "type": "newEffect&Adjustment",
+                "type": "adjustmentAndNewEffect",
                 "abilityName": "(RMB) - Heartpiercer",
                 "abilityImg": "",
                 "changes": [
@@ -668,8 +343,8 @@
           },
           {
             "name": "Oath",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/oath.png",
+            "imgBig": "/patch-notes/hunter-portraits/oath-full-body-cropped.png",
             "description": "",
             "notes": "This change should make Oath’s hammer feel smoother to spam, and you can’t autoclick your way to higher DPS beyond a certain point.",
             "changes": [
@@ -693,8 +368,8 @@
           },
           {
             "name": "Shiv",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/shiv.png",
+            "imgBig": "/patch-notes/hunter-portraits/shiv-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -711,31 +386,13 @@
                 "abilityName": "(R) - Fusillade",
                 "abilityImg": "",
                 "changes": ["Improved visuals/decals"]
-              },
-              {
-                "type": "adjustment",
-                "abilityName": "",
-                "abilityImg": "",
-                "changes": [{ "part1": "", "part2": "" }]
-              },
-              {
-                "type": "newEffect&Adjustment",
-                "abilityName": "",
-                "abilityImg": "",
-                "changes": [
-                  "",
-                  {
-                    "part1": "Max stun duration decreased from 1.4",
-                    "part2": "1.2 seconds"
-                  }
-                ]
               }
             ]
           },
           {
             "name": "Shrike",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/shrike.png",
+            "imgBig": "/patch-notes/hunter-portraits/shrike-full-body-cropped.png",
             "description": "Has a new in-game model",
             "notes": "",
             "changes": [
@@ -752,7 +409,7 @@
                 "changes": [{ "part1": "", "part2": "" }]
               },
               {
-                "type": "newEffect&Adjustment",
+                "type": "adjustmentAndNewEffect",
                 "abilityName": "",
                 "abilityImg": "",
                 "changes": [
@@ -767,8 +424,8 @@
           },
           {
             "name": "Void",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/void.png",
+            "imgBig": "/patch-notes/hunter-portraits/void-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -785,8 +442,8 @@
           },
           {
             "name": "Zeph",
-            "imgSmall": "",
-            "imgBig": "",
+            "imgSmall": "/patch-notes/hunter-icons/zeph.png",
+            "imgBig": "/patch-notes/hunter-portraits/zeph-full-body-cropped.png",
             "description": "",
             "notes": "",
             "changes": [
@@ -1100,7 +757,246 @@
             ]
           }
         ],
-        "bugFixes": [
+        "systemChanges": [
+          {
+            "title": "[!!!] AFK Detection",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Has been added to the game. When a player is detected as AFK, they will be automatically killed/unable to be respawned",
+                  "Players on the team of a disconnected or AFK player are allowed to leave the game without penalty"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Run It Back",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "A new “Run It Back” button has been added on the team screen of Match Summary",
+                  "Pressing this button will send a party invite to everyone on your team"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "New Player Experience",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Added further improvements to “Welcome to Skylands” Stormshift for newer players, including the introduction of Resurgence",
+                  "Resurgence: During the first 3 days, when a teammate is killed, a timer starts on remaining teammates. When the timer expires, the dead teammate is revived.",
+                  "Added updated tutorial videos in the Learn tab",
+                  "The Controls Tutorial now has Voiceover"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Quests",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": ["", ""]
+              }
+            ]
+          },
+          {
+            "title": "Circle Tunings",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "BR games now start with an initial Death Circle. Gold zones and Major Objectives will not spawn in the initial death circle",
+                  "For Squad games: Day 1 circle duration lowered by 60s. Subsequent days lowered slightly"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Most Wanted",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Dying while Most Wanted now sends you straight to Deathbox",
+                  "Kill credit from spikes will always go to the player who hit the spike, and won't be stolen by damaging a player after the spike starts",
+                  "Last hit leniency - if the most wanted player has an assist within 0.5 seconds of a kill, they'll get full kill time reduction instead of assist reduction"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Health/damage reduction clarity",
+            "notes": "This change shouldn’t feel like a change. In a previous playtest, we gave all hunters some passive damage reduction as an experiment to increase time-to-kill. We liked the change, so we’re swapping the invisible damage-reduction with health to get the same effect with better clarity.",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Hidden 3% damage reduction and 5% healing reduction removed from all hunters",
+                  "All hunters are given +30 base Health (and a small amount of scaling Health per Level) to compensate for the above removals"
+                ]
+              },
+              {
+                "type": "adjustment",
+                "changes": [
+                  { "old": "", "new": "" },
+                  { "old": "", "new": "" }
+                ]
+              },
+              { "type": "removedEffect", "changes": ["", ""] }
+            ]
+          },
+          {
+            "title": "Other Stuff",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "As a reminder, all inventory and progression has been reset for Open Beta",
+                  "The glider “Soft Ceiling” pulls you down less harshly, and should generally feel better",
+                  "The \"Out of Bounds\" Buffer does not regenerate until you're on the ground again (thank you zzkknn for showing us that we need this…)",
+                  "All hunters have received a third Hunter Mastery mission. Some existing Hunter Mastery missions have been modified.",
+                  "You are now Vulnerable while repairing armor at a Basecamp (same as brewing Vive)",
+                  "You can now mute your teammates’ Emotes and Pings in Settings",
+                  "When you are dead, you can only hear sound that your living teammates can hear"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Environment/Map",
+            "notes": "These look like small notes, but they’re doing a lot of heavy lifting. Big environmental upgrades! And some context on random chests: given how much of SUPERVIVE relies on teammates to do efficiently (vaults, monster packs, etc) we wanted to add something that is easily solo-able and has good rewards to encourage teams breaking up to efficiently farm out a biome. Obviously this has its own risks, but it definitely adds ~ t e x t u r e ~ to your gaming experience. If you see a chest, you should probably open it.",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "[!!!] Random Chests now spawn in the outskirts of most biomes: they contain goodies!",
+                  "[!!!] Kaiju Water now anti-heals for a short duration",
+                  "[!!!] Explosive barrels now have a slight delay before exploding, and they now apply anti-heal",
+                  "Environment looks nicer :^)",
+                  "Chaos Steppes has an updated layout, including a new Boss arena",
+                  "Prisma Falls has a secret area!"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "PvE",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Several minions have updated loot/XP adjustments to match their density/danger",
+                  "Creeps now ignore you if you sneak around them (unless you’re really really close to them)",
+                  "Wavemaker Boss: Projectile orbs are now destructible by melee attacks",
+                  "Town Guards now change color when they attack you",
+                  "Several minions have updated art"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Powers",
+            "notes": "",
+            "changes": [
+              {
+                "type": "newEffect",
+                "changes": [
+                  "Several powers have received visual updates",
+                  {
+                    "systemSpecificName": "AoE Teleport",
+                    "changeList": [
+                      "Now lets you teleport everything into Abyss, including Revive Beacons and Base Camps",
+                      "Now no longer lets you target inside of mountains / invalid terrain"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Grapple Hook",
+                    "changeList": [
+                      {
+                        "part1": "Bonus root duration on enemies lowered from 0.5",
+                        "part2": "0.1 second"
+                      },
+                      "No longer has a minimum hit distance"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Hover Wings",
+                    "changeList": [
+                      {
+                        "part1": "Duration reduced from 3.5",
+                        "part2": "3 seconds"
+                      },
+                      {
+                        "part1": "Cooldown increased from 20",
+                        "part2": "30 seconds"
+                      }
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Icarus Glide",
+                    "changeList": [
+                      "Pulls you up more gently",
+                      "Burns you less",
+                      "Fixed a bug where you instantly start burning when gliding in Academy"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Mana Cloud",
+                    "changeList": ["Follows you better"]
+                  },
+                  {
+                    "systemSpecificName": "Mortar",
+                    "changeList": [
+                      {
+                        "part1": "Cooldown increased from 3",
+                        "part2": "4 seconds"
+                      },
+                      "Cooldown starts on mortar launch, instead of on initial cast"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Replicator",
+                    "changeList": [
+                      "Replicated Armor retains the value it had when cloned"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Tactical Nuke",
+                    "changeList": [
+                      {
+                        "part1": "Base explosion damage increased from 2700",
+                        "part2": "5000"
+                      },
+                      "Exotic Tactical Nuke does 10x the explosion damage of regular Tactical Nuke"
+                    ]
+                  },
+                  {
+                    "systemSpecificName": "Wisp Vacuum",
+                    "changeList": [
+                      "Now also pulls living enemies while they are airborne",
+                      "Now applies a heal over time to you when pulling allies or enemies. The heal scales with targets pulled"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "bugFixesList": [
           "We’ve added a South American server for Open Beta",
           "Support for widescreen added",
           "Knock streaks (Double Knock, Triple Knock, etc.) reset after 10 seconds of not getting a knock, instead of resetting only on death",
@@ -1121,6 +1017,28 @@
           "Fixed a bug where shooting the Heart could sometimes spike enemies across the map",
           "Fixed a bug where Glider trails could spawn erratically on the map"
         ]
+      }
+    },
+    {
+      "title": "Patch 1.01 Notes",
+      "date": "11/23/2024",
+      "img": "/patch-notes/duos.png",
+      "description": "Knock down your foes in Patch 1.01",
+      "slug": "patch-1-01-notes",
+      "data": {
+        "introduction": {
+          "title": "",
+          "description": "",
+          "date": "",
+          "author": ""
+        },
+        "summary": { "summary": "", "author": "", "authorImg": "" },
+        "midPatchUpdates": {},
+        "patchHighlights": {},
+        "custom": [],
+        "hunterChanges": [],
+        "equipmentChanges": [],
+        "bugFixesList": []
       }
     },
     {

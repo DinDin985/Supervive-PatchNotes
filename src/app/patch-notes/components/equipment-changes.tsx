@@ -1,75 +1,127 @@
 import Image from "next/image";
+import Adjustment from "./changes-format/adjustment";
+import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
+import NewEffect from "./changes-format/new-effect";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
+interface EquipmentChangesProps {
+  equipmentChanges: {
+    name: string;
+    description: string;
+    notes: string;
+    changes: (
+      | {
+          type: string;
+          changes: string[];
+        }
+      | {
+          type: string;
+          changes: {
+            part1: string;
+            part2: string;
+          }[];
+        }
+    )[];
+  }[];
+}
+
 export default function EquipmentChanges({
-  name,
-  img,
-  description,
-  notes,
-  changes,
-}) {
+  equipmentChanges,
+}: EquipmentChangesProps) {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Equipment Changes</h1>
 
-      <div className="relative flex flex-col border-4 p-4">
-        <CutCorners />
+      {equipmentChanges.map(({ name, description, notes, changes }, i) => {
+        let imgName: string | string[] = name.split(" ");
+        if (imgName[0] === "[NEW]") {
+          imgName = imgName.slice(1);
+        }
 
-        <div className="mb-6 flex items-center">
-          <Image
-            src={"/patch-notes/equipment-icons/tech-sword.png"}
-            className="mr-5 bg-white p-2"
-            width={80}
-            height={80}
-            layout="intrinsic"
-            alt="equipment icon"
-          />
+        imgName = imgName.join("-");
 
-          <div className="flex flex-col justify-center">
-            <h2 className="mb-4 text-xl font-bold md:text-2xl lg:text-3xl">
-              {/* {name} */}
-            </h2>
+        return (
+          <div
+            key={i}
+            className={`${i === equipmentChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`}
+          >
+            <CutCorners />
 
-            <h2 className="text-sm text-neutral-300 md:text-base lg:text-lg">
-              {/* description */}
-            </h2>
+            <div className="mb-6 flex items-center">
+              <div className="relative mr-3">
+                <Image
+                  src={`/patch-notes/equipment-icons/${imgName}.png`}
+                  className="sticky z-10 bg-white p-1"
+                  width={80}
+                  height={80}
+                  layout="intrinsic"
+                  alt="power icon"
+                />
+                <div className="absolute inset-0 z-0 h-full w-full bg-white blur-sm"></div>
+              </div>
+
+              <div className="flex flex-col justify-center">
+                <h2 className="mb-4 text-xl font-bold md:text-2xl lg:text-3xl">
+                  {name}
+                </h2>
+
+                <h2 className="text-sm text-neutral-300 md:text-base lg:text-lg">
+                  {description}
+                </h2>
+              </div>
+            </div>
+
+            <div className="mb-2">
+              {notes && <p className="mb-5">&ldquo;{notes}&ldquo;</p>}
+
+              <Hr className="mx-auto mb-6" />
+
+              {changes.map(({ type, changes }, i) => {
+                let changeFormat: JSX.Element | null = null;
+
+                if (type === "adjustment") {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return typeof change === "object" ? (
+                          <Adjustment key={i} change={change} />
+                        ) : null;
+                      })}
+                    </ul>
+                  );
+                } else if (type === "newEffect") {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return typeof change === "string" ? (
+                          <NewEffect key={i} change={change} />
+                        ) : null;
+                      })}
+                    </ul>
+                  );
+                } else {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return (
+                          <AdjustmentAndNewEffect key={i} change={change} />
+                        );
+                      })}
+                    </ul>
+                  );
+                }
+
+                return (
+                  <div key={i} className="flex flex-col">
+                    {changeFormat}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
-
-        <Hr className="mx-auto mb-6" />
-
-        <ul className="list-disc pl-6">
-          <li>
-            <div className="flex items-center">
-              <p className="mr-2">Ability Power: 160</p>
-              <Image
-                src={"/patch-notes/right-arrow.png"}
-                className="mr-2"
-                width={20}
-                height={20}
-                layout="intrinsic"
-                alt="right arrow"
-              />
-              <p>170</p>
-            </div>
-          </li>
-          <li>
-            <div className="flex items-center">
-              <p className="mr-2">Ability Haste: 16%</p>
-              <Image
-                src={"/patch-notes/right-arrow.png"}
-                className="mr-2"
-                width={20}
-                height={20}
-                layout="intrinsic"
-                alt="right arrow"
-              />
-              <p>18%</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+        );
+      })}
     </div>
   );
 }

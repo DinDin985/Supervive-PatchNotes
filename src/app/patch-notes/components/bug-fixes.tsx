@@ -1,6 +1,10 @@
 import CutCorners from "./ui/cut-corners";
 
-export default function BugFixes({ bugFixesList }) {
+interface BugFixesProps {
+  bugFixes: string[];
+}
+
+export default function BugFixes({ bugFixesList }: BugFixesProps) {
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Other Bugfixes/QoL</h1>

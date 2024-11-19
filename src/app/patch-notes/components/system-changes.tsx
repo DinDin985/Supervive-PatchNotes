@@ -1,91 +1,107 @@
-import Image from "next/image";
+import Adjustment from "./changes-format/adjustment";
+import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
+import NewEffect from "./changes-format/new-effect";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
-export default function SystemChanges({ title }) {
+interface SystemChangesProps {
+  systemChanges: {
+    title: string;
+    notes: string;
+    changes: {
+      type: string;
+      subtitle?: string;
+      changes: (
+        | string
+        | {
+            systemSpecificName: string;
+            changeList: (
+              | string
+              | {
+                  part1: string;
+                  part2: string;
+                }
+            )[];
+          }
+      )[];
+    }[];
+  }[];
+}
+
+export default function SystemChanges({ systemChanges }: SystemChangesProps) {
+  console.log(systemChanges);
   return (
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">System Changes</h1>
 
-      <div className="relative flex flex-col border-4 p-4">
-        <CutCorners />
+      {systemChanges.map(({ title, notes, changes }, i) => {
+        return (
+          <div
+            key={i}
+            className={`${i === systemChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`}
+          >
+            <CutCorners />
 
-        <div>
-          <div className="mb-5 space-y-2">
-            <h2 className="text-2xl font-bold">Gliders</h2>
-            <p> n n
-              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sit amet neque velit. Nam tempus tincidunt purus vitae posuere.
-              Aliquam ultricies vulputate cursus.&ldquo;
-            </p>
+            <div>
+              <div className="mb-5 space-y-2">
+                <h2 className="text-2xl font-bold">{title}</h2>
+                {notes && (
+                  <p>
+                    &ldquo;
+                    {notes}
+                    &ldquo;
+                  </p>
+                )}
+              </div>
+
+              <Hr className="mx-auto mb-5" />
+
+              {changes.map(({ type, subtitle, changes }, i) => {
+                let changeFormat: JSX.Element | null = null;
+
+                if (type === "adjustment") {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return typeof change === "object" ? (
+                          <Adjustment key={i} change={change} />
+                        ) : null;
+                      })}
+                    </ul>
+                  );
+                } else if (type === "newEffect") {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return typeof change === "string" ? (
+                          <NewEffect key={i} change={change} />
+                        ) : null;
+                      })}
+                    </ul>
+                  );
+                } else {
+                  changeFormat = (
+                    <ul key={i} className="list-disc pl-6">
+                      {changes.map((change, i) => {
+                        return (
+                          <AdjustmentAndNewEffect key={i} change={change} />
+                        );
+                      })}
+                    </ul>
+                  );
+                }
+
+                return (
+                  <div key={i} className="mb-5 flex flex-col">
+                    <h2>{subtitle}</h2>
+                    {changeFormat}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
-          <Hr className="mx-auto mb-5" />
-
-          <ul className="mb-5 list-disc pl-6">
-            <li>
-              <div className="flex items-center">
-                <p className="mr-2">Initial Glider Speed: 300</p>
-                <Image
-                  src={"/patch-notes/right-arrow.png"}
-                  className="mr-2"
-                  width={20}
-                  height={20}
-                  layout="intrinsic"
-                  alt="right arrow"
-                />
-                <p>250</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <Hr className="mx-auto mb-5" />
-
-        <div>
-          <div className="mb-5 space-y-2">
-            <h2 className="text-2xl font-bold">Monsters</h2>
-            <p>
-              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              sit amet neque velit. Nam tempus tincidunt purus vitae posuere.
-              Aliquam ultricies vulputate cursus.&ldquo;
-            </p>
-          </div>
-
-          <Hr className="mx-auto mb-5" />
-
-          <ul className="mb-5 list-disc pl-6">
-            <li>
-              <div className="flex items-center">
-                <p className="mr-2">Monster Gold Drop: 100</p>
-                <Image
-                  src={"/patch-notes/right-arrow.png"}
-                  className="mr-2"
-                  width={20}
-                  height={20}
-                  layout="intrinsic"
-                  alt="right arrow"
-                />
-                <p>200</p>
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center">
-                <p className="mr-2">Monster EXP: 250</p>
-                <Image
-                  src={"/patch-notes/right-arrow.png"}
-                  className="mr-2"
-                  width={20}
-                  height={20}
-                  layout="intrinsic"
-                  alt="right arrow"
-                />
-                <p>300</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }

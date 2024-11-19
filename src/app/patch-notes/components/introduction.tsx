@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Hr from "./hr";
 
-export default function Introduction({ title, description, author, date }) {
+type IntroductionProps = {
+  introduction: {
+    title: string;
+    description: string;
+    author: string;
+    date: string;
+  };
+};
+
+export default function Introduction({ introduction }: IntroductionProps) {
+  const { title, description, author, date } = introduction;
+
   return (
     <div className="w-full">
       <div className="flex flex-col items-center md:mt-12">
@@ -28,11 +39,11 @@ export default function Introduction({ title, description, author, date }) {
             alt="introduction image"
           />
 
-          <h1 className="mb-4 font-tusker-6700 text-4xl italic tracking-wider">
+          <h1 className="mb-4 font-tusker-6700 text-4xl italic tracking-wider lg:text-5xl">
             {title}
           </h1>
 
-          <h2 className="mb-1 font-tusker-6700 text-xl tracking-wider">
+          <h2 className="mb-1 font-tusker-6700 text-lg tracking-[.06em] text-neutral-300">
             {description}
           </h2>
 

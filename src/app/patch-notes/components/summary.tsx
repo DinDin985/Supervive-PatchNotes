@@ -1,34 +1,29 @@
 import Image from "next/image";
 import Hr from "./hr";
 
-export default function Summary({  }) {
+type SummaryProps = {
+  summary: {
+    message: string[];
+    author: string;
+    authorImg: string;
+  };
+};
+
+export default function Summary({ summary }: SummaryProps) {
+  const { message } = summary;
+
   return (
     <div className="mb-10 w-10/12 max-w-[800px]">
       <div className="mb-8 space-y-4">
-        <p>
-          &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut
-          sodales molestie tellus, ac laoreet metus placerat blandit.
-        </p>
-
-        <p>
-          Vestibulum arcu lectus, dignissim in auctor at, mollis sed tortor.
-          Vivamus vitae massa eget nisl finibus consequat. Quisque sed pretium
-          magna. Phasellus vel risus ut ante fermentum tempor. Praesent sagittis
-          leo facilisis nisl aliquet dignissim. Suspendisse dignissim faucibus
-          ipsum, et venenatis turpis ultricies a. Ut blandit tortor non placerat
-          venenatis. Donec ac tellus in massa dictum tempus. Etiam augue dui,
-          mollis et viverra a, congue eu ligula. Suspendisse ut rhoncus augue.
-          <br />
-        </p>
-
-        <p>
-          Nam eleifend metus vitae leo vehicula, a congue nulla commodo. Mauris
-          eget luctus nibh. Etiam pellentesque sem enim, et facilisis nisl
-          convallis ac. Curabitur eu ipsum purus. Ut rhoncus volutpat velit, ut
-          luctus sapien consequat ut. Vivamus justo quam, ultrices a massa sed,
-          posuere hendrerit lacus. Mauris porttitor risus quam, nec dignissim
-          magna finibus nec.&ldquo;
-        </p>
+        {message.map((text, i) => {
+          return (
+            <p key={i}>
+              {i === 0 ? <span>&ldquo;</span> : ""}
+              {text}
+              {i === message.length - 1 ? <span>&ldquo;</span> : ""}
+            </p>
+          );
+        })}
 
         <div className="flex items-center">
           <p className="mr-2">- The Balance Team</p>
