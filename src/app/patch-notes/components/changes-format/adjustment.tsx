@@ -10,8 +10,6 @@ interface AdjustmentProps {
 export default function Adjustment({ change }: AdjustmentProps) {
   const { part1, part2 } = change;
 
-  console.log(change);
-
   return (
     <li>
       <p className="inline">
