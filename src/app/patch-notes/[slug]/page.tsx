@@ -13,7 +13,7 @@ import SystemChanges from "../components/system-changes";
 import { patchNotesData } from "../data/db";
 
 export default function BlogPostPage() {
-  const [postData] = useState(patchNotesData);
+  const [postData] = useState(patchNotesData.data);
 
   return (
     <div className="mx-auto flex w-full max-w-[1000px] flex-col items-center bg-ui-dark-purple">
