@@ -7,23 +7,11 @@ import CutCorners from "./ui/cut-corners";
 interface SystemChangesProps {
   systemChanges: {
     title: string;
-    notes: string;
+    notes: (string | string[])[];
     changes: {
       type: string;
       subtitle?: string;
-      changes: (
-        | string
-        | {
-            systemSpecificName: string;
-            changeList: (
-              | string
-              | {
-                  part1: string;
-                  part2: string;
-                }
-            )[];
-          }
-      )[];
+      changes: (string | { part1: string; part2: string })[];
     }[];
   }[];
 }
@@ -45,13 +33,25 @@ export default function SystemChanges({ systemChanges }: SystemChangesProps) {
             <div>
               <div className="mb-5 space-y-2">
                 <h2 className="text-2xl font-bold">{title}</h2>
-                {notes && (
-                  <p>
-                    &ldquo;
-                    {notes}
-                    &ldquo;
-                  </p>
-                )}
+                {notes.map((noteStructure, i) => {
+                  if (typeof noteStructure === "string") {
+                    return (
+                      <p key={i}>
+                        {i === 0 ? <span>&ldquo;</span> : null}
+                        {noteStructure}
+                        {i === notes.length - 1 ? <span>&ldquo;</span> : null}
+                      </p>
+                    );
+                  } else {
+                    return (
+                      <ul className="list-disc pl-6" key={i}>
+                        {noteStructure.map((bulletPoint, i) => {
+                          return <li key={i}>{bulletPoint}</li>;
+                        })}
+                      </ul>
+                    );
+                  }
+                })}
               </div>
 
               <Hr className="mx-auto mb-5" />

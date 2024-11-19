@@ -871,7 +871,7 @@ export const patchNotesData = {
   systemChanges: [
     {
       title: "[!!!] AFK Detection",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -884,7 +884,7 @@ export const patchNotesData = {
     },
     {
       title: "Run It Back",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -897,7 +897,7 @@ export const patchNotesData = {
     },
     {
       title: "New Player Experience",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -919,7 +919,7 @@ export const patchNotesData = {
           "Add immediate, clear, shared early game goals with compelling rewards",
           "Incentivize smaller-scale, early game PvP collisions",
         ],
-        "While these things will ideally make the game better for all players, we believe they’ll be especially helpful to players that are NOT in a premade, since there’s now a clear answer to “what should we do right now?",
+        "While these things will ideally make the game better for all players, we believe they’ll be especially helpful to players that are NOT in a premade, since there’s now a clear answer to what should we do right now?",
         "And now some caveats. This system came in very late in development so there’s a good amount of temporary content associated with it, like:",
         [
           "The vendor is a recolored version of the red key vendor, neither of which are necessarily final in terms of visuals or sound,",
@@ -954,7 +954,7 @@ export const patchNotesData = {
     },
     {
       title: "Circle Tunings",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -967,7 +967,7 @@ export const patchNotesData = {
     },
     {
       title: "Most Wanted",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -981,8 +981,9 @@ export const patchNotesData = {
     },
     {
       title: "Health/damage reduction clarity",
-      notes:
+      notes: [
         "This change shouldn’t feel like a change. In a previous playtest, we gave all hunters some passive damage reduction as an experiment to increase time-to-kill. We liked the change, so we’re swapping the invisible damage-reduction with health to get the same effect with better clarity.",
+      ],
       changes: [
         {
           type: "newEffect",
@@ -995,7 +996,7 @@ export const patchNotesData = {
     },
     {
       title: "Other Stuff",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
@@ -1013,8 +1014,9 @@ export const patchNotesData = {
     },
     {
       title: "Environment/Map",
-      notes:
+      notes: [
         "These look like small notes, but they’re doing a lot of heavy lifting. Big environmental upgrades! And some context on random chests: given how much of SUPERVIVE relies on teammates to do efficiently (vaults, monster packs, etc) we wanted to add something that is easily solo-able and has good rewards to encourage teams breaking up to efficiently farm out a biome. Obviously this has its own risks, but it definitely adds ~ t e x t u r e ~ to your gaming experience. If you see a chest, you should probably open it.",
+      ],
       changes: [
         {
           type: "newEffect",
@@ -1031,7 +1033,7 @@ export const patchNotesData = {
     },
     {
       title: "PvE",
-      notes: "",
+      notes: [],
       changes: [
         {
           type: "newEffect",
