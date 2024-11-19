@@ -10,19 +10,10 @@ interface PowerChangesProps {
     name: string;
     description: string;
     notes: string;
-    changes: (
-      | {
-          type: string;
-          changes: string[];
-        }
-      | {
-          type: string;
-          changes: {
-            part1: string;
-            part2: string;
-          }[];
-        }
-    )[];
+    changes: {
+      type: string;
+      changes: (string | { part1: string; part2: string })[];
+    }[];
   }[];
 }
 
