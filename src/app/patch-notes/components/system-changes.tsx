@@ -32,7 +32,7 @@ export default function SystemChanges({ systemChanges }: SystemChangesProps) {
 
             <div>
               <div className="mb-5 space-y-2">
-                <h2 className="text-2xl font-bold">{title}</h2>
+                <h2 className="text-2xl font-bold lg:text-4xl">{title}</h2>
                 {notes.map((noteStructure, i) => {
                   if (typeof noteStructure === "string") {
                     return (
