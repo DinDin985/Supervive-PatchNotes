@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import FanWarning from "./components/fan-warning";
@@ -33,6 +34,7 @@ export default function RootLayout({
         <div className="bg-ui-dark-purple pt-24">
           {children}
           <FanWarning />
+          <Analytics />
         </div>
         {/* <Footer /> */}
       </body>
