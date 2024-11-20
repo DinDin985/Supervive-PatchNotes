@@ -871,7 +871,7 @@ export const patchNotesData = {
       },
       {
         name: "Tactical Nuke",
-        img: "/patch-notes/power-icons/tatical-nuke.png",
+        img: "/patch-notes/power-icons/tactical-nuke.png",
         description: "",
         notes: "",
         changes: [
