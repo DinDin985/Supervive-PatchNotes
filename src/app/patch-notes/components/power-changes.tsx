@@ -8,6 +8,7 @@ import CutCorners from "./ui/cut-corners";
 interface PowerChangesProps {
   powerChanges: {
     name: string;
+    img: string;
     description: string;
     notes: string;
     changes: {
@@ -22,7 +23,7 @@ export default function PowerChanges({ powerChanges }: PowerChangesProps) {
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Power Changes</h1>
 
-      {powerChanges.map(({ name, description, notes, changes }, i) => {
+      {powerChanges.map(({ name, img, description, notes, changes }, i) => {
         let imgName: string | string[] = name.split(" ");
         if (imgName[0] === "[NEW]") {
           imgName = imgName.slice(1);
@@ -40,7 +41,7 @@ export default function PowerChanges({ powerChanges }: PowerChangesProps) {
             <div className="mb-6 flex items-center">
               <div className="relative mr-3">
                 <Image
-                  src={`/patch-notes/power-icons/${imgName}.png`}
+                  src={img}
                   className="sticky z-10 bg-white"
                   width={80}
                   height={80}

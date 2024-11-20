@@ -8,6 +8,7 @@ import CutCorners from "./ui/cut-corners";
 interface EquipmentChangesProps {
   equipmentChanges: {
     name: string;
+    img: string;
     description: string;
     notes: string;
     changes: (
@@ -33,7 +34,7 @@ export default function EquipmentChanges({
     <div className="mb-8 w-10/12">
       <h1 className="patch-notes-subtitle">Equipment Changes</h1>
 
-      {equipmentChanges.map(({ name, description, notes, changes }, i) => {
+      {equipmentChanges.map(({ name, img, description, notes, changes }, i) => {
         let imgName: string | string[] = name.split(" ");
         if (imgName[0] === "[NEW]") {
           imgName = imgName.slice(1);
@@ -51,7 +52,7 @@ export default function EquipmentChanges({
             <div className="mb-6 flex items-center">
               <div className="relative mr-3">
                 <Image
-                  src={`/patch-notes/equipment-icons/${imgName}.png`}
+                  src={img}
                   className="sticky z-10 bg-white p-1"
                   width={80}
                   height={80}

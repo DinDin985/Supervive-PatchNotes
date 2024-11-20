@@ -455,18 +455,21 @@ export const patchNotesData = {
     equipmentChanges: [
       {
         name: "Ninja Boots",
+        img: "/patch-notes/equipment-icons/ninja-boots.png",
         description: "Removed.",
         notes: "",
         changes: [{ type: "newEffect", changes: ["Removed"] }],
       },
       {
         name: "Forestphasing Boots",
+        img: "/patch-notes/equipment-icons/forestphasing-boots.png",
         description: "Removed.",
         notes: "",
         changes: [{ type: "newEffect", changes: ["Removed"] }],
       },
       {
         name: "[NEW] Chain Jump Boots",
+        img: "/patch-notes/equipment-icons/chain-jump-boots.png",
         description: "Higher jumps.",
         notes: "",
         changes: [
@@ -480,6 +483,7 @@ export const patchNotesData = {
       },
       {
         name: "[NEW] Executioner",
+        img: "/patch-notes/equipment-icons/executioner.png",
         description: "Healing on wisp damage/kill.",
         notes: "",
         changes: [
@@ -491,6 +495,7 @@ export const patchNotesData = {
       },
       {
         name: "Meditation Boots",
+        img: "/patch-notes/equipment-icons/meditation-boots.png",
         description: "Added Team mana regen.",
         notes: "",
         changes: [
@@ -504,6 +509,7 @@ export const patchNotesData = {
       },
       {
         name: "Greed",
+        img: "/patch-notes/equipment-icons/greed.png",
         description: "Lower cashout thresholds.",
         notes: "",
         changes: [
@@ -520,6 +526,7 @@ export const patchNotesData = {
       },
       {
         name: "Bubble Blade",
+        img: "/patch-notes/equipment-icons/bubble-blade.png",
         description: "Shield amount and duration increased.",
         notes: "",
         changes: [
@@ -540,6 +547,7 @@ export const patchNotesData = {
       },
       {
         name: "Mindblade",
+        img: "/patch-notes/equipment-icons/mindblade.png",
         description:
           "Max mana on fully stacked increased, Max mana to AP scaling decreased.",
         notes: "",
@@ -561,6 +569,7 @@ export const patchNotesData = {
       },
       {
         name: "Rampage",
+        img: "/patch-notes/equipment-icons/rampage.png",
         description: "",
         notes: "",
         changes: [
@@ -585,6 +594,7 @@ export const patchNotesData = {
       },
       {
         name: "Ambrush",
+        img: "/patch-notes/equipment-icons/ambrush.png",
         description: "",
         notes: "",
         changes: [
@@ -598,6 +608,7 @@ export const patchNotesData = {
       },
       {
         name: "Scholar",
+        img: "/patch-notes/equipment-icons/scholar.png",
         description: "",
         notes: "",
         changes: [
@@ -624,6 +635,7 @@ export const patchNotesData = {
       },
       {
         name: "Bloodscent",
+        img: "/patch-notes/equipment-icons/bloodscent.png",
         description: "",
         notes: "",
         changes: [
@@ -635,6 +647,7 @@ export const patchNotesData = {
       },
       {
         name: "[NEW] Turbo Boost",
+        img: "/patch-notes/equipment-icons/turbo-boost.png",
         description: "",
         notes: "",
         changes: [
@@ -648,6 +661,7 @@ export const patchNotesData = {
       },
       {
         name: "Big Game Hunter",
+        img: "/patch-notes/equipment-icons/big-game-hunter.png",
         description: "",
         notes: "",
         changes: [
@@ -673,6 +687,7 @@ export const patchNotesData = {
       },
       {
         name: "Interweaver",
+        img: "/patch-notes/equipment-icons/interweaver.png",
         description: "",
         notes: "",
         changes: [
@@ -695,6 +710,7 @@ export const patchNotesData = {
       },
       {
         name: "Executioner",
+        img: "/patch-notes/equipment-icons/executioner.png",
         description: "",
         notes: "",
         changes: [
@@ -706,6 +722,7 @@ export const patchNotesData = {
       },
       {
         name: "[NEW] Last Stand",
+        img: "/patch-notes/equipment-icons/last-stand.png",
         description: "",
         notes: "",
         changes: [
@@ -719,6 +736,7 @@ export const patchNotesData = {
       },
       {
         name: "Soulstealer",
+        img: "/patch-notes/equipment-icons/soulstealer.png",
         description: "",
         notes: "",
         changes: [
@@ -737,6 +755,7 @@ export const patchNotesData = {
     powerChanges: [
       {
         name: "AoE Teleport",
+        img: "/patch-notes/power-icons/aoe-teleport.png",
         description: "",
         notes: "",
         changes: [
@@ -755,6 +774,7 @@ export const patchNotesData = {
       },
       {
         name: "Grapple Hook",
+        img: "/patch-notes/power-icons/grapple-hook.png",
         description: "",
         notes: "",
         changes: [
@@ -772,6 +792,7 @@ export const patchNotesData = {
       },
       {
         name: "Hover Wings",
+        img: "/patch-notes/power-icons/hover-wings.png",
         description: "",
         notes: "",
         changes: [
@@ -792,6 +813,7 @@ export const patchNotesData = {
       },
       {
         name: "Icarus Glide",
+        img: "/patch-notes/power-icons/icarus-glide.png",
         description: "",
         notes: "",
         changes: [
@@ -807,6 +829,7 @@ export const patchNotesData = {
       },
       {
         name: "Mana Cloud",
+        img: "/patch-notes/power-icons/mana-cloud.png",
         description: "",
         notes: "",
         changes: [
@@ -818,6 +841,7 @@ export const patchNotesData = {
       },
       {
         name: "Mortar",
+        img: "/patch-notes/power-icons/mortar.png",
         description: "",
         notes: "",
         changes: [
@@ -835,6 +859,7 @@ export const patchNotesData = {
       },
       {
         name: "Replicator",
+        img: "/patch-notes/power-icons/replicator.png",
         description: "",
         notes: "",
         changes: [
@@ -846,6 +871,7 @@ export const patchNotesData = {
       },
       {
         name: "Tactical Nuke",
+        img: "/patch-notes/power-icons/tatical-nuke.png",
         description: "",
         notes: "",
         changes: [
@@ -863,6 +889,7 @@ export const patchNotesData = {
       },
       {
         name: "Wisp Vacuum",
+        img: "/patch-notes/power-icons/wisp-vacuum.png",
         description: "",
         notes: "",
         changes: [
