@@ -17,7 +17,7 @@ export default function FanWarning() {
         </p>
         <button
           onClick={() => setToggleFanWarning(false)}
-          className="rounded-lg bg-white p-5 font-tusker-5700 uppercase tracking-wider text-black"
+          className="z-[9999] rounded-lg bg-white p-5 font-tusker-5700 uppercase tracking-wider text-black"
         >
           I Understand
         </button>
