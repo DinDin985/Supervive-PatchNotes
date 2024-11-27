@@ -1,31 +1,21 @@
 "use client";
 import Image from "next/image";
-import Hr from "./hr";
+import { twMerge } from "tailwind-merge";
+import { HunterChangesProps } from "../types";
 import Adjustment from "./changes-format/adjustment";
 import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
 import NewEffect from "./changes-format/new-effect";
+import Hr from "./hr";
 import ImageEdgeBlue from "./image-edge-blue";
 import CutCorners from "./ui/cut-corners";
 
-interface HunterChangesProps {
-  hunterChanges: {
-    name: string;
-    imgSmall: string;
-    imgBig: string;
-    description: string;
-    notes: string;
-    changes: {
-      type: string;
-      abilityName: string;
-      abilityImg: string;
-      changes: (string | { part1: string; part2: string })[];
-    }[];
-  }[];
-}
-
-export default function HunterChanges({ hunterChanges }: HunterChangesProps) {
+export default function HunterChanges({
+  hunterChanges,
+  containerClassName,
+  cutCornersClassName,
+}: HunterChangesProps) {
   return (
-    <div className="mb-8 w-10/12">
+    <div className="mb-8 w-full">
       <h1 className="patch-notes-subtitle lg:text-4xl">Hunter Changes</h1>
 
       {hunterChanges.map(
@@ -33,9 +23,12 @@ export default function HunterChanges({ hunterChanges }: HunterChangesProps) {
           return (
             <div
               key={i}
-              className={`${i === hunterChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4 lg:flex-row`}
+              className={twMerge(
+                `${i === hunterChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4 lg:flex-row`,
+                containerClassName,
+              )}
             >
-              <CutCorners />
+              <CutCorners className={cutCornersClassName} />
 
               <div className={`${notes !== "" ? "mb-5" : "mb-8"} flex lg:mb-0`}>
                 <div className="relative mr-5 h-full">

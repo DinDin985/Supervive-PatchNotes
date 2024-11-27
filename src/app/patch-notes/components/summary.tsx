@@ -10,10 +10,10 @@ type SummaryProps = {
 };
 
 export default function Summary({ summary }: SummaryProps) {
-  const { message } = summary;
+  const { message, author, authorImg } = summary;
 
   return (
-    <div className="mb-10 w-10/12 max-w-[800px]">
+    <div className="mb-10 w-full">
       <div className="mb-8 space-y-4">
         {message.map((text, i) => {
           return (
@@ -26,14 +26,23 @@ export default function Summary({ summary }: SummaryProps) {
         })}
 
         <div className="flex items-center">
-          <p className="mr-2">- The Balance Team</p>
+          <p className="mr-2">- {author}</p>
           <div className="w-fit rounded-full bg-white p-[6px]">
-            <Image
-              src={"/patch-notes/balance-team-icon.png"}
-              width={15}
-              height={15}
-              alt="balance team icon"
-            />
+            {authorImg !== "" ? (
+              <Image
+                src={"/patch-notes/balance-team-icon.png"}
+                width={15}
+                height={15}
+                alt="author icon"
+              />
+            ) : (
+              <Image
+                src={"/patch-notes/balance-team-icon.png"}
+                width={15}
+                height={15}
+                alt="balance team icon"
+              />
+            )}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import Hr from "./hr";
 import { default as Post } from "./post";
 
 export default function PostList() {
-  const [posts] = useState([patchNotesData]);
+  const [posts] = useState([...patchNotesData]);
   const [numOfVisablePosts, showNumOfVisablePosts] = useState(6);
 
   function ShowMorePosts() {

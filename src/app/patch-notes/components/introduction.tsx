@@ -3,6 +3,7 @@ import Hr from "./hr";
 
 type IntroductionProps = {
   introduction: {
+    img: string;
     title: string;
     description: string;
     author: string;
@@ -11,14 +12,14 @@ type IntroductionProps = {
 };
 
 export default function Introduction({ introduction }: IntroductionProps) {
-  const { title, description, author, date } = introduction;
+  const { img, title, description, author, date } = introduction;
 
   return (
     <div className="w-full">
-      <div className="flex flex-col items-center md:mt-12">
-        <div className="absolute top-16 h-[400px] w-full overflow-hidden lg:border-b-2">
+      <div className="flex flex-col items-center">
+        <div className="absolute -top-6 h-[400px] w-full overflow-hidden lg:border-b-2">
           <Image
-            src={"/patch-notes/supervive-wallpaper.png"}
+            src={img}
             className="absolute left-0 top-0 hidden h-full w-full scale-125 blur-lg lg:block"
             width={500}
             height={300}
@@ -28,10 +29,10 @@ export default function Introduction({ introduction }: IntroductionProps) {
           />
         </div>
 
-        <div className="flex h-fit w-full flex-col items-center justify-center overflow-hidden">
+        <div className="flex h-fit w-full flex-col items-center justify-center overflow-hidden md:mt-16">
           <Image
-            src={"/patch-notes/supervive-wallpaper.png"}
-            className="z-10 mb-8 max-w-[700px] lg:static lg:h-auto lg:w-full lg:max-w-[800px] lg:border-2 xl:max-w-[1000px]"
+            src={img}
+            className="z-10 mb-8 max-w-[700px] lg:static lg:h-auto lg:w-full lg:max-w-[800px] lg:border-2 xl:max-h-[406px] xl:max-w-[1000px]"
             width={500}
             height={300}
             layout="responsive"

@@ -1,37 +1,20 @@
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 import Adjustment from "./changes-format/adjustment";
 import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
 import NewEffect from "./changes-format/new-effect";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
-
-interface EquipmentChangesProps {
-  equipmentChanges: {
-    name: string;
-    img: string;
-    description: string;
-    notes: string;
-    changes: (
-      | {
-          type: string;
-          changes: string[];
-        }
-      | {
-          type: string;
-          changes: {
-            part1: string;
-            part2: string;
-          }[];
-        }
-    )[];
-  }[];
-}
+import { EquipmentChangesProps } from "../types";
 
 export default function EquipmentChanges({
   equipmentChanges,
+  containerClassName,
+  cutCornersClassName,
+  marginVariant,
 }: EquipmentChangesProps) {
   return (
-    <div className="mb-8 w-10/12">
+    <div className={twMerge(`mb-8 w-full`, marginVariant)}>
       <h1 className="patch-notes-subtitle">Equipment Changes</h1>
 
       {equipmentChanges.map(({ name, img, description, notes, changes }, i) => {
@@ -45,9 +28,12 @@ export default function EquipmentChanges({
         return (
           <div
             key={i}
-            className={`${i === equipmentChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`}
+            className={twMerge(
+              `${i === equipmentChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`,
+              containerClassName,
+            )}
           >
-            <CutCorners />
+            <CutCorners className={cutCornersClassName} />
 
             <div className="mb-6 flex items-center">
               <div className="relative mr-3">

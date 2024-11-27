@@ -1,34 +1,31 @@
+import { twMerge } from "tailwind-merge";
+import { SystemChangesProps } from "../types";
 import Adjustment from "./changes-format/adjustment";
 import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
 import NewEffect from "./changes-format/new-effect";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
-interface SystemChangesProps {
-  systemChanges: {
-    title: string;
-    notes: (string | string[])[];
-    changes: {
-      type: string;
-      subtitle?: string;
-      changes: (string | { part1: string; part2: string })[];
-    }[];
-  }[];
-}
-
-export default function SystemChanges({ systemChanges }: SystemChangesProps) {
-  console.log(systemChanges);
+export default function SystemChanges({
+  systemChanges,
+  containerClassName,
+  cutCornersClassName,
+  marginVariant,
+}: SystemChangesProps) {
   return (
-    <div className="mb-8 w-10/12">
+    <div className={twMerge(`mb-8 w-full`, marginVariant)}>
       <h1 className="patch-notes-subtitle">System Changes</h1>
 
       {systemChanges.map(({ title, notes, changes }, i) => {
         return (
           <div
             key={i}
-            className={`${i === systemChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`}
+            className={twMerge(
+              `${i === systemChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`,
+              containerClassName,
+            )}
           >
-            <CutCorners />
+            <CutCorners className={cutCornersClassName} />
 
             <div>
               <div className="mb-5 space-y-2">

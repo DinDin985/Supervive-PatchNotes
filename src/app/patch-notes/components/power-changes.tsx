@@ -1,26 +1,20 @@
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
+import { PowerChangesProps } from "../types";
 import Adjustment from "./changes-format/adjustment";
 import AdjustmentAndNewEffect from "./changes-format/adjustment-and-new-effect";
 import NewEffect from "./changes-format/new-effect";
 import Hr from "./hr";
 import CutCorners from "./ui/cut-corners";
 
-interface PowerChangesProps {
-  powerChanges: {
-    name: string;
-    img: string;
-    description: string;
-    notes: string;
-    changes: {
-      type: string;
-      changes: (string | { part1: string; part2: string })[];
-    }[];
-  }[];
-}
-
-export default function PowerChanges({ powerChanges }: PowerChangesProps) {
+export default function PowerChanges({
+  powerChanges,
+  containerClassName,
+  cutCornersClassName,
+  marginVariant,
+}: PowerChangesProps) {
   return (
-    <div className="mb-8 w-10/12">
+    <div className={twMerge(`mb-8 w-full`, marginVariant)}>
       <h1 className="patch-notes-subtitle">Power Changes</h1>
 
       {powerChanges.map(({ name, img, description, notes, changes }, i) => {
@@ -34,9 +28,12 @@ export default function PowerChanges({ powerChanges }: PowerChangesProps) {
         return (
           <div
             key={i}
-            className={`${i === powerChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`}
+            className={twMerge(
+              `${i === powerChanges.length - 1 ? "mb-0" : "mb-8"} relative flex flex-col border-4 p-4`,
+              containerClassName,
+            )}
           >
-            <CutCorners />
+            <CutCorners className={cutCornersClassName} />
 
             <div className="mb-6 flex items-center">
               <div className="relative mr-3">
