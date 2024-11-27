@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import FanWarning from "./components/fan-warning";
+import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -30,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="bg-ui-dark-purple pt-24">
           {children}
           <FanWarning />

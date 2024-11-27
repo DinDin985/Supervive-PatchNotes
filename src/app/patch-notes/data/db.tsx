@@ -23,128 +23,13 @@ export const patchNotesData = [
         authorImg: "",
       },
       midPatchUpdates: {
-        title: "11/25/2024 Mid-Patch-Update",
-        custom: [
-          {
-            title: "Refer-a-Friend",
-            notes: [
-              "Refer-a-friend is BACK and now all done in the game client!",
-            ],
-            bulletPoints: [
-              "Earn points for referring friends into SUPERVIVE",
-              "Earn even more points for playing together with those friends",
-              "Earn enough points to earn exclusive cosmetic rewards!",
-            ],
-          },
-        ],
-        systemChanges: [
-          {
-            title: "[!!!] AFK Detection",
-            notes: [],
-            changes: [
-              {
-                type: "newEffect",
-                changes: [
-                  "Has been added to the game. When a player is detected as AFK, they will be automatically killed/unable to be respawned",
-                  "Players on the team of a disconnected or AFK player are allowed to leave the game without penalty",
-                ],
-              },
-            ],
-          },
-        ],
-        hunterChanges: [
-          {
-            name: "Bishop",
-            imgSmall: "/patch-notes/hunter-icons/bishop.png",
-            imgBig:
-              "/patch-notes/hunter-portraits/bishop-full-body-cropped.png",
-            description:
-              "RMB level 3 adjustment, Shift cooldown increase, R nerf.",
-            notes:
-              "Bishop was strong during Steam Next Fest, especially at higher MMRs.",
-            changes: [
-              {
-                type: "newEffect",
-                abilityName: "(RMB) - Displacement Charge",
-                abilityImg: "/patch-notes/hunter-abilities/bishop/RMB.png",
-                changes: [
-                  "Level 3 upgrade now only resets the cooldown of Haymaker (Q) if the satchel hits an enemy",
-                ],
-              },
-              {
-                type: "adjustment",
-                abilityName: "(Shift) - Rocket Jump",
-                abilityImg: "/patch-notes/hunter-abilities/bishop/shift.png",
-                changes: [
-                  { part1: "Charge time increased from 10s", part2: "11s" },
-                ],
-              },
-              {
-                type: "adjustmentAndNewEffect",
-                abilityName: "(R) - Blast-off!",
-                abilityImg: "/patch-notes/hunter-abilities/bishop/R.png",
-                changes: [
-                  "Turn rate lowered by ~10%",
-                  "Detonation radius lowered by 25%",
-                  {
-                    part1: "Max stun duration decreased from 1.4",
-                    part2: "1.2 seconds",
-                  },
-                  "QoL: No longer follows heightmap downward, meaning if you jumppad and ult, you’ll stay high up in the air",
-                ],
-              },
-            ],
-          },
-        ],
-        equipmentChanges: [
-          {
-            name: "Ninja Boots",
-            img: "/patch-notes/equipment-icons/ninja-boots.png",
-            description: "Removed.",
-            notes: "",
-            changes: [{ type: "newEffect", changes: ["Removed"] }],
-          },
-        ],
-        powerChanges: [
-          {
-            name: "Two Way Teleporter",
-            img: "/patch-notes/power-icons/two-way-teleporter.png",
-            description: "",
-            notes: "",
-            changes: [
-              {
-                type: "adjustment",
-                changes: [
-                  {
-                    part1:
-                      "Now lets you teleport everything into Abyss, including Revive Beacons and Base Camps",
-                    part2:
-                      "Now no longer lets you target inside of mountains / invalid terrain",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: "Wisp Vacuum",
-            img: "/patch-notes/power-icons/wisp-vacuum.png",
-            description: "",
-            notes: "",
-            changes: [
-              {
-                type: "newEffect",
-                changes: [
-                  "Now also pulls living enemies while they are airborne",
-                  "Now applies a heal over time to you when pulling allies or enemies. The heal scales with targets pulled",
-                ],
-              },
-            ],
-          },
-        ],
-        bugFixesList: [
-          "We’ve added a South American server for Open Beta",
-          "Support for widescreen added",
-        ],
+        title: "",
+        custom: [],
+        systemChanges: [],
+        hunterChanges: [],
+        equipmentChanges: [],
+        powerChanges: [],
+        bugFixesList: [],
       },
       patchHighlights: {
         video: "https://www.youtube.com/embed/9TPBdxoZe0E",
@@ -166,7 +51,7 @@ export const patchNotesData = [
         },
         {
           title: "Art/Sound/UI Updates",
-          notes: [""],
+          notes: [],
           bulletPoints: [
             "Updated tooltip styling for all items and abilities",
             "Updated visuals for Hunter healthbars (new status icons, new broken armor indicator, new visuals on damage taken)",

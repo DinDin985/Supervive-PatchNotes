@@ -19,7 +19,7 @@ export default function TableOfContents({
   }
 
   return (
-    <div className="sticky right-0 top-10 z-[9999]">
+    <div className="sticky right-0 top-28 z-[9999]">
       <ul className="absolute left-[80%] w-fit">
         {sections.map((section: string, i) => {
           const sectionPascalCase = formatCamelCase(section);
