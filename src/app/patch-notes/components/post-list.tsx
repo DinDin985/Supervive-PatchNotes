@@ -26,27 +26,30 @@ export default function PostList() {
 
   return (
     <div className="w-full flex-col items-center justify-center self-center">
-      <ul className="mb-10 grid w-full max-w-[1600px] bg-ui-dark-purple md:grid-cols-2 md:gap-y-10 md:px-4 lg:grid-cols-3">
-        {posts.map(({ title, date, img, description, slug }, i) => {
-          return (
-            <li
-              className={`${i < numOfVisablePosts ? "block" : "hidden"}`}
-              key={i}
-            >
-              <Link
-                className="flex items-center justify-center"
-                href={`/patch-notes/${slug}`}
+      <ul className="grid- mb-10 grid w-full max-w-[1600px] bg-ui-dark-purple md:grid-cols-2 md:gap-y-10 md:px-4 lg:grid-cols-3">
+        {posts
+          .slice()
+          .reverse()
+          .map(({ title, date, img, description, slug }, i) => {
+            return (
+              <li
+                className={`${i < numOfVisablePosts ? "block" : "hidden"}`}
+                key={i}
               >
-                <Post
-                  title={title}
-                  date={date}
-                  img={img}
-                  description={description}
-                />
-              </Link>
-            </li>
-          );
-        })}
+                <Link
+                  className="flex items-center justify-center"
+                  href={`/patch-notes/${slug}`}
+                >
+                  <Post
+                    title={title}
+                    date={date}
+                    img={img}
+                    description={description}
+                  />
+                </Link>
+              </li>
+            );
+          })}
       </ul>
 
       <button
