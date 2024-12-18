@@ -1,4 +1,5 @@
 import type { JSXElementConstructor, ReactElement } from "react";
+import { Tusker5700 } from "../fonts";
 import { getPosts } from "../hooks/mdx-fetcher";
 import PatchNotesListContainer from "./components/patch-notes-list-container";
 
@@ -29,7 +30,9 @@ export default async function PatchNotes() {
       <div className="absolute top-0 h-28 w-full bg-ui-light-purple"></div>
 
       <div className="flex h-40 items-center bg-ui-light-purple md:mb-10 xl:h-56">
-        <h1 className="ml-10 font-tusker-5700 text-5xl italic text-white xl:text-6xl">
+        <h1
+          className={`${Tusker5700.className} ml-10 text-5xl italic text-white xl:text-6xl`}
+        >
           Patch Notes
         </h1>
       </div>

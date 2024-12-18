@@ -222,9 +222,6 @@ const config: Config = {
             },
           },
         },
-        "prose-patch-bugfixes": {
-          css: {},
-        },
         "patch-custom": {
           css: {
             p: {

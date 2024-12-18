@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Tusker6700 } from "../fonts";
 
 interface PostProps {
   title: string;
@@ -26,7 +27,9 @@ export default function Post({ title, date, img, description }: PostProps) {
       <div className="flex w-full flex-col">
         <h2 className="text-sm tracking-wide">{date} |</h2>
 
-        <h1 className="font-tusker-6700 text-lg tracking-[0.08em] text-neon-mint">
+        <h1
+          className={`${Tusker6700.className} text-lg tracking-[0.08em] text-neon-mint`}
+        >
           {title}
         </h1>
 
