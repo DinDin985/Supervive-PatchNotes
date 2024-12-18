@@ -1,21 +1,9 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import FanWarning from "./components/fan-warning";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`antialiased`}>
         <Navbar />
         <div className="bg-ui-dark-purple pt-24">
           {children}
