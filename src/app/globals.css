@@ -7,6 +7,7 @@
 @font-face {
   font-family: "Tusker-5700";
   src: url("/fonts/TuskerGrotesk-5700Bold.ttf") format("truetype");
+  display: swap;
   font-weight: bold;
   font-style: normal;
 }
@@ -14,6 +15,7 @@
 @font-face {
   font-family: "Tusker-6700";
   src: url("/fonts/TuskerGrotesk-6700Bold.ttf") format("truetype");
+  display: swap;
   font-weight: bold;
   font-style: normal;
 }
