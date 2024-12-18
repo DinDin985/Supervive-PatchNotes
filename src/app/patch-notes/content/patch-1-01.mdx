@@ -1,0 +1,264 @@
+---
+title: "Patch Notes 1.01"
+cover-image: "/patch-notes/defend.png"
+date: "11/26/2024"
+description: "Dive In Hunters!"
+---
+
+<Introduction img={"/patch-notes/defend.png"}>
+  # Patch Notes 1.01
+
+  ## Dive In Hunters!
+
+  ### DinDin | 11/26/2024
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  “Hi SUPERVIVERs! We’re still deciding how we want to label our patches, so for now 
+  you get functional names and nothing numerical. We reserve the right to change based 
+  on our whims.
+
+  Aight let’s get to it. For this patch, we’ve been looking at the data and listening 
+  to your feedback, trying to formulate a set of mostly numerical changes for balance, 
+  along with some bigger changes to the ranked experience. RE: deliberately staying lighter on balance—we’re not taking massive swings because everything is fresh and things are rapidly changing. We want to leave space for metas to form and re-form, especially as knowledge is shared and y’all figure out how to counter Shrike.
+
+  Seeing a week one patch might also prompt questions as to what our desired patch 
+  cadence is, to which I’d say: we’re thinking one more BIG patch in December, then 
+  bi-weekly patches starting mid-Jan. Or maybe you’re asking about what our FUTURE CONTENT 
+  PLANS are, to which I’d say: READ THIS ψ(｀∇´)ψ“
+</Summary>
+
+<MidPatchUpdates title={"11/26/2024 Mid-Patch-Update"}>
+  <Custom title={"Ranked"} variant={"midPatchUpdate"}>
+    "Thanks for your feedback on the queue restrictions. When we were making these changes, 
+    we knew we were trading social play (a HUGE value for us) for competitive integrity at 
+    the VERY top end (0.3% of you), but felt it was a necessary change to make for squads 
+    especially, since a 4stack squad of the top 0.01% is very likely unbeatable in any matchmade setting.
+
+    That preamble aside, we hear you on the duo queue restrictions being too much (especially 
+    since it applied to ranked squad queue) - so:"
+
+    <Hr className="mb-5"/>
+
+    - We are lifting the solo masters+ restrictions for DUO QUEUE entirely - effective immediately.
+    - Squads queue remains unchanged.
+    - Thanks for your feedback! And fun fact, a Steam review helped us with this! We hope everyone leaves us nice Steam reviews :D
+  </Custom>
+</MidPatchUpdates>
+
+<PatchHighlights img={"/patch-notes/defend.png"}>
+  “Hello Supervivers, in this patch you can expect changes to ranked, death circles, hunters, 
+  and equipment changes. We're still looking to flesh out the game as much as we can, but that 
+  requires feedback from you. If you have anything to say, both positive or negative let us know.“
+</PatchHighlights>
+
+<Custom title={"Ranked"}>
+  "Coming into Open Beta, we knew there was still work to do, but wanted to get the game in your hands 
+  to validate feedback before digging into our competitive systems. Well… heard, chef! We were already 
+  working on a ranked upgrade for January/February, but have started yoinking things up to NOW per your 
+  feedback. So before we get to changes:
+  
+  FOR THE FUTURE we would like to do a more comprehensive overhaul with plans for better leaderboards 
+  (friends, social, regional), rewards, and competitivityness. We also hear you regarding ranked feeling 
+  more grind-based than skill-based (we have some hypotheses as to why) and that doomed feeling as a solo 
+  player getting run over by a premade, but no promises yet, just plans.
+  
+  FOR NOW: given all the constraints of shipping a patch within a week of launch and using the tools we 
+  have, we think we have a fun, temporary solution for the holidays."
+
+  <Hr className="mb-5"/>
+
+  - Anyone with more than 500 Ranked Points at Legend Rank will get reset back to 500 RP (this is to recalibrate the top of the ladder competition with our new premade restriction rules)
+  - Squads Master+ Queue will now be limited to duos premades at most
+  - Duos Master+ Queue will now be limited to solos at most
+</Custom>
+
+<Custom title={"Custom Game Access For Legend+"}>
+  "If you’ve ever been the top 0.01% of anything (couldn’t be me), you’ll know it’s lonely at the top 
+  and no matchmaking algorithm will save you when you’re just… better. Something something bell curves. 
+  Giving custom game access to Legend+ players lets these gifted SUPERVIVERS play socially after grinding 
+  through Masters with halved premades, while also upholding a core community philosophy of Theorycraft: 
+  the power of self-organization! There’s simply no way a formula can matchmake the best, but you can, 
+  through the power of friendship. Godspeed.
+  
+  P.S. inevitably we’ll be asked about why not giving Custom Lobbies to everyone so I will speedrun the 
+  context:"
+
+    - Individual games of SUPERVIVE cost us for each instance hosted - meaning a 1-player game of SUPERVIVE is about as expensive as a 40-player game (this is me generalizing to an extreme)
+    - Custom games also pull players out of the matchmaking pool, which harms matchmaking quality and queue times
+    - Therefore: giving custom game access is very scary for us from a cost and game quality perspective
+    - We’re gonna do it anyway (for Legend+ players) until January 15 because we don’t have other acceptable solutions for our very best
+
+  <Hr className="mb-5"/>
+
+    - At MONDAY, 12PM PST, we will manually grant every player who is ranked Legend+ (duos and squads) the ability to host custom games for the whole week. Since it’s not Monday, we have already done this week's grants
+    - If you fall out of Legend+ rank during the week, you'll retain access to custom games until the next sweep on Monday, so you have until then to reclaim your standing
+    - Custom games include the ability to set storm shifts, powers, and game modes. They are also a little janky (it’s a dev tool currently) so pardon the dust
+    - You can access Custom Games through the queue dropdown menu in the top left
+    - This is a temporary solution and will be removed on January 15th, 2025
+    - You must have at least 8 players in the lobby to start - we reserve the right to increase this threshold if things get scary (undefined). There is also no indicator as to why you can’t start (it just won’t start until you get 8+), so consider this patch note to be your UX
+    - Legend+ players, if you want us to set up something on our official Discord to help you organize, reach out to PWYFF - otherwise it’s in your hands now
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Death Circle
+
+    "We've heard lots of feedback on the changes to the initial circle size. While we believe the smaller 
+    size has improved our early game pacing—especially in cases where things feel real empty for the first 
+    few minutes—we also hear that some drop paths end up feeling claustrophobic. We’d like to preserve our 
+    current game pacing, but want to alleviate that feeling, so let’s try this first set of changes. Keep the 
+    feedback coming!"
+
+    <Hr className="mb-5"/>
+
+    - Initial circle radius has been increased by +10%
+    - The first circle will still close in the same amount of time, so it will feel faster once it starts closing
+
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/ghost-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/ghost.png"}>
+    ## Ghost
+
+    #### LMB damage increase, shift cooldown decrease.
+
+    ### "Ghost is looking weak across the board. Giving him a little more damage & mobility to bring him back into the fold."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/LMB.png"} abilityName={"(LMB) - MK7 Glyph Rifle"}>
+        - Damage increased by ~5%
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/shift.png"} abilityName={"(SHIFT) - Combat Slide"}>
+        - Cooldown reduced from 12/9/8 >>> 11/8/8 seconds
+        - NOTE: The level 2 to 3 change was not in the tooltip and not intended, so this is just buffing lvl 1 & 2, and leaving lvl 3 the same
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+    ## Hudson
+
+    #### LMB unempowered range and shift duration decreased.
+
+    ### "We're seeing Hudson looking pretty dominant across all MMRs. Gun should go brr, but his mobility and range were feeling pretty out of line."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/LMB.png"} abilityName={"(LMB) - Minigun"}>
+        - Unempowered projectile range reduced from 1500 >>> 1400
+        - Aim laser now accurately shows range, both empowered and unempowered
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/shift.png"} abilityName={"(SHIFT) - Hover Jets"}>
+        - Hover duration reduced from 2/2/2.5 >>> 1.4/1.4/1.75 seconds
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/jin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/jin.png"}>
+    ## Jin
+
+    #### RMB cast warmup time decreased.
+
+    ### "Our resident hot assassin is looking a little weak. This is also the last time we will use objectifying language for Jin, but he has recently just come into hotness and so we must celebrate (momentarily). To the change: we expect Jin to get better as people get more games in, but this small change should help him get there a bit quicker."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/RMB.png"} abilityName={"(RMB) - Flash Dagger"}>
+        - Cast warmup reduced from 0.3 >>> 0.1 seconds
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/myth-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/myth.png"}>
+    ## Myth
+
+    #### Recommended item changes from Rampage, Mindblade (it's better for her).
+
+    ### "fridge.gif sorry"
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+  </HunterChanges>
+</HunterChangesContainer>
+
+<EquipmentChangesContainer>
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/vampiric-blade.png"}>
+    ## Vampiric Blade
+
+    #### Base omivamp increased.
+    
+    ### "These changes are mostly based on data we’re seeing - specifically: evolution pickrates, win rates, etc. Small nudges here and there to bring things in."
+
+    <EquipmentSpecificChangesContainer>
+      - All evolutions of Vampiric Blade are underperforming, so this is a category-wide buff:
+      - Base Omnivamp increased from 7.5% >>> 8.5% (the in-game tooltip rounds up so it’ll look like 9%, sorry. Also: all evolutions get this buff)
+    </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/swiftblade.png"}>
+    ## Swiftblade
+
+    #### Empowered attack self-helf increased.
+
+    ### "These changes are mostly based on data we’re seeing - specifically: evolution pickrates, win rates, etc. Small nudges here and there to bring things in."
+
+    <EquipmentSpecificChangesContainer>
+      - Self-heal on empowered attack increased from 50 >>> 60
+    </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/rampage.png"}>
+    ## Rampage
+
+    #### Ability power at max stacks reduced.
+
+    ### "These changes are mostly based on data we’re seeing - specifically: evolution pickrates, win rates, etc. Small nudges here and there to bring things in."
+
+    <EquipmentSpecificChangesContainer>
+      - Ability Power at max stacks reduced from 50 >>> 40
+    </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+</EquipmentChangesContainer>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/two-way-teleporter.png"}>
+    ## Two-Way Teleporter
+
+    #### Cooldown and min delay reduced.
+
+    ### "Some of y’all are sleeping on this power (and we know who because we’re tracking drop rates), so we're hoping light buffs will make it more exciting to hold on to. Some tips: teleport resurrection beacons! Pre-drop teleports for mid-fight flanks! Try third-party kidnapping someone from a fight! Oh the possibilities!""
+  
+    <EquipmentSpecificChangesContainer>
+      - Cooldown reduced from 100 >>> 70 seconds
+      - Minimum delay on reactivation reduced from 10 >>> 8 seconds (so it’s faster to teleport)
+    </EquipmentSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/bungee-shot.png"}>
+    ## Bungee Shot
+
+    #### Cooldown and shot warmup time reduced.
+
+    ### "Philosophically we feel the same as above (cool power y’all sleeping on), so we’re gonna buff it until you like it >:^)"
+  
+    <EquipmentSpecificChangesContainer>
+      - Cooldown reduced from 20 >>> 16 seconds
+      - Shot warmup time reduced from 0.2 >>> 0 seconds (so it’s near instant)
+    </EquipmentSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<BugFixes>
+  - Fixed Felix’s name in French
+  - Fixed issue where AFK detection would kill players even when they return from being AFK
+  - Fixed Shiv’s Secret Agent Golden Gun Chroma so it isn’t pulling from base gun textures in-game
+  - Improved ping retry on region latency check to reduce issues where players get disconnected entirely from the internet due to spam
+</BugFixes>
