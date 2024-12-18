@@ -1,14 +1,16 @@
+import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
-import type { PluginAPI } from "tailwindcss/types/config";
+import type { PluginAPI, PluginUtils } from "tailwindcss/types/config";
 
 const config: Config = {
-  mode: 'jit',
+  mode: "jit",
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./mdx-components.tsx",
   ],
   theme: {
     screens: {
@@ -123,6 +125,11 @@ const config: Config = {
       backgroundImage: {
         "footer-texture": "url('/footer/footer_gradient_noblack.png')",
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       clipPath: {
         header:
           "polygon(0 0, 0 calc(100% - 15px), 190px 100%, 250px calc(100% - 40px), 290px calc(100% - 20px), 100% calc(100% - 20px), 100% 0)",
@@ -184,15 +191,232 @@ const config: Config = {
       screens: {
         xs: "360px",
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+      typography: ({ theme }: PluginUtils) => ({
+        DEFAULT: {
+          css: {
+            a: { color: theme("colors.blue.400") },
+            h1: { color: "colors.white", margin: theme("spacing.0") },
+            h2: { color: "colors.white", margin: theme("spacing.0") },
+            h3: { color: "colors.white", margin: theme("spacing.0") },
+            h4: { color: "colors.white", margin: theme("spacing.0") },
+            h5: { color: "colors.white", margin: theme("spacing.0") },
+            h6: { color: "colors.white", margin: theme("spacing.0") },
+            img: {
+              margin: theme("spacing.0"),
+            },
+            p: { color: "colors.white", margin: theme("spacing.0") },
+            strong: {
+              color: "colors.white",
+              fontWeight: theme("fontWeight.bold"),
+            },
+            ul: {
+              li: {
+                color: theme("colors.white"),
+                paddingLeft: theme("spacing.0"),
+                margin: theme("spacing.0"),
+              },
+              lineHeight: theme("lineHeight.6"),
+              paddingLeft: theme("spacing.6"),
+              marginTop: theme("spacing.0"),
+            },
+          },
+        },
+        "prose-patch-bugfixes": {
+          css: {},
+        },
+        "patch-custom": {
+          css: {
+            p: {
+              marginBottom: theme("spacing.4"),
+              lineHeight: theme("lineHeight.6"),
+            },
+          },
+        },
+        "patch-equipment-changes": {
+          css: {
+            h2: {
+              fontSize: theme("fontSize.xl"),
+              fontWeight: theme("fontWeight.bold"),
+              marginBottom: theme("spacing.4"),
+              "@screen md": {
+                fontSize: theme("fontSize.2xl"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.3xl"),
+              },
+            },
+            h3: {
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                marginBottom: theme("spacing.4"),
+              },
+            },
+            h4: {
+              color: theme("colors.neutral.300"),
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              marginBottom: theme("spacing.0"),
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.base"),
+              },
+            },
+          },
+        },
+        "patch-highlights": {
+          css: {
+            p: {
+              lineHeight: theme("lineHeight.6"),
+            },
+          },
+        },
+        "patch-hunter-ability-changes": {
+          css: {},
+        },
+        "patch-hunter-changes": {
+          css: {
+            h2: {
+              fontSize: theme("fontSize.xl"),
+              fontStyle: theme("fontWeight.bold"),
+              marginBottom: theme("spacing.4"),
+              "@screen md": {
+                fontSize: theme("fontSize.2xl"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.4xl"),
+              },
+            },
+            h3: {
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              display: "none",
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                display: "block",
+                marginBottom: theme("spacing.4"),
+              },
+            },
+            h4: {
+              color: theme("colors.neutral.300"),
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              marginBottom: theme("spacing.0"),
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.base"),
+                marginBottom: theme("spacing.4"),
+              },
+            },
+          },
+        },
+        "patch-hunter-intro": {
+          css: {},
+        },
+        "patch-introduction": {
+          css: {
+            h1: {
+              fontFamily: "'Tusker-6700', sans-serif",
+              fontSize: theme("fontSize.4xl"),
+              fontStyle: "italic",
+              letterSpacing: theme("letterSpacing.wider"),
+              marginBottom: theme("spacing.4"),
+              "@screen lg": {
+                fontSize: theme("fontSize.5xl"),
+              },
+            },
+            h2: {
+              color: theme("colors.neutral.300"),
+              fontFamily: "'Tusker-6700', sans-serif",
+              fontSize: theme("fontSize.lg"),
+              letterSpacing: "0.06em",
+              marginBottom: theme("spacing.1"),
+            },
+            h3: {
+              color: theme("colors.white"),
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.sm"),
+              marginBottom: theme("spacing.6"),
+            },
+          },
+        },
+        "patch-power-changes": {
+          css: {
+            h2: {
+              fontSize: theme("fontSize.xl"),
+              fontStyle: theme("fontWeight.bold"),
+              marginBottom: theme("spacing.4"),
+              "@screen md": {
+                fontSize: theme("fontSize.2xl"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.4xl"),
+              },
+            },
+            h3: {
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                marginBottom: theme("spacing.4"),
+              },
+            },
+            h4: {
+              color: theme("colors.neutral.300"),
+              fontSize: theme("fontSize.sm"),
+              fontWeight: theme("fontWeight.light"),
+              marginBottom: theme("spacing.0"),
+              "@screen md": {
+                fontSize: theme("fontSize.base"),
+              },
+              "@screen lg": {
+                fontSize: theme("fontSize.base"),
+              },
+            },
+          },
+        },
+        "patch-summary": {
+          css: {
+            p: {
+              lineHeight: theme("lineHeight.6"),
+            },
+          },
+        },
+        "patch-system-changes": {
+          css: {
+            p: {
+              marginBottom: theme("spacing.4"),
+              lineHeight: theme("lineHeight.6"),
+            },
+            h2: {
+              marginBottom: theme("spacing.2"),
+              fontFamily: theme("fontFamily.tusker"),
+              fontSize: theme("fontSize.2xl"),
+              fontWeight: theme("fontWeight.bold"),
+              "@screen lg": {
+                fontSize: theme("fontSize.4xl"),
+              },
+            },
+          },
+        },
+      }),
+      variant: {},
     },
   },
   plugins: [
     tailwindcssAnimate,
+    typography,
     function ({ addUtilities, theme }: PluginAPI) {
       const newUtilities: Record<string, { clipPath: string }> = {};
       Object.keys(theme("clipPath")).forEach((key) => {

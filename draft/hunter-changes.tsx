@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hr from "../src/app/patch-notes/components/hr";
+import Hr from "../src/app/components/ui/hr";
 import CutCorners from "../src/app/patch-notes/components/ui/cut-corners";
 
 export default function HunterChanges() {

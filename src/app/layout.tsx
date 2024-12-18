@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import FanWarning from "./components/fan-warning";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 
@@ -37,7 +38,7 @@ export default function RootLayout({
           <FanWarning />
           <Analytics />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

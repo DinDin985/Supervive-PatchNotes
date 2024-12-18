@@ -1,19 +1,43 @@
-import PostList from "./components/post-list";
+import type { JSXElementConstructor, ReactElement } from "react";
+import { getPosts } from "../hooks/mdx-fetcher";
+import PatchNotesListContainer from "./components/patch-notes-list-container";
 
-export default function PatchNotes() {
+type post = {
+  frontmatter: {
+    title: string;
+    "cover-image": string;
+    date: string;
+    description: string;
+  };
+  content: ReactElement<unknown, string | JSXElementConstructor<any>>;
+  slug: string;
+};
+
+export default async function PatchNotes() {
+  const posts = await getPosts();
+
+  function sortPostsByDate(posts: post[]) {
+    return posts.sort(
+      (a, b) =>
+        new Date(a.frontmatter.date).getTime() -
+        new Date(b.frontmatter.date).getTime(),
+    );
+  }
+
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pb-10">
       <div className="absolute top-0 h-28 w-full bg-ui-light-purple"></div>
 
       <div className="flex h-40 items-center bg-ui-light-purple md:mb-10 xl:h-56">
-        <span className="ml-10 font-tusker-5700 text-5xl italic text-white xl:text-6xl">
+        <h1 className="ml-10 font-tusker-5700 text-5xl italic text-white xl:text-6xl">
           Patch Notes
-        </span>
+        </h1>
       </div>
 
-      <PostList />
-
-      <div className="pb-10"></div>
+      <PatchNotesListContainer
+        postLength={posts.length}
+        posts={sortPostsByDate(posts)}
+      />
     </div>
   );
 }

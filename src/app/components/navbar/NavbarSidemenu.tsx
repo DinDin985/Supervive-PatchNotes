@@ -1,5 +1,5 @@
 import { toggleMenuAtom } from "@/app/atoms/globalState";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useAtom } from "jotai";
 import Image from "next/image";
 import SidemenuLinks from "./SideMenuLinks";

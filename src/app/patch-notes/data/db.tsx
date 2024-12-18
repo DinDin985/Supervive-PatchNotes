@@ -40,6 +40,7 @@ export const patchNotesData = [
       custom: [
         {
           title: "Refer-a-Friend",
+          description: [],
           notes: [
             "Refer-a-friend is BACK and now all done in the game client!",
           ],
@@ -51,6 +52,7 @@ export const patchNotesData = [
         },
         {
           title: "Art/Sound/UI Updates",
+          description: [],
           notes: [],
           bulletPoints: [
             "Updated tooltip styling for all items and abilities",
@@ -388,7 +390,7 @@ export const patchNotesData = [
               abilityName: "(RMB) - Spike Grenade",
               abilityImg: "/patch-notes/hunter-abilities/ghost/RMB.png",
               changes: [
-                "Now properly attaches to dynamic objects like Oath’s Brightshield (RMB) and Celete’s Barricade (Q) rather than deleting on impac",
+                "Now properly attaches to dynamic objects like Oath’s Brightshield (RMB) and Celete’s Barricade (Q) rather than deleting on impact",
               ],
             },
           ],
@@ -1136,7 +1138,7 @@ export const patchNotesData = [
         img: "/patch-notes/defend.png",
         title: "Patch Notes 1.01",
         description: "Dive In Hunters!",
-        date: "11/20/2024",
+        date: "11/26/2024",
         author: "DinDin",
       },
       summary: {
