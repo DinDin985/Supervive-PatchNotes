@@ -11,6 +11,9 @@ dependencies:
   '@mdx-js/react':
     specifier: ^3.1.0
     version: 3.1.0(@types/react@19.0.1)(react@19.0.0)
+  '@next/font':
+    specifier: ^14.2.15
+    version: 14.2.15(next@15.0.4)
   '@next/mdx':
     specifier: 15.0.4
     version: 15.0.4(@mdx-js/loader@3.1.0)(@mdx-js/react@3.1.0)
@@ -471,6 +474,14 @@ packages:
     dependencies:
       fast-glob: 3.3.1
     dev: true
+
+  /@next/font@14.2.15(next@15.0.4):
+    resolution: {integrity: sha512-QopYhBmCDDrNDynbi+ZD1hDZXmQXVFo7TmAFp4DQgO/kogz1OLbQ92hPigJbj572eZ3GaaVxNIyYVn3/eAsehg==}
+    peerDependencies:
+      next: '*'
+    dependencies:
+      next: 15.0.4(react-dom@19.0.0)(react@19.0.0)
+    dev: false
 
   /@next/mdx@15.0.4(@mdx-js/loader@3.1.0)(@mdx-js/react@3.1.0):
     resolution: {integrity: sha512-BeqbM0ShnGQGv0qNM1ac7t0TqerHzjYamhbfE62UDZ35U7dlsqaafeuGUw91kZJWdHBOja1kUgZn1I1xCZQNhQ==}
