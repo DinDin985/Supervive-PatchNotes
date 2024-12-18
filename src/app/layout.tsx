@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import FanWarning from "./components/fan-warning";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
-import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
