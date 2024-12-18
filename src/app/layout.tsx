@@ -36,7 +36,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <Navbar />
-        <div className={`${Tusker.className} bg-ui-dark-purple pt-24`}>
+        <div
+          className={`${Tusker.className} font-arial bg-ui-dark-purple pt-24`}
+        >
           {children}
           <FanWarning />
           <Analytics />

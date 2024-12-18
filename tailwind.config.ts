@@ -184,6 +184,7 @@ const config: Config = {
         "ui-dark-purple": "#34025B",
       },
       fontFamily: {
+        arial: ["Arial", "sans-serif"],
         "tusker-5700": ["Tusker-5700", "sans-serif"],
         "tusker-6700": ["Tusker-6700", "sans-serif"],
         quicksand: ["Quicksand", "sans-serif"],
