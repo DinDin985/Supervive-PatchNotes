@@ -1,4 +1,4 @@
-import { getAllPostSlug, getPostBySlug } from "@/app/hooks/mdx-fetcher";
+import { getAllPostSlug, getPostBySlug } from "../../hooks/mdx-fetcher";
 
 export async function generateStaticParams() {
   return getAllPostSlug();
