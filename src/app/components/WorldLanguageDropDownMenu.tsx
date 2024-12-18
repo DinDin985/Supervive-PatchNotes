@@ -1,13 +1,8 @@
 "use client";
 
-import * as React from "react";
-
-import { useAtom } from "jotai";
-import { toggleMenuAtom } from "../atoms/globalState";
-
 export function WorldLanguageDropDownMenu() {
-  const [position, setPosition] = React.useState("English (US)");
-  const [toggleMenu] = useAtom(toggleMenuAtom);
+  // const [position, setPosition] = React.useState("English (US)");
+  // const [toggleMenu] = useAtom(toggleMenuAtom);
 
   return (
     <div></div>

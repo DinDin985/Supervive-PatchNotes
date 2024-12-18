@@ -9,7 +9,7 @@ type post = {
     date: string;
     description: string;
   };
-  content: ReactElement<unknown, string | JSXElementConstructor<any>>;
+  content: ReactElement<unknown, string | JSXElementConstructor<unknown>>;
   slug: string;
 };
 

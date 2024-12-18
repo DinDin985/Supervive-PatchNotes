@@ -40,12 +40,7 @@ type EquipmentChanges = {
 };
 
 export interface EquipmentChangesProps {
-  children: ReactNode;
-  equipmentImg: string;
-}
-
-export interface EquipmentChangesTopProps {
-  children: ReactNode;
+  children: ReactNode[];
   equipmentImg: string;
 }
 
@@ -70,9 +65,10 @@ type HunterChanges = {
 };
 
 export interface HunterChangesProps {
-  children: ReactNode;
+  children: ReactNode[];
   imgBig: string;
   imgSmall: string;
+  variant: "midPatchUpdate";
 }
 
 export type HunterIntroProps = {
@@ -126,7 +122,7 @@ export type PatchNotesListContainer = {
 };
 
 export interface PowerChangesProps {
-  children: ReactNode;
+  children: ReactNode[];
   powerImg: string;
 }
 
