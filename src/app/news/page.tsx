@@ -1,5 +1,5 @@
 import type { JSXElementConstructor, ReactElement } from "react";
-import { getNewsPosts, getPatchNotesPosts } from "../hooks/mdx-fetcher";
+import { getNewsPosts } from "../hooks/mdx-fetcher";
 import NewsListContainer from "./components/news-list-container";
 
 type post = {
