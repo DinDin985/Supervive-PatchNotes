@@ -1,0 +1,950 @@
+---
+title: "Steam Next Fest Fireside Chat & Patch Notes"
+cover-image: "/patch-notes/steam-next-fest-fireside-chat-&-patch-notes.png"
+date: "10/7/2024"
+description: "BIG WALL OF TEXT JUST WATCH THE VIDEO"
+---
+
+<Introduction img={"/patch-notes/steam-next-fest-fireside-chat-&-patch-notes.png"}>
+  # Steam Next Fest Fireside Chat & Patch Notes
+
+  ## BIG WALL OF TEXT JUST WATCH THE VIDEO
+
+  ### DinDin | 10/7/2024
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  We're excited to have our game launch for steam next fest and want to give an update on what's new to Supervive.
+</Summary>
+
+<PatchHighlights video={"https://www.youtube.com/embed/Zx-PPaC39Vk"} img={""}>
+  
+</PatchHighlights>
+
+<Custom title={"Visual updates"}>
+  "A note on the ‘Soul Anchors’ - if you played in the veteran test, we reverted the abyss aiming changes 
+  but we have updated the glider balloon visual so it’s easier to understand where to aim to hit the enemy. 
+  If that thing is going crazy, hit it!!!!
+
+  Also some of these changes are like... one line but lemme tell ya they're pretty big visual upgrades!"
+
+  <Hr className="mb-5"/>
+
+  - The in-game HUD has been updated across the board for style and clarity
+  - All Hunter portraits have been updated
+  - Many monsters have had their visuals updated
+  - Team colors have been updated for higher clarity
+  - Hunters use a new aim laser
+  - The aim laser now properly follows the path of your aimed projectile up and down terrain
+  - Added “Limit Laser to Cursor” setting (under Settings >>> Game) that allows you to adjust whether your aim laser stops at cursor or extends beyond it
+  - Several VFX updates have been made, including (but not limited to): Geysers, Most Wanted proc celebration, Ability Reset cue, Invulnerability state (e.g. Freeze Ult), Brush, Stealth, Character fade when Hunters are in the Abyss, Soul Anchors (formerly Glider Balloons), execution warnings, effects around booping, dashing, mantling, walking on water, along with a bunch of Hunter abilities and much more
+</Custom>
+
+<Custom title={"Voiceover/Localization"}>
+  "Non-English VO is in-progress. If you change your language settings to a non-English language, you might hear 
+  some localized voice lines, but it’ll be incomplete."
+
+  <Hr className="mb-5"/>
+
+  - Every Hunter has received English Voiceover lines, and several new contextual Announcer recordings have been added
+</Custom>
+
+<Custom title={"Cosmetics"}>
+
+  <Hr className="mb-5"/>
+  Twitch Drop Emotes
+    - Due to player feedback, we’ve swapped the “You think I’m boosted!?” voiceline to a new Twitch Drop emote, and put in a new voiceline for the previous Twitch Drop emote (he now says “Ayy Yo!”)
+    - You can still get both emotes from ((Twitch Drops during Steam Next Fest) [https://drops.theorycraftgames.com/] drops.theorycraftgames.com)
+    - If for some reason you miss this at the end of Steam Next Fest and have the “Ayy Yo” emote but want the “You think I’m boosted!?” emote, you can DM us on Discord but you'd better have a good reason!!!
+
+  Vive Points Update
+    - Vive Points have been divided by 100 but have the exact same functionality - so number smaller but functionality same
+
+  Currency
+    - Have been reset. We will reset at least one more time at Open Beta, so feel free to spend it on cosmetics during the playtest
+</Custom>
+
+<Custom title={"Map"}>
+
+  <Hr className="mb-5"/>
+
+  Map Visuals
+    - BIG VISUAL UPGRADES ACROSS THE BOARD. We put a lot of work into upgrading our ‘basekit’ for the map, which means a lot of base map textures were improved everywhere
+
+  Plane drops
+    - New plane path/drop types have been added. Expect some rare plane paths that are not straight lines!
+
+  Hot Zones [Zones with Gold Armor spawns]
+    - Gold Armor zone can be in any biome, not just the outer ones
+    - Gold Armor zone can be on the train
+    - Chance of all Gold Armors spawning in a single biome increased from 10% >>> 25%
+
+  Academy
+  "We like the added texture that Academy brings in giving teams an early XP advantage, but seeing you gremlins come out at level 8 in the first three minutes was less cool."
+    - Green Books removed, replaced with more Blue Books
+    - Blue Book XP decreased from 125 >>> 50
+    - Red Book unchanged
+
+  Vault
+    - Common Powers (runes) 20% >>> 15%
+    - Uncommon Powers 60% >>> 75%
+    - Rare Powers 20% >>> 10%
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Damage/Time-to-Kill
+
+    We’re trying to live in this narrow sweet spot of time-to-kill (TTK) where 1vN potential lives 
+    (even at the highest level), but there’s still room for back-and-forth fencing. Any higher (ie. 
+    high TTK, low lethality) and fights become attrition-heavy with no sharp turns or counterswings 
+    (we call these slow plane crashes). And obviously if TTK goes too low (aka super high lethality), 
+    we get into “what the hell killed me?” territory. It’s a fine line to walk.
+
+    We’ve also taken on a lot of complexity/noise with our new evolving equipment, so finding that zone 
+    is an ongoing journey. If you’ve been following us closely: in our September open test, we increased 
+    time-to-kill with a number of armor damage reduction buffs (and tank items were VERY GOOD). Then in 
+    our veteran September test, time-to-kill went way down with AP equipment being overtuned (and we combo’d 
+    some armor damage reduction changes). Now we’re somewhere in the middle.
+
+    <Hr className="mb-5"/>
+
+    - Reverted a change from September playtest that increased baseline Damage Reduction and Armor Damage Reduction across all tiers
+    - Armor Damage reduction has been increased to August playtest levels - being unarmored hurts more again
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Audio
+
+    <Hr className="mb-5"/>
+
+    - Audio attenuation for enemy attacks increased. You should be able to hear enemy actions from further away
+    - Fixed issues with enemy footsteps not playing the correct sounds that distinguish them from ally/your own footsteps
+    - Fixed issues with incorrect Glider sounds playing
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Power Shards
+
+    I know this looks like a reason not to share your shards with your teammates, but imagine the 
+    EMBARRASSMENT when you get picked and explode like a shard piñata while your teammates look on 
+    in their green equipment. Think about that.
+
+    <Hr className="mb-5"/>
+
+    - Every unused Power Shard you hold onto grants +2 AP
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Cremation
+
+    <Hr className="mb-5"/>
+
+    - Fixed a bug where stomping a Hunter who is Cremated removes the effect
+    - Fixing this bug does not mean Cremated Wisps get stomped faster than before
+    - Revive bar decay while Cremated (and not being revived) reduced by 50%
+    - This means you won't lose your progress reviving an ally as quickly if you have to step off
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Gold Keys
+
+    <Hr className="mb-5"/>
+
+    - Can now be used to open Vaults instantly (they can still be used to open Armor Chests)
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Hunter Mastery Missions
+
+    <Hr className="mb-5"/>
+
+    - Each Hunter has a unique set of challenges that, when completed, will grant XP towards your Hunter’s journey
+    - You can find these missions under Hunters -> Mastery in the Main Menu
+    - Each mission also has a unique Callsign as a reward for completion
+    - Please note that progress and rewards will reset one more time before Open Beta
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/bishop-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/bishop.png"}>
+      ## Bishop
+
+      #### Lowered toughness, damage makeup adjusted on all abilities, and RMB new level 3 upgrade.
+
+      ### "TL;DR - We’re nerfing Tank Bishop’s damage output, as she was doing too much damage for her survivability last playtest. Glass cannon Bishop damage should be largely unchanged."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness lowered from 5 >>> 4.5
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/LMB.png"} abilityName={"(LMB) - Rocket Launcher"}>
+          - Damage makeup tuned from roughly 66% Base and 33% AP >>> roughly 50% Base and 50% AP
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/RMB.png"} abilityName={"(RMB) - Displacement Charge"}>
+          - Damage makeup tuned from roughly 66% Base and 33% AP >>> roughly 50% Base and 50% AP
+          - (NEW) Level 3 Upgrade - Now resets Haymaker (Q) cooldown if you punch a Satchel
+        </HunterAbilityChanges>
+        
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/Q.png"} abilityName={"(Q) - Haymaker"}>
+          - Damage makeup tuned from roughly 66% Base and 33% AP >>> roughly 50% Base and 50% AP
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/R.png"} abilityName={"(R) - Blast-off!"}>
+          - Damage makeup tuned from roughly 66% Base and 33% AP >>> roughly 50% Base and 50% AP
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+      ## Brall
+
+      #### LMB damage and Empowered reduced, RMB damage increased, shift new level 3 upgrade, Q tether speed reduced.
+
+      ###
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/LMB.png"} abilityName={"(LMB) - Caldera, Molten Greatsword"}>
+          - Damage reduced by 5%
+          - Empowered State damage reduced by 5%
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/RMB.png"} abilityName={"(RMB) - Adaptive Strike"}>
+          - Damage increased by 10%
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/shift.png"} abilityName={"(Shift) - Flame Step"}>
+          - (NEW) Level 3 upgrade - Dashing leaves a clone behind. If the clone is hit with a projectile, Brall gains stacks of Blazing Spirit (Passive)
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/Q.png"} abilityName={"(Q) - Feysteel Chain"}>
+          - Tether speed reduced from 2350 >>> 2150 (at soft cap) and 2700 >>> 2550 (at full speed)
+          - Fixed a bug where the Level 3 upgrade was not working
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/elluna-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/elluna.png"}>
+      ## Elluna
+
+      #### Toughness lowered, LMB base damage increased, max burn stacks increased, and movement speed penalty reduced.
+
+      ###
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness lowered from 4.5 >>> 4
+        </HunterAbilityChanges>
+        
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/LMB.png"} abilityName={"(LMB) - Crescent Bolt"}>
+          - Base damage and damage per stack increased by 10%
+          - Max burn stacks increased from 4 >>> 5
+          - Movement Speed penalty when firing Crescent Bolts reduced
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/felix-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/felix.png"}>
+      ## Felix
+
+      #### 
+
+      ###
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness lowered from 5 >>> 4.5
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/felix/passive.png"} abilityName={"(Passive) - Ignite"}>
+          - Once again reduces the cooldown of his level 3 ability by 20% when Felix applies or upgrades Ignite
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/felix/Q.png"} abilityName={"(Q) - Heat Shield"}>
+          - Cooldown increased to compensate for the passive change from 12/8 seconds >>> 12/10 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/ghost-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/ghost.png"}>
+      ## Ghost
+
+      #### 
+
+      ###
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/RMB.png"} abilityName={"(RMB) - Spike Grenade"}>
+          - Daze duration on directly stuck enemies increased by 0.2s
+          - Daze slow increased from 30% >>> 40%
+          - Now respects Line-of-Sight
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/shift.png"} abilityName={"(Shift) - Combat Slide"}>
+          - Minimum cooldown on tap-dash increased to 4s
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/Q.png"} abilityName={"(Q) - Arcane Railgun"}>
+          - Beam damage increased by 10%
+          - Yaw dampening lowered by 10% (this means you can move your beam around more after you cast it and before it fires)
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/R.png"} abilityName={"(R) - Summon Napalm"}>
+          - Colors updated to make it easier to distinguish between ally and enemy Napalms
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+      ## Hudson (formerly known as Gunner)
+
+      #### 
+
+      ### "Following through on his mini-rework."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness lowered from 5 >>> 4.5
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/passive.png"} abilityName={"(Passive) - Salvager"}>
+          - (NEW) Hudson regenerates 1% of his armor per second when out of combat
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/LMB.png"} abilityName={"(LMB) - Minigun"}>
+          - No longer has a Heat/Overheat mechanic
+          - Fires immediately on press at a slower, base fire rate
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/RMB.png"} abilityName={"(RMB, formerly Q) - Overclock"}>
+          - Press and hold to increase the spin rate of your Minigun barrels, release the button to spin them back down
+          - Spins up and down over 1 second
+          - The faster your barrels spin, the slower you move and the more your turn rate is restricted
+          - At 90%+ bonus spin rate, your shots become Empowered, dealing 10% bonus damage and healing you for 0.3% of maximum health every time they hit an enemy
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/shift.png"} abilityName={"(Shift) - Hover Jets"}>
+          - Now has 2 charges
+          - Recharge rate is 13 seconds, 10 seconds at Level 2
+          - When colliding with an enemy during Hover, you now deal low damage to them and knock them back. Damage and knockback scale with your momentum
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/R.png"} abilityName={"(R) - Salvage Hook"}>
+          - ‘Salvaging’ an enemy this way drops a Scrap Engine pickup for your allies, which restores +25% health and armor
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/jin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/jin.png"}>
+      ## Jin (formerly known as Stalker)
+
+      #### 
+
+      ### ""oh no he’s hot now" (think about this when you’re getting stabbed to death)"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/LMB.png"} abilityName={"(LMB) (that’s the name of his weapon) - Ash'gara Warblade"}>
+          - No longer applies a mark on enemies (RMB Level 3 upgrade still applies the mark)
+          - Reduced bonus armor shred by 1
+          - Added 0.1s winddown to attacks
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/RMB.png"} abilityName={"(RMB) - Flash Dagger"}>
+          - Visuals updated
+          - Damage at max range reduced
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/Q.png"} abilityName={"(R) - Feylight Clone"}>
+          - Clone now aims at cursor/is generally better at following orders
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/joule-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/joule.png"}>
+      ## Joule
+
+      #### 
+
+      ### "fridge.gif (sorry lol)"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/Q.png"} abilityName={"(Q) - Lightning Strike"}>
+          - Ability warmup visuals updated to be much louder/noticeable
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/RMB.png"} abilityName={"(RMB) - Voltaic Spear"}>
+          - Now does Explosive damage
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/kingpin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/kingpin.png"}>
+      ## Kingpin
+
+      #### 
+
+      ###
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/kingpin/Q.png"} abilityName={"(Q) - Primal Slam"}>
+          - (NEW) Level 3 upgrade - Now applies up to +75% bonus damage based on Kingpin’s distance from the ground when cast.
+          - For reference, a Jump into Dash into Primal Slam will give around +30% bonus damage with this upgrade. It’s up to you to imagine how you can go even higher.
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/myth-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/myth.png"}>
+      ## Myth
+
+      #### 
+
+      ### "Some changes aimed at raising Myth’s skill floor while also throwing in some necessary nerfs. For those health changes specifically; as one of the most elusive Huntresses around, we think if she does get caught… that’s on you, dawg."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Base Health lowered from 950 >>> 850
+          - Health per Level lowered from 57 >>> 51
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/myth/LMB.png"} abilityName={"(LMB) - Greenwood Bow"}>
+          - Adjusted timing for Green shots to feel more linear (less of a pause in the middle)
+          - Fixed a bug where Perfect Timing green shots were not going the full distance shown on the laser
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/myth/RMB.png"} abilityName={"(RMB) - Heartpiercer"}>
+          - Knockback amount is weighted much more towards charge time and less towards distance of shot. Meaning: you’ll knock back less with quick fires at close range than before, and knock back much more with full charge-ups at longer range
+          - Minimum charge time before firing 0.35s >>> 0.4s
+          - Can no longer hold infinitely, auto-fires after 1.9s (1.5s after warmup)
+          - (NEW) Level 3 upgrade - Now gains a charge of Phase Walk (Shift) whenever you successfully wallstun with Heartpiercer
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/myth/Q.png"} abilityName={"(Q) - Rain of Arrows"}>
+          - Arc width increased up close, decreased at long range
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/oath-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/oath.png"}>
+      ## Oath
+
+      #### 
+
+      ### "Oath has had a big presence in the last few playtests - especially at high skill levels. With these changes we’re trying to nudge him closer to a tank/melee playstyle, while giving him some more interesting options for Level 3 ability upgrades."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness lowered from 7 >>> 6
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/oath/LMB.png"} abilityName={"(LMB) - Magnetic Hammer"}>
+          - Now charges twice as fast
+          - Damage ratios have been adjusted from 50% base damage / 50% ratios >>> 33% base damage / 66% ratios
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/oath/shift.png"} abilityName={"(Shift) - Spin Dash"}>
+          - (NEW) Level 3 Upgrade changed - Hitting an enemy with Spin Dash resets Shield Bash (RMB) cooldown
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/shiv-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/shiv.png"}>
+      ## Shiv
+
+      #### 
+
+      ### "As our premiere mechanics hunter, we should see Shiv’s relative power/winrate improve from low skill to high skill (meaning: she should see more success in high-skill games as a high-mechanics hunter), but this just isn’t true. We want to make it true. So here are changes to make it true."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/passive.png"} abilityName={"(Passive) - Master Assassin"}>
+          - Increased Master Assassin stack duration from 4s >>> 5s
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/LMB.png"} abilityName={"(LMB) - Arcslinger Pistols"}>
+          - Base damage reduced from 62 (32% AP) >>> 60 (30% AP)
+          - Empowered damage increased from 72 (+41% AP) >>> 74 (+41.5% AP)
+          - Damager per Master Assassin stack increased from 6.8 (+4.35% AP) >>> 8 (+4.75% AP)
+          - With the changes to Master Assassin (Passive), Arcslinger Pistols does less damage at 0 - 2 Master Assassin (Passive) stacks, and more damage at 3+ stacks
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/RMB.png"} abilityName={"(RMB) - Chain Bolas"}>
+          - (NEW) Level 3 Upgrade - Now applies 2 stacks of Master Assassin (Passive) to target hit
+          - No longer provides bonus 0.5s stun duration at Level 3
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/shift.png"} abilityName={"(Shift) - Quickflip"}>
+          - Base cooldown reduced from 7s >>> 6.5s (Level 3 still 5s)
+          - Speed buff after using Quickflip increased from 7% >>> 11.5%
+          - Movespeed bonus properly gets removed when you take damage
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/Q.png"} abilityName={"(Q) - Farstep Dagge"}>
+          - Now always applies a 50% slow to enemies
+          - (NEW) Level 3 Upgrade - Applies 2 stacks of Master Assassin (Passive) to target hit
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shiv/R.png"} abilityName={"(R) - Fusilade"}>
+          - Damage decrease from 45 (+25% AP) >>> 42 (+22% AP)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/shrike-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/shrike.png"}>
+      ## Shrike
+
+      #### 
+
+      ### 
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/LMB.png"} abilityName={"(LMB) - Truetalon Rifle"}>
+          - Shrike can hold LMB to continuously fire her rifle
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/shift.png"} abilityName={"(Shift) - Disengage"}>
+          - Knocks always reset Disengage
+          - Level 3 upgrade causes the projectile to mark targets with her passive
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/RMB.png"} abilityName={"(RMB) - Dive-Bomb"}>
+          - (NEW) Level 3 Upgrade - Lowers ability cooldown by 2s, and increases the Cremate burn rate of Wisps that it hits
+          - No longer grants a second charge at level 3
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/Q.png"} abilityName={"(Q) - Scout Hawk"}>
+          - (NEW) Level 3 Upgrade - Increased Vision Radius by 50%, duration increased to 40s
+          - No longer marks enemies (change from Veteran test)
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/R.png"} abilityName={"(R) - Full Bore"}>
+          - Projectile size increased by 50%
+          - Damage reduced by 33%
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/zeph-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/zeph.png"}>
+      ## Zeph
+
+      #### 
+
+      ### "During the last playtest, it was Zephrey's world, we were all just living in it. Today I am learning Zeph’s full name is Zephrey, and if it’s not, well, it is now. Anyway, we’re pulling back on Zeph’s raw healing output and looking to inject tools that require more skill to play optimally."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/zeph/RMB.png"} abilityName={"(RMB) - Mending Breeze"}>
+          - Heal amount lowered by 20%
+          - (NEW) Level 3 upgrade changed - Now grants a short movement speed to the target
+          - No longer grants a 4th charge
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<EquipmentChangesContainer>
+  <EquipmentChanges equipmentImg={""}>
+      ## General
+
+      #### 
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Tier 0 and Tier 1 Equipment no longer drops. Instead, killing minions will drop Scraps that can be picked up to upgrade your items.
+        - Scraps will prioritize upgrading your lowest tier Equipment. Once both Equipment is Tier 3 (Blue), Scraps will go towards your Boots.
+        - 5% of the time, when a Scrap would drop, a Purple "Hyper Scrap" will drop that grants 3 pips instead
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/wisps-kicks.png"}>
+      ## (NEW) Wisp Kicks (replaces Alchemist)
+
+      #### Jumping onto enemy wisps kick them away from you
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Jumping onto enemy wisps kick them away from you
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/bladed-helmet.png"}>
+      ## Bladed Helmet
+
+      #### All Bladed Helmet items gives less health.
+
+      ### 
+
+      <EquipmentSpecificChangesContainer>
+        - All Bladed Helmet items give 5% less health
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/perseverance.png"}>
+      ## (NEW) Perseverance (replaces Equalizer)
+
+      #### Scaling max health and healing during combat.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - While in combat (aka dealing/taking damage), build up to 3 stacks. At 3 stacks, your next LMB against an enemy Hunter will heal you for 3% of your max HP and grant permanent max Health, scaling with your Toughness.
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/helm-of-gigantism.png"}>
+      ## Helm of Gigantism
+
+      #### Hp to Ap conversion % lowered.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Max HP to AP conversion % changed from 7.5% >>> 5%
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/bubble-blade.png"}>
+      ## Bubble Blade
+
+      #### Bug fix.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Fixed a bug that caused repeated shield instances on spells that ticked several instances of healing. Notably: Elluna’s Moonlight Blessing (Q)
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/mindblade.png"}>
+      ## Mindblade 
+
+      #### Mana to Ap converstion % lowered and bug fix.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Max Mana to AP conversion % lowered from 33% >>> 10%
+        - Fixed a bug that dropped your stacks when you died/dropped the item
+        - Now only procs against enemy Hunters
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/rampage.png"}>
+      ## Rampage
+
+      #### Ap per stack lowered and added new affect.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - AP per stack lowered from 10 >>> 5
+        - (NEW) Doubles granted bonus AP at max stacks. This means that it will give less AP than before until it reaches max stacks, at which point it will give the same value as before
+        - Stack falloff time lowered from 5s >>> 3s
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/mana-helmet.png"}>
+      ## Mana Helmet
+
+      #### All Mana Helm items lowered health.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - All Mana Helm items give 5% less health
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/ambrush.png"}>
+      ## Ambrush
+
+      #### Armor shred lowered.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Once again spawns Brush while you are stationary
+        - Baseline armor shred lowered from 200% >>> 50%
+        - Armor shred in Brush lowered from 400% >>> 200%
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/glacial-comet.png"}>
+      ## Glacial Comet
+
+      #### Lob time and damage lowered
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Lob time and damage lowered
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/scholar.png"}>
+      ## (NEW) Scholar (replaces Intensity)
+
+      #### Scaling toughness and mana
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Every minute, gain an additional +2 x Toughness HP and +5 Mana. Max 10 stacks
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+  
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/interweaver.png"}>
+      ## Interweaver
+
+      #### Seeker missle damaged lower and no longer reduces ability cooldowns.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Seeker missile damage lowered from 70 (+10% AP) >>> 10 (+8% AP)
+        - No longer reduces ability cooldowns by 0.5s per missile
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/power-user.png"}>
+      ## Power User(replaces Thunderbolt)
+
+      #### Stacking power haste for opening vaults.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Gain 15% stacking Power haste for opening Vaults (Max 2 stacks). At 2 stacks, transforms into Power Master - your Powers also become Soulbound
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/amplifier.png"}>
+      ## Amplifier(replaces Rampager)
+
+      #### Stacking ability haste. 
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Abilities refresh 5% faster. This effect stacks up 10x until you cast another ability
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/tech-helmet.png"}>
+      ## Tech Helmet
+
+      #### All Tech Helmet items give less health.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - All Tech Helmet items give 5% less health
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/soulbound.png"}>
+      ## Soulbound
+
+      #### No longer triggers spike.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Soulbound damage no longer causes you to be spiked (this was very funny to learn)
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/vive-infusor.png"}>
+      ## Vive Infusor
+
+      #### Changed how heal is delivered.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Heal on dash converted from a full instant burst heal to 50% burst, 50% heal-over-time that is removed on damage. Now has an internal cooldown of 5s
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/soul-drain.png"}>
+      ## (NEW) Soul Drain (replaces Executioner)
+
+      #### Heal for stomping/exectuing wisps.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Stomping or executing wisps heals you for 200 HP per second
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/swiftblade.png"}>
+      ## Swiftblade
+
+      #### Bonus damage at full charge lowered.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Bonus damage at full charge lowered from 80 >>> 20
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+
+  <EquipmentChanges equipmentImg={"/patch-notes/equipment-icons/overdrive.png"}>
+      ## Overdrive
+
+      #### Added omniheal and overheal shield increased.
+
+      ###
+
+      <EquipmentSpecificChangesContainer>
+        - Now has +3% omnivamp and overheals generate a shield equal to 50% >>> 100% of the overheal
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+</EquipmentChangesContainer>
+
+<Custom title={"Powers"}>
+  "Lots of powers have been reintroduced or had their rarity, icons, or names changed. Rather than listing
+   all of those changes, we’re taking the easier route by just… listing all of the powers, by rarity (lol). 
+   Since we’re not listing tooltips, you may look at some of these (NEW) items and be like, “Wow that sounds 
+   cool what does it do?” to which we’d say, “Please check out the LEARN tab in the main menu!”"
+
+  <Hr className="mb-5"/>
+  Exotic Powers (14):
+    - (NEW) Icarus Glide
+    - (NEW) Wisp Vacuum
+    - Abyssal Eye (formerly Kaiju Eye)
+    - Abyssal Fang (formerly Kaiju Scale)
+    - Abyssal Scale (formerly Kaiju Heart)
+    - Armor Shredder (formerly Radioactive)
+    - Blinkstone (formerly Veil Piercer)
+    - Delicate Disguise
+    - Fate Rewinder (formerly Be Kind Rewind)
+    - Guardian Archangel
+    - Mega Cluster Nuke
+    - Power Shuffler
+    - Replicate
+    - Team Frog Jump (formerly Frog Jump)
+  
+  Non-Power Exotics (4):
+    - (NEW) Endless Reaper
+    - (NEW) Glide Boots
+    - Gnarl Heart
+    - Respawn Beacon
+    - Soulstealer
+
+  Rare Powers (23):
+    - Abyss Specialist
+    - Air Blast
+    - Anti-Mobility Field
+    - Berry Eater
+    - Brushwhacker
+    - Bungee Shot
+    - Chonker Cannon
+    - Delicate X-Ray Goggles
+    - Fixer (formerly Multitool)
+    - Glider Jet
+    - Grappling Hook
+    - Guardian Angel
+    - Health Packs
+    - Hover Wings (your mass is slightly increased when using these now)
+    - Little Cook
+    - Robber Raccoon
+    - Sand Wall (this got buffed)
+    - Stealth Cloak
+    - Tactical Nuke
+    - The Chonker
+    - Touch of Life
+    - Tree Prison
+    - Two Way Teleporter
+    
+  Uncommon Powers (29):
+    - Bloodstone
+    - Brush Boar
+    - Burning Core
+    - Creep Cloner (we reworked the input paradigm: press to capture, press again to release - no more holding down the button)
+    - Delicate Barrier
+    - Delicate Mana Battery
+    - Emergency Platform
+    - Fishing Pole
+    - Forestwalking (formerly Forestphasing)
+    - Friend of the Forest
+    - Ghillie Suit
+    - Green Thumb
+    - Homing Missile
+    - Instant Vive (formerly Water Bottle)
+    - Iron Fist (punching a tree refunds half of Iron Fist’s cooldown)
+    - Radar Jammer
+    - Mana Cloud
+    - Money Tree Seeds
+    - Mortar
+    - Rally
+    - Raven Spy (rework of Tree Drone - this ones for you @MajorPleasure)
+    - Regenerative Armor
+    - Remote Laser
+    - Rescue Grenade
+    - Scuba Gear (now works in Ice Water (aka Spicy Water))
+    - Throwing Axe (formerly Timber)
+    - Touch of Mana
+    - Touch of Speed
+    - Tree Costume
+
+  COMMON POWERS (3):
+    - Mana Rune
+    - Omnivamp Rune
+    - Ability Haste Rune
+</Custom>
+
+<BugFixes>
+  - Several actions are WASD cancellable, including placing Chonker Cannon, repairing Armor, Cooking food, Vaults, etc.)
+  - Most actions are WASD cancellable 0.25s after the initial cast. Vaults are cancellable 0.5s after starting the Vault.
+  - Trees now have a small volume in the middle of the tree that grants you the same effect as when you're in brush (hiding you from vision unless people are very close to you)
+  - This allows Forestwalking and Tree Costume to hide you properly and not sometimes make you visible if players are on higher elevation than you
+  - Hovering over an ability will display their cast ranges
+  - You can now toggle off camera smoothing when you get hard-corrected
+  - You now have the ability to have the aiming laser play past the your cursor, showing full length at all times
+  - [Minimap vision cone] Fixed issue where vision cones on the minimap become pixelated/low res
+  - [Abyss Aiming] Fixed a bug where abyss aiming was off by about 40 units depending on camera angle.
+  - [Joule] Fixed a bug where the warmup state VFX on Joule’s Lightning Strike (Q) would linger after the projectile fires
+  - [Joule] Fixed a bug that was causing Joule’s Jolt (LMB) hits to incorrectly reduce the cooldown of Surge (Shift)
+  - [Powers] Two-way Telporter should now accurately use the visuals of a Basecamp when determining whether it's in the teleport area or not
+  - [Felix] Fixed a bug with Felix’s Flight of the Firefox (R) that prevented his Level 2 upgrade from working properly
+  - [Reconnect] Hunters should no longer sail into the sky when crashing while mid-physics motion
+  - [Performance] Addressed an issue causing crashes with some older AMD GPUs
+  - [Celeste] Fixed an issue that caused Celeste to sometimes get stuck while using Skate (Shift) (shoutout to DUNMUIR for calling this out to us!)
+  - [Zeph] Fixed an issue causing Vortex Charm (Q) to sometimes not hit large enemies reliably
+  - [Bishop] Fixed an issue causing Bishop’s Rocket Launcher (LMB) to double hit targets near terrain
+  - [Jin] Fixed an issue causing the third hit of Ash’gara Warblade (LMB) to be stuck sometimes
+  - [Kingpin] Fixed an issue causing Abyssal Grasp (RMB) to sometimes pull allies/enemies underground
+</BugFixes>

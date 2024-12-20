@@ -1,7 +1,7 @@
 import { atom } from "jotai";
 
 const toggleMenuAtom = atom<boolean>(false);
-const toggleFanWarningAtom = atom<boolean>(true);
+const toggleFanWarningAtom = atom<boolean>(false);
 const setVisibleSectionAtom = atom<string>("Summary");
 const visablePatchNotesPostsAtom = atom<number>(6);
 
