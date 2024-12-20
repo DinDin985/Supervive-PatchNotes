@@ -40,7 +40,7 @@ export default function HunterChanges() {
         <div className="flex flex-col">
           <div className="mb-3 flex items-center">
             <Image
-              src={"/patch-notes/balance-team-icon.png"}
+              src={"/patch-notes/misc-icons/balance-team-icon.png"}
               className="mr-2 bg-white p-2"
               width={60}
               height={60}

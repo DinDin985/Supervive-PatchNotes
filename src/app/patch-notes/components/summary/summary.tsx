@@ -20,7 +20,7 @@ export default function Summary({
             <Image src={authorImg} width={15} height={15} alt="author icon" />
           ) : (
             <Image
-              src={"/patch-notes/balance-team-icon.png"}
+              src={"/patch-notes/misc-icons/balance-team-icon.png"}
               width={15}
               height={15}
               alt="balance team icon"
