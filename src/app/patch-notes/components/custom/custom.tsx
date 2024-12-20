@@ -23,7 +23,7 @@ export default function Custom({ children, title, variant }: CustomProps) {
         customVariants[variant],
       )}
     >
-      <h1 className="patch-notes-subtitle">{title}</h1>
+      <h1 className="patch-notes-subtitle z-10">{title}</h1>
 
       <div
         className={twMerge(
