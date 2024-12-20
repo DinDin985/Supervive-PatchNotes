@@ -334,9 +334,8 @@ const config: Config = {
             },
             h2: {
               color: theme("colors.neutral.300"),
-              fontFamily: "'Tusker-6700', sans-serif",
+              fontFamily: "Arial",
               fontSize: theme("fontSize.lg"),
-              letterSpacing: "0.06em",
               marginBottom: theme("spacing.1"),
             },
             h3: {
