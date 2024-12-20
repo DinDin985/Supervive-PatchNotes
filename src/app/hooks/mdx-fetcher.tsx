@@ -22,11 +22,15 @@ import Summary from "../patch-notes/components/summary/summary";
 import SystemChanges from "../patch-notes/components/system-changes/system-changes";
 import SystemChangesContainer from "../patch-notes/components/system-changes/system-changes-containter";
 
-const contentDir = path.join(process.cwd(), "src/app/patch-notes/content");
+const patchNotesContentDir = path.join(
+  process.cwd(),
+  "src/app/patch-notes/content",
+);
+const newsContentDir = path.join(process.cwd(), "src/app/news/content");
 
-export async function getPostBySlug(slug: string) {
+export async function getPatchNotesPostBySlug(slug: string) {
   const fileName = slug + ".mdx";
-  const filePath = path.join(contentDir, fileName);
+  const filePath = path.join(patchNotesContentDir, fileName);
   const fileContent = fs.readFileSync(filePath, "utf8");
   const { frontmatter, content } = await compileMDX<{
     title: string;
@@ -66,16 +70,55 @@ export async function getPostBySlug(slug: string) {
   };
 }
 
-export async function getPosts() {
-  const files = fs.readdirSync(contentDir);
+export async function getNewsPostBySlug(slug: string) {
+  const fileName = slug + ".mdx";
+  const filePath = path.join(newsContentDir, fileName);
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  const { frontmatter, content } = await compileMDX<{
+    title: string;
+    "cover-image": string;
+    date: string;
+    description: string;
+  }>({
+    source: fileContent,
+    options: { parseFrontmatter: true },
+    components: {},
+  });
+  return {
+    frontmatter,
+    content,
+    slug: path.parse(fileName).name,
+  };
+}
+
+export async function getPatchNotesPosts() {
+  const files = fs.readdirSync(patchNotesContentDir);
   const posts = await Promise.all(
-    files.map(async (file) => await getPostBySlug(path.parse(file).name)),
+    files.map(
+      async (file) => await getPatchNotesPostBySlug(path.parse(file).name),
+    ),
   );
   return posts;
 }
 
-export function getAllPostSlug() {
-  const files = fs.readdirSync(contentDir);
+export function getAllPatchNotesPostsPostSlug() {
+  const files = fs.readdirSync(patchNotesContentDir);
+  const slugs = files.map((file) => ({ slug: path.parse(file).name }));
+  return slugs;
+}
+
+export async function getNewsPosts() {
+  const files = fs.readdirSync(newsContentDir);
+  const posts = await Promise.all(
+    files.map(
+      async (file) => await getPatchNotesPostBySlug(path.parse(file).name),
+    ),
+  );
+  return posts;
+}
+
+export function getAllNewsPostSlug() {
+  const files = fs.readdirSync(newsContentDir);
   const slugs = files.map((file) => ({ slug: path.parse(file).name }));
   return slugs;
 }

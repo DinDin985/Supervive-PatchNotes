@@ -1,7 +1,10 @@
-import { getAllPostSlug, getPostBySlug } from "../../hooks/mdx-fetcher";
+import {
+  getAllPatchNotesPostsPostSlug,
+  getPatchNotesPostBySlug,
+} from "../../hooks/mdx-fetcher";
 
 export async function generateStaticParams() {
-  return getAllPostSlug();
+  return getAllPatchNotesPostsPostSlug();
 }
 
 export type paramsType = Promise<{ slug: string }>;
@@ -12,7 +15,9 @@ export default async function PatchNotesPost({
   params: paramsType;
 }) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  console.log(slug);
+
+  const post = await getPatchNotesPostBySlug(slug);
   console.log(params);
 
   console.log(post);

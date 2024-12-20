@@ -1,6 +1,6 @@
 import type { JSXElementConstructor, ReactElement } from "react";
 import { Tusker5700 } from "../fonts";
-import { getPosts } from "../hooks/mdx-fetcher";
+import { getPatchNotesPosts } from "../hooks/mdx-fetcher";
 import PatchNotesListContainer from "./components/patch-notes-list-container";
 
 type post = {
@@ -15,7 +15,7 @@ type post = {
 };
 
 export default async function PatchNotes() {
-  const posts = await getPosts();
+  const posts = await getPatchNotesPosts();
 
   function sortPostsByDate(posts: post[]) {
     return posts.sort(

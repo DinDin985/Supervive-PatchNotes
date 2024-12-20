@@ -7,6 +7,7 @@ export default function NavbarLinks() {
     { name: "Refer-a-friend", url: "http://accounts.theorycraftgames.com/" },
     { name: "Twitch Drops", url: "https://drops.theorycraftgames.com/" },
     { name: "Patch Notes", url: "/patch-notes" },
+    { name: "News", url: "/news" },
   ];
 
   return (

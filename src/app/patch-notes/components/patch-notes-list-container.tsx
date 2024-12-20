@@ -1,9 +1,9 @@
 "use client";
 
+import ShowMoreButton from "@/app/components/ui/show-more-button";
 import { useState } from "react";
 import type { PatchNotesListContainer } from "../types";
 import PatchNotesList from "./patch-notes-list";
-import ShowMoreButton from "./ui/show-more-button";
 
 export default function PatchNotesListContainer({
   postLength,
