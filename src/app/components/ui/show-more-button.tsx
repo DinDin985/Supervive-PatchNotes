@@ -1,5 +1,5 @@
 import Hr from "@/app/components/ui/hr";
-import type { ShowMoreButtonProps } from "../../types";
+import type { ShowMoreButtonProps } from "@/app/patch-notes/types";
 
 export default function ShowMoreButton({
   ShowMorePosts,
