@@ -222,6 +222,41 @@ const config: Config = {
             },
           },
         },
+        "news-content": {
+          css: {
+            h1: {
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.2xl"),
+              marginBottom: theme("spacing.8"),
+              "@screen md": {
+                fontSize: theme("fontSize.3xl"),
+              },
+            },
+            h2: {
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.xl"),
+              marginBottom: theme("spacing.4"),
+              "@screen md": {
+                fontSize: theme("fontSize.2xl"),
+              },
+            },
+            img: {
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginBottom: theme("spacing.8"),
+              marginTop: theme("spacing.8"),
+              maxHeight: "500px",
+            },
+            p: {
+              marginBottom: theme("spacing.2"),
+              lineHeight: theme("lineHeight.6"),
+              "@screen md": {
+                fontSize: theme("fontSize.lg"),
+                marginBottom: theme("spacing.4"),
+              },
+            },
+          },
+        },
         "patch-custom": {
           css: {
             p: {

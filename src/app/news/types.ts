@@ -4,6 +4,7 @@ export type posts = {
     "cover-image": string;
     date: string;
     description: string;
+    subdirectory: string;
   };
   content: React.ReactNode;
   slug: string;

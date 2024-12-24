@@ -3,6 +3,8 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 import HunterIntro from "../../../draft/hunter-intro";
 import Hr from "../components/ui/hr";
+import NewsIntroduction from "../news/components/news-introduction/news-introduction";
+import NewsContent from "../news/components/news-content/news-content";
 import BugFixes from "../patch-notes/components/bug-fixes/bug-fixes";
 import Custom from "../patch-notes/components/custom/custom";
 import EquipmentChanges from "../patch-notes/components/equipment-changes/equipment-changes";
@@ -37,6 +39,7 @@ export async function getPatchNotesPostBySlug(slug: string) {
     "cover-image": string;
     date: string;
     description: string;
+    subdirectory: string;
   }>({
     source: fileContent,
     options: { parseFrontmatter: true },
@@ -79,31 +82,11 @@ export async function getNewsPostBySlug(slug: string) {
     "cover-image": string;
     date: string;
     description: string;
+    subdirectory: string;
   }>({
     source: fileContent,
     options: { parseFrontmatter: true },
-    components: {
-      BugFixes,
-      Custom,
-      EquipmentChanges,
-      EquipmentChangesContainer,
-      EquipmentSpecificChangesContainer,
-      Hr,
-      HunterAbilityChanges,
-      HunterAbilityChangesContainer,
-      HunterChanges,
-      HunterChangesContainer,
-      HunterIntro,
-      Introduction,
-      MidPatchUpdates,
-      PatchHighlights,
-      PowerChanges,
-      PowerChangesContainer,
-      PowerSpecificChangesContainer,
-      Summary,
-      SystemChanges,
-      SystemChangesContainer,
-    },
+    components: { NewsContent, NewsIntroduction },
   });
   return {
     frontmatter,
@@ -129,13 +112,22 @@ export function getAllPatchNotesPostsPostSlug() {
 }
 
 export async function getNewsPosts() {
-  const files = fs.readdirSync(newsContentDir);
-  const posts = await Promise.all(
-    files.map(
+  const newsFiles = fs.readdirSync(newsContentDir);
+  const patchFiles = fs.readdirSync(patchNotesContentDir);
+
+  const newsPosts = await Promise.all(
+    newsFiles.map(
+      async (file) => await getNewsPostBySlug(path.parse(file).name),
+    ),
+  );
+
+  const patchNotesPosts = await Promise.all(
+    patchFiles.map(
       async (file) => await getPatchNotesPostBySlug(path.parse(file).name),
     ),
   );
-  return posts;
+
+  return [...newsPosts, ...patchNotesPosts];
 }
 
 export function getAllNewsPostSlug() {

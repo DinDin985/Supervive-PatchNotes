@@ -1,22 +1,15 @@
-import type { JSXElementConstructor, ReactElement } from "react";
 import { getNewsPosts } from "../hooks/mdx-fetcher";
 import NewsListContainer from "./components/news-list-container";
+import type { posts } from "./types";
 
-type post = {
-  frontmatter: {
-    title: string;
-    "cover-image": string;
-    date: string;
-    description: string;
-  };
-  content: ReactElement<unknown, string | JSXElementConstructor<unknown>>;
-  slug: string;
+export const metadata = {
+  title: "News",
 };
 
 export default async function News() {
   const posts = await getNewsPosts();
 
-  function sortPostsByDate(posts: post[]) {
+  function sortPostsByDate(posts: posts[]) {
     return posts.sort(
       (a, b) =>
         new Date(a.frontmatter.date).getTime() -

@@ -14,6 +14,10 @@ type post = {
   slug: string;
 };
 
+export const metadata = {
+  title: "Patch Notes",
+};
+
 export default async function PatchNotes() {
   const posts = await getPatchNotesPosts();
 
