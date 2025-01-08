@@ -32,12 +32,21 @@ dependencies:
   clsx:
     specifier: ^2.1.1
     version: 2.1.1
+  hast-util-sanitize:
+    specifier: ^5.0.2
+    version: 5.0.2
+  hast-util-to-string:
+    specifier: ^3.0.1
+    version: 3.0.1
   jotai:
     specifier: ^2.10.1
     version: 2.10.3(@types/react@19.0.1)(react@19.0.0)
   lucide-react:
     specifier: ^0.454.0
     version: 0.454.0(react@19.0.0)
+  mdast-util-to-hast:
+    specifier: ^13.2.0
+    version: 13.2.0
   motion:
     specifier: ^12.0.0-alpha.2
     version: 12.0.0-alpha.2(react-dom@19.0.0)(react@19.0.0)
@@ -59,12 +68,18 @@ dependencies:
   remark-mdx:
     specifier: ^3.1.0
     version: 3.1.0
+  remark-parse:
+    specifier: ^11.0.0
+    version: 11.0.0
   tailwind-merge:
     specifier: ^2.5.4
     version: 2.5.5
   tailwindcss-animate:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.4.16)
+  unified:
+    specifier: ^11.0.5
+    version: 11.0.5
 
 devDependencies:
   '@tailwindcss/typography':
@@ -2152,6 +2167,14 @@ packages:
     dependencies:
       function-bind: 1.1.2
 
+  /hast-util-sanitize@5.0.2:
+    resolution: {integrity: sha512-3yTWghByc50aGS7JlGhk61SPenfE/p1oaFeNwkOOyrscaOkMGrcW9+Cy/QAIOBpZxP1yqDIzFMR0+Np0i0+usg==}
+    dependencies:
+      '@types/hast': 3.0.4
+      '@ungap/structured-clone': 1.2.1
+      unist-util-position: 5.0.0
+    dev: false
+
   /hast-util-to-estree@3.1.0:
     resolution: {integrity: sha512-lfX5g6hqVh9kjS/B9E2gSkvHH4SZNiQFiqWS0x9fENzEl+8W12RqdRxX6d/Cwxi30tPQs3bIO+aolQJNp1bIyw==}
     dependencies:
@@ -2195,6 +2218,12 @@ packages:
       vfile-message: 4.0.2
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /hast-util-to-string@3.0.1:
+    resolution: {integrity: sha512-XelQVTDWvqcl3axRfI0xSeoVKzyIFPwsAGSLIsKdJKQMXDYJS4WYrBNF/8J7RdhIcFI2BOHgAifggsvsxp/3+A==}
+    dependencies:
+      '@types/hast': 3.0.4
     dev: false
 
   /hast-util-whitespace@3.0.0:
