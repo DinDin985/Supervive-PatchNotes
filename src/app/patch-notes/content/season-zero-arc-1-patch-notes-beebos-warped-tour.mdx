@@ -1,0 +1,412 @@
+---
+title: "Season Zero - Arc 1 Patch Notes - Beebo’s Warped Tour!"
+cover-image: "/patch-notes/cover-images/season-zero-arc-1-patch-notes-beebos-warped-tour.png"
+date: "1/8/2025"
+description: "A new warped equipment system, our first battlepass, new ranked changes, and Beebo makes his debut!"
+---
+
+<Introduction img={"/patch-notes/cover-images/season-zero-arc-1-patch-notes-beebos-warped-tour.png"}>
+  # Season Zero - Arc 1 Patch Notes - Beebo’s Warped Tour!
+
+  ## A new warped equipment system, our first battlepass, new ranked changes, and Beebo makes his debut!
+
+  ### DinDin | 1/8/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Welcome to Season Zero, our first season of themed content after Open Beta launch. As a note, we may not stick 
+  absolutely to this theme, but we think it’s fun to have creative wrappers so here we are.
+
+  But before I get to the fun stuff, since this is our first patch back from the holidays, we should talk about 
+  how things are going and where we’re going with SUPERVIVE. First: we appreciate y’all playing and sticking around. 
+  Second: while things aren’t perfect, we did see improvements over the holidays (as measured by hours played, 
+  especially by new players), which we attribute to our experimental revival rule changes, ascending armor, and 
+  hunter mastery pass. We’re going to continue making big changes!
+
+  We also know not all of you will love all the changes we make, but we hope you agree that the current game as is 
+  is simply not thriving, which means we need to take big swings rather than small ones. This is what open beta is 
+  for! So expect us to be very experimental as we try to make the game deeper and more engaging for all - then it’s 
+  onto a 1.0 launch when we like what we see!
+
+  Now for context on this patch: for stability reasons we had to prepare most of this patch before the winter 
+  holidays, so we haven’t been able to act on all community feedback that’s come up over the holidays. For example, 
+  we do want to do some balancing on the new revival rules but since it’s a more complex system it’s too risky to 
+  slam in without extensive testing. It’s on our mind, however! Please just give us a bit to settle into our rhythm 
+  for the new year - thanks!
+</Summary>
+
+<PatchHighlights video={"https://www.youtube.com/embed/KYH9iSM6aq8"} img={""}>
+  
+</PatchHighlights>
+
+<Custom title={"New Hunter: Beebo"}>
+  ![Beebo](/patch-notes/misc-images/beebo.png "Roadmap")
+
+  <Hr className="mb-5"/>
+
+  - (PASSIVE) - Matterball: Beebo’s Matterball lets him cross lava and other hazards safely. He is also 10% lighter than other Hunters
+
+  - (LMB) - Bat: Tap to swing Beebo's bat. HOLD to charge a powerful swing that deals significant knockback and damage
+
+  - (RMB) - Zeep Zeep: Press to fire a Zeep from Beebo’s slingshot. After firing, Beebo readies the next random shot. HOLD to cycle between Zeeps with different effects.
+
+  - (SHIFT) - Schwoop: Dash forward a short distance and gain a movement speed bonus for a period of time.
+
+  - (Q) - Beeb-omb: PRESS to throw a Beeb-omb that grows in size and damage over time. PRESS again to detonate!
+
+  - (R) - Tonk Tonk!: Drive a kart that picks up enemies and allies. Crashing into a wall deals damage to struck enemies. Recast to hop out early.’
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Global Shop
+
+    "A big point of feedback we’ve heard is that gold feels inconsistently valuable. Specifically because shops 
+    are inconsistently available, and (aside from armor) it’s hard to plan for what kind of inventory they have. 
+    We also want farming gold to be an “early game skill or strategy” that you can focus on in order to get better 
+    at the game, so we’re taking our first step with the Global Shop. This might not be the final shape of how we 
+    want to use gold as part of the strategic layer of SUPERVIVE, but let’s try it out!"
+
+    <Hr className="mb-5"/>
+
+    - You can now shop anywhere. Default keybind is “V" to open the Global Shop (you can rebind via "Remote Shop" in keybinds)
+    - Upon purchase, a Delivery Drop Pod will be issued and sent down after with your requested Items. Normal time to drop is 20 seconds, which gets reduced in the late game
+    - Items purchased by allies while your team has an incoming Delivery Pod will be added to that Pod.
+    - Every match, 12 powers are rolled to be offered in limited quantities: 8 common/uncommon powers, 3 rare powers, and 1 exotic power
+    - The Global Shop has a smaller set of core items you can always purchase:
+      - Hypervive
+      - Green & Blue Armor
+      - An Armor Repair Kit that repairs 1500 HP (3 bars) to your shield
+      - ... and a Mobile Respawn Beacon
+    
+    - Normal Shops no longer sell equipment or raw beans
+    - Each region’s shop has different default powers that you can reliably find
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## UAV Sound Pulses
+
+    "The main audience for this change was to teach newer players a skillset that’s a little foreign in the top-down 
+    camera setting: scouting for sound (shoutout to the music MOBA gamers). And because it’s a new behavior, we had 
+    to go a little more heavy-handed. On the other side, we hear you veteran players that this change felt like too 
+    much free information, and that it invalidated a skillset you’d been building over years of playtesting. Now that 
+    new players are adjusting and using the system, we’re toning it down as well as hitting the most egregious issues
+    where pulses were pinging for VERY quiet sounds VERY far away."
+
+    <Hr className="mb-5"/>
+
+    - Max range for pulses has been reduced by 20% (that’s a total area reduction of 36%)
+    - Pulses within that range will no longer show if they’re at the lower end of their attenuation range (meaning very quiet sounds will no longer show up if they are at max range)
+  
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Map Objectives, Legendaries, and Exotics
+
+    "With these changes, we’re trying to inject more variability in the early game strategy of SUPERVIVE, 
+    while also reducing the amount of exotics floating around in the endgame (particularly at high MMR) and 
+    adding more clarity/knowability when it comes to the high-end rarities."
+
+    <Hr className="mb-5"/>
+
+    - There is now a maximum of 8 >>> 4 exotics per game, except if modified by a storm shift
+    - Each game, these 4 exotics will be spread across:
+      - 2 exotics in evil chests
+      - 1 dropped by a first night boss
+      - 1 as a Global Shop purchase
+
+
+    For clarity, we’ll list out the ways you can pursue legendary and exotic drops per game:
+      - 2 Evil Chests: Each contains an exotic item. As a reminder, if you get an evil key and both exotic items are claimed, the evil key will point toward the closest player with an exotic
+      - 2 Night Bosses: 1 spawns with an exotic, and 1 spawns with a legendary
+      - These will both spawn on the first night and will show their possible reward on the map.
+      - Abyssal Vaults: A special vault that holds an Abyssal Scale or Abyssal Eye legendary power. Can no longer spawn Abyssal Fang, which is now considered an exotic
+      - Train: Now always holds a legendary item at the start of the game
+      - Legendary Airdrop: A Legendary item that lands on the map at the start of day 3 in an airdrop
+      - Hot Zones: Randomly selected zones that hold 2 or 4 legendary armors. Can now also very rarely roll exotic armors
+
+    Item Rarities:
+    - LEGENDARY:
+      - Mobile Beacon
+      - 25,000 Gold
+      - Deploy Base Camp Power
+      - Glider Updraft
+      - Wisp Magnet
+      - Tier 5 Armor
+      - Megashard
+      - Soulstealer
+      - Masamune (will now give you a basic dagger if you die and lose it)
+
+    - EXOTIC:
+      - Replicator
+      - Power Shuffler
+      - Yearbook
+      - Endless Reaper
+      - Fate Rewinder
+      - Armor Shredder
+      - Mega Cluster Nuke
+      - Blinkstone
+      - Team Frog Jump
+      - Guardian Archangel
+      - Delicate Disguise
+      - Abyssal Fang
+  </SystemChanges>
+
+  <SystemChanges>
+    ## No Changes to Day/Night 1 Revival rules (for now)
+
+    "At a high level, our new revival rules are leading to new and solo players being able to survive longer in games, 
+    participate in combat, and thereby experience more of the session. As a result, we saw new and solo players 
+    sticking around with SUPERVIVE longer, which is obviously a good thing. We also check our survey results, and so 
+    far those responses are also positive. So overall: we like the change.
+
+    That said, no system is perfect and we know there are improvements we can make - resurgence is just a deep system 
+    that we didn’t feel confident putting in changes with limited testing for this patch. So this is context for why 
+    no changes were made for now."
+
+    <Hr className="mb-5"/>
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Stealth
+
+    <Hr className="mb-5"/>
+
+    - One-off Stealth effects like Brushwhacker or Ethereal Smoke are now removed on dash
+    - Active stealth effects like Mana Cloak are turned off on dash
+    - Always-on effects like Scuba, Delicate Disguise, and Night Soul are suppressed for 4 seconds on dash
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Stormshifts
+
+    <Hr className="mb-5"/>
+
+    Unstable Portals
+      - Two-way portals will randomly spawn at the edges of the playable space for a limited amount of time
+
+    Berry Season
+      - The frequency of berries spawned in bushes across the map is dramatically increased. The amount that berries heal and restore is also increased substantially
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Map
+
+    <Hr className="mb-5"/>
+
+    There are now “Mini-Warp” Anomalies found on the map. Step into one to see what happens!
+    - Academy now has a giant warp anomaly that will teleport you anywhere… but there
+    - Academy now has new Swamp territory to its right, adding a new combat space and making it so Academy is in play from session to session more often
+    - Scavenger Bay have been expanded into three discrete, more grokable combat spaces
+
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+      ## Brall
+
+      #### Passive reduced empowerment gained from creeps, LMB damage reduced, hitbox adjusted, and knockback re-added, Q cooldown start timer changed and chain active duration reduced, Shift level 3 cooldown reduction lowered.
+
+      ### "By popular demand, he gets his own section, hehe. We hear you that Brall’s windows of vulnerability (and windows of opportunity) are too fuzzy, so here are some changes to meaningfully increase those windows on his mobility. Calling out the re-addition of the knockback: one thing it did was automatically create space when Brall was spamming LMBs on you, which we think helps create space against him."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/passive.png"} abilityName={"(Passive) - Blazing Spirit"}>
+          - Dramatically reduced the amount of empowerment Brall gets from dealing damage to creeps
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/LMB.png"} abilityName={"(LMB) - Caldera, Molten Greatsword"}>
+          - Damage has been reduced by 10%
+          - Hitbox width pulled in by ~30%
+          - Knockback has been re-added
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/Q.png"} abilityName={"(Q) - Feysteel Chain"}>
+          - Cooldown now begins counting down on second activation or chain break instead of when the ability is first activated
+          - Chain duration reduced from 7 >>> 5.5 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/shift.png"} abilityName={"(Shift) - Flame Step"}>
+          - Lv.3 Ability upgrade now gives less cooldown reduction from -3.5 >>> -2 seconds and dodging shots gives less empowerment energy from 95 >>> 65
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+      ## Hudson
+
+      #### Q now destructible, width increased, cast range increased.
+
+      ### "We significantly nerfed Hudson in a previous patch and have been thinking of ways to sharpen his other strengths in the meantime. Today we’re adding a little more conversation to Hudson's fortification abilities, which will let us in turn also dial up his power. Win win!"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/Q.png"} abilityName={"(Q) - Barbed Wire"}>
+          - Is now a destructible, with pass-through damage
+          - Health increases with ability level
+          - Width increased by 100
+          - Cast range increased and now shows a warning while lobbed
+          - Increased placement/lobbing duration when cast at max range (2x longer than the old speed)
+          - Increased total life time to 20 seconds at level 1/2, and 30 seconds at level 3
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<Custom title={"Warped Equipment"}>
+  "A common point of feedback we hear from players is they often choose the same evolves, over and over, for equipment. We’d like to add some spice to the system, and reward players for thinking on their feet."
+
+  <Hr className="mb-5"/>
+
+  - Blue tier equipment upgrades now have a 4th evolution choice: a Warped evolution
+  - Warped evolutions keep the base stats of the item, but can roll a random passive from any other item in the game - and sometimes come with additional benefits!
+    - 75% chance: your warped evolution has a passive from any other blue equipment
+    - 20% chance: your warped evolution comes with extra stats pulled from the evolution it got its passive from
+    - 5% chance: your warped evolution has a unique ‘legendary’ passive! Currently there are 3 ‘legendary’ passives: Soulstealer, Glider, and Trail Blazer
+</Custom>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/coming-soon.png"}>
+      ## Dimensional Tunnel
+
+      #### New Power
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - New Power
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/coming-soon.png"}>
+      ## Deployable Fan
+
+      #### New Power
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - New Power
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/coming-soon.png"}>
+      ## Instant Fortress
+
+      #### New Power
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - New Power
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/power-shuffler.png"}>
+      ## Power Shuffler
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Can no longer reroll a power to Replicator
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/abyss-specialist.png"}>
+      ## Abyss Specialst
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now has an internal cooldown of 30 seconds
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<Custom title={"Ranked"}>
+  "For open beta launch, we saw folks climbing much faster than anticipated in terms of their rank, so we’re 
+  implementing a few changes to clamp down on inflation while keeping the rank climb focused on the right actions. 
+  Regarding that solo player bonus - we know it’s sometimes rough out there as a solo player running into premades, 
+  so we’re trying a light solution because splitting the queues or adding premade restrictions adds another set of 
+  challenges.
+
+  Finally, for the shift on placement vs. elimination points distribution: today we think there’s not enough emphasis 
+  on mid-to-late game strategy, and want that to have a larger impact on your ranked progression, so we’re shifting 
+  the values to reflect this philosophy. The big danger if we go too far is that ratting becomes too prevalent of a 
+  way to climb - but we’ll be keeping an eye on this."
+
+  <Hr className="mb-5"/>
+
+  - There will be a full ranked reset with this patch
+  - This ranked season will last 3 months (until the end of March)
+
+  SYSTEM CHANGES
+    - Solo players now gain an extra +5 ranked points regardless of placement
+    - Ranked points required to progress between tiers has been increased from 100 >>> 200
+    - Ranked point ante costs will increase by 1 point for every 200 points you have at Grandmaster+
+    - As a reminder, last patch we changed ranked point changes from kills to team eliminations so that placements matter more than kill farming for climbing
+    - Below Master rank, you will get an extra ranked point bonus if your team gets a lot of kills but no team eliminations that game
+    - We've rebalanced the distribution of Ranked Points between Team Eliminations and Placement to weigh more toward Placement (think 60/40 where previously it was 50/50)
+    - Ranked matchmaking will attempt to match you based on your rank in addition to your MMR; this means you'll see less rank disparity in your matches
+
+
+  RANKED REWARDS
+    - Throughout this season, we’ll be offering ranked rewards and methods for tracking:
+    - Avatars - As you progress through the ranks, you’ll unlock Avatars that have borders to reflect your highest earned rank. You’ll be able to equip and use any rank you want via the Avatar selector
+    - Glider - At the end of Season Zero (April) we’ll be granting a custom glider based on your highest rank achieved
+    - Leaderboards - You can now filter ranked leaderboards by region or friends
+</Custom>
+
+<Custom title={"Progression"}>
+  "As mentioned in our fireside chat last year, we want the battlepass to be a generous progression track that 
+  rewards you for playing, so we’re doing a few things to dial up the good vibes. The first is letting you go 
+  infinite through what you earn in the battlepass alone, as well as giving free-to-play players the ability to 
+  get a battlepass with enough time (and then go infinite). We also don’t want you to feel like you owe us your 
+  time if you purchased a battlepass, so we’re introducing a system called ‘juiced experience’ where, if you’re 
+  ‘behind the curve’ of battlepass progression, you’ll get an EXP buff for your games played to help catch you up."
+
+  <Hr className="mb-5"/>
+
+  - Season Zero comes with our first Battlepass! You can purchase the Battlepass for 1000 Theorycraft Coins (TC) or 300 VIVE Points (VP)
+  - Every battlepass contains a total of 300 VP, letting you purchase the next one for free
+  - We have also added VP to the free portion of the battlepass, so players can eventually buy a battlepass through regular play if they so choose
+  - When you are ‘behind the curve’ of battlepass progression (as in: behind the average player in progression), you’ll get a buff for all EXP gained while you are behind
+
+  Progression Trackers & Seasonal Missions
+    - New Progression trackers have been added to the lobby UI
+    - Just above your Progression Trackers, you’ll see a button that will take you to Season Zero’s Seasonal Missions, which are limited-time event missions that grant you exclusive Callsigns and cosmetic rewards
+
+</Custom>
+
+<Custom title={"Chat"}>
+  "Not everyone likes to be on voice, and part of accommodating for that needs to be a better chat system, so we’re 
+  cleaning things up."
+
+  <Hr className="mb-5"/>
+
+  - Messages from your group/party will now always play a unique sound when a message is sent or received
+  - Sounds should be louder
+  - Pings send contextual messages to chat
+  - A variety of system messages like Day Night Cycle messages have been removed to reduce spamminess
+</Custom>
+
+<BugFixes>
+  - Fixed a bug that allowed dropped items to be duped by other players (thanks 슈선생 for discovering this!)
+  - Portuguese VO is now available
+  - Japanese text is now available
+  - You can now emote in the pre-game lobby… to the entire lobby
+  - Practice Mode now has Exotic Powers and Souls
+  - Social requests (invites and requests to join) can now be viewed from end of game screen or while spectating if fully eliminated
+  - You can now level up your equipment by pressing ALT + 1-4. You can adjust these keybinds in the settings as well
+  - AZERTY Keybinds have been added
+</BugFixes>
