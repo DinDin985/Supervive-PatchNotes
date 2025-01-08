@@ -44,22 +44,22 @@ export default function TableOfContents() {
     };
   }, []);
 
-  function scrollToSection(sectionId: string) {
-    console.log(sectionId);
-    const section = document.getElementById(sectionId);
-    console.log(section);
-    if (section) {
-      const headerOffset = 96;
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
+  // function scrollToSection(sectionId: string) {
+  //   console.log(sectionId);
+  //   const section = document.getElementById(sectionId);
+  //   console.log(section);
+  //   if (section) {
+  //     const headerOffset = 96;
+  //     const elementPosition = section.getBoundingClientRect().top;
+  //     const offsetPosition =
+  //       elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  }
+  //     window.scrollTo({
+  //       top: offsetPosition,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // }
 
   return (
     <div className="sticky right-0 top-32 z-10">
