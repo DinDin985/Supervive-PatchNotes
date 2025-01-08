@@ -9,7 +9,9 @@ export default function EquipmentChanges({
 }: EquipmentChangesProps) {
   return (
     <div className="mb-8 w-full">
-      <div className={`relative flex w-full flex-col border-4 p-4`}>
+      <div
+        className={`relative flex w-full scroll-mt-24 flex-col border-4 p-4`}
+      >
         <CutCorners />
 
         <div className="flex w-full flex-1 items-center">

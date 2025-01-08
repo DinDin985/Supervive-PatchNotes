@@ -9,6 +9,11 @@ export default function TableOfContents() {
 
   useEffect(() => {
     sectionsRef.current = Array.from(document.querySelectorAll("section"));
+    console.log(sectionsRef.current);
+
+    sectionsRef.current = sectionsRef.current.filter(
+      (section) => section.id !== "",
+    );
   }, []);
 
   useEffect(() => {
@@ -65,13 +70,17 @@ export default function TableOfContents() {
               className={`${visibleSection === section.id ? "text-neutral-100" : "text-neutral-300"} flex text-sm`}
               key={i}
             >
-              <span className="mr-1">-</span>
+              <a href={`#${section.id}`}>
+                <span className="mr-1">-</span>
+                {section.id}
+              </a>
+              {/* <span className="mr-1">-</span>
               <button
                 onClick={() => scrollToSection(section.id)}
                 className="text-start"
               >
                 {section.id}
-              </button>
+              </button> */}
             </li>
           );
         })}

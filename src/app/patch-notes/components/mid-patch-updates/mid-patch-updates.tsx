@@ -8,7 +8,7 @@ export default function MidPatchUpdates({
   return (
     <section
       id="Mid Patch Updates"
-      className="mx-auto mb-10 flex w-10/12 flex-col"
+      className="mx-auto mb-10 flex w-10/12 scroll-mt-28 flex-col"
     >
       <h1 className="patch-notes-subtitle">{title}</h1>
 

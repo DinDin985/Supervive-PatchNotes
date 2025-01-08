@@ -7,7 +7,7 @@ export default function HunterAbilityChanges({
   abilityName,
 }: HunterAbilityChangesProps) {
   return (
-    <div className="mb-5 flex flex-col">
+    <div className="mb-5 flex scroll-mt-24 flex-col">
       <div className="relative mb-3 flex items-center">
         {abilityImg !== "" && (
           <div className="relative mr-3">

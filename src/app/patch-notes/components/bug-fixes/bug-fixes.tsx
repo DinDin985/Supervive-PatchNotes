@@ -3,7 +3,10 @@ import CutCorners from "../ui/cut-corners";
 
 export default function BugFixes({ children }: { children: ReactNode }) {
   return (
-    <section id="Bug Fixes" className="mx-auto mb-10 flex w-10/12 flex-col">
+    <section
+      id="Bug Fixes"
+      className="mx-auto mb-10 flex w-10/12 scroll-mt-24 flex-col"
+    >
       <h1 className="patch-notes-subtitle">Other Bugfixes/QOL</h1>
 
       <div className={`relative flex flex-col border-4 p-4`}>

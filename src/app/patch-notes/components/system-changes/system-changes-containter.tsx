@@ -6,9 +6,12 @@ export default function SystemChangesContainer({
   children: ReactNode;
 }) {
   return (
-    <div id="systemChanges" className="mx-auto flex w-10/12 flex-col">
+    <section
+      id="System Changes"
+      className="mx-auto flex w-10/12 scroll-mt-28 flex-col"
+    >
       <h1 className="patch-notes-subtitle">System Changes</h1>
       {children}
-    </div>
+    </section>
   );
 }

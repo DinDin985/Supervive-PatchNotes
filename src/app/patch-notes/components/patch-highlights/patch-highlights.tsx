@@ -15,7 +15,10 @@ export default function PatchHighlights({
   video,
 }: PatchHighlightsProps) {
   return (
-    <section id="Patch Highlights" className="mx-auto mb-10 flex w-10/12 flex-col">
+    <section
+      id="Patch Highlights"
+      className="mx-auto mb-10 flex w-10/12 scroll-mt-28 flex-col"
+    >
       <h1 className="patch-notes-subtitle">Patch Highlights</h1>
 
       <div className="relative flex flex-col border-4 p-8">

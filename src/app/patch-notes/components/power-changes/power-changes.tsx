@@ -8,7 +8,7 @@ export default function PowerChanges({
   powerImg,
 }: PowerChangesProps) {
   return (
-    <div className="mb-8 w-full">
+    <div className="mb-8 w-full scroll-mt-24">
       <div className={`relative flex w-full flex-col border-4 p-4`}>
         <CutCorners />
 

@@ -1,6 +1,7 @@
 "use client";
 import Hr from "@/app/components/ui/hr";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import type { IntroductionProps } from "../../types";
 import TableOfContents from "../table-of-contents/table-of-contents";
 

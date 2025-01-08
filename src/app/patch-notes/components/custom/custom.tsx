@@ -14,12 +14,14 @@ export default function Custom({ children, title, variant }: CustomProps) {
   const customVariants: Record<CustomVariants, string> = {
     midPatchUpdate: "w-full mx-0 border-0 p-0",
   };
+  console.log("THIS IS VARIANT");
+  console.log(variant);
 
   return (
     <section
-      id={title}
+      id={variant === "midPatchUpdate" ? "" : title}
       className={twMerge(
-        "mx-auto mb-10 flex w-10/12 flex-col",
+        "mx-auto mb-10 flex w-10/12 scroll-mt-28 flex-col",
         customVariants[variant],
       )}
     >

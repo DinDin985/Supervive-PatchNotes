@@ -8,7 +8,10 @@ export default function Summary({
   authorImg,
 }: SummaryProps) {
   return (
-    <section id="Summary" className="mx-auto mb-10 flex w-10/12 flex-col">
+    <section
+      id="Summary"
+      className="mx-auto mb-10 flex w-10/12 scroll-mt-24 flex-col"
+    >
       <div className="prose prose-patch-summary mb-4 w-full max-w-none space-y-4">
         {children}
       </div>
