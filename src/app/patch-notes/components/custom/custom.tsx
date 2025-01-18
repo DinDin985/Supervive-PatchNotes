@@ -11,18 +11,20 @@ type CustomProps = {
 type CustomVariants = "midPatchUpdate";
 
 export default function Custom({ children, title, variant }: CustomProps) {
-  const customVariants: Record<CustomVariants, string> = {
-    midPatchUpdate: "w-full mx-0 border-0 p-0",
+  const sectionVariants: Record<CustomVariants, string> = {
+    midPatchUpdate: "w-full mx-0 border-0 p-0 mb-5",
   };
-  console.log("THIS IS VARIANT");
-  console.log(variant);
+
+  const childrenContainerVariants: Record<CustomVariants, string> = {
+    midPatchUpdate: "border-0 p-0",
+  };
 
   return (
     <section
       id={variant === "midPatchUpdate" ? "" : title}
       className={twMerge(
         "mx-auto mb-10 flex w-10/12 scroll-mt-28 flex-col",
-        customVariants[variant],
+        sectionVariants[variant],
       )}
     >
       <h1 className="patch-notes-subtitle z-10">{title}</h1>
@@ -30,7 +32,7 @@ export default function Custom({ children, title, variant }: CustomProps) {
       <div
         className={twMerge(
           `relative flex flex-col border-4 p-4`,
-          customVariants[variant],
+          childrenContainerVariants[variant],
         )}
       >
         <CutCorners variant={variant} />

@@ -32,7 +32,6 @@ export default function TableOfContents() {
       });
 
       if (nearestSection) {
-        console.log(nearestSection);
         setVisibleSection(nearestSection);
       }
     };
