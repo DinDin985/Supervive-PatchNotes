@@ -15,19 +15,19 @@ export default function BugFixes({
     midPatchUpdate: "w-full",
   };
 
-  const borderVariant = {
+  const borderVariants = {
     midPatchUpdate: "border-0 p-2",
   };
 
-  const sectionVariantKey = variant ? sectionVariants[variant] : "";
-  const borderVariantKey = variant ? borderVariant[variant] : "";
+  const sectionVariantsKey = variant ? sectionVariants[variant] : "";
+  const borderVariantsKey = variant ? borderVariants[variant] : "";
 
   return (
     <section
       id="Bug Fixes"
       className={twMerge(
         "mx-auto mb-10 flex w-10/12 scroll-mt-24 flex-col",
-        sectionVariantKey,
+        sectionVariantsKey
       )}
     >
       <h1 className="patch-notes-subtitle">Other Bugfixes/QOL</h1>
@@ -35,7 +35,7 @@ export default function BugFixes({
       <div
         className={twMerge(
           `relative flex flex-col border-4 p-4`,
-          borderVariantKey,
+          borderVariantsKey,
         )}
       >
         <CutCorners variant={variant} />

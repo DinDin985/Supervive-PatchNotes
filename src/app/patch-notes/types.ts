@@ -44,6 +44,11 @@ export interface EquipmentChangesProps {
   equipmentImg: string;
 }
 
+export type HunterChangesContainerProps = {
+  children: ReactNode;
+  variant?: "midPatchUpdate" | "default";
+};
+
 export type HunterAbilityChangesProps = {
   children: ReactNode;
   abilityImg: string;

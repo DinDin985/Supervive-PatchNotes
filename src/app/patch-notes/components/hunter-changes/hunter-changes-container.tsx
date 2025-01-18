@@ -1,23 +1,19 @@
-import { type ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-
-type hunterChangesContainerVariants = "midPatchUpdate";
+import type { HunterChangesContainerProps } from "../../types";
 
 export default function HunterChangesContainer({
   children,
-  variant,
-}: {
-  children: ReactNode;
-  variant?: hunterChangesContainerVariants;
-}) {
+  variant = "default",
+}: HunterChangesContainerProps) {
   const sectionVariants = {
+    default: "",
     midPatchUpdate: "w-full",
   };
 
   const titleVariants = {
+    default: "",
     midPatchUpdate: "mb-5",
   };
- 
 
   return (
     <section
