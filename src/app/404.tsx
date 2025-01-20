@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function NotFound() {
+export default function Custom404() {
   return (
     <div className="relative flex h-[600px] w-full flex-col items-center justify-center bg-black">
       <h1 className="z-10 mb-10 font-tusker-5700 text-6xl uppercase italic">
