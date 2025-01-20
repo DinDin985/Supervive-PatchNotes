@@ -124,6 +124,7 @@ const config: Config = {
       },
       backgroundImage: {
         "footer-texture": "url('/footer/footer_gradient_noblack.png')",
+        "navbar-texture": "url('/nav-bar/header-sidemenu.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function NavbarBackground() {
   return (
-    <div className="absolute left-0 top-0 h-full w-full overflow-hidden bg-black md:h-[calc(100%+20px)] md:clip-header">
+    <div className="absolute left-0 top-0 z-20 h-full w-full overflow-hidden bg-black md:h-[calc(100%+20px)] md:clip-header">
       <Image
         className="absolute left-0 top-0 h-full w-full"
         src={"/nav-bar/header-glow-right.png"}
