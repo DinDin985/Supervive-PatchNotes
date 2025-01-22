@@ -23,6 +23,9 @@ import PowerSpecificChangesContainer from "../patch-notes/components/power-chang
 import Summary from "../patch-notes/components/summary/summary";
 import SystemChanges from "../patch-notes/components/system-changes/system-changes";
 import SystemChangesContainer from "../patch-notes/components/system-changes/system-changes-containter";
+import ConsumableChanges from "../patch-notes/components/consumable-changes/consumable-changes";
+import ConsumableChangesContainer from "../patch-notes/components/consumable-changes/consumable-changes-container";
+import ConsumableSpecificChangesContainer from "../patch-notes/components/consumable-changes/consumable-specific-changes-container";
 
 const patchNotesContentDir = path.join(
   process.cwd(),
@@ -46,6 +49,9 @@ export async function getPatchNotesPostBySlug(slug: string) {
     components: {
       BugFixes,
       Custom,
+      ConsumableChanges,
+      ConsumableChangesContainer,
+      ConsumableSpecificChangesContainer,
       EquipmentChanges,
       EquipmentChangesContainer,
       EquipmentSpecificChangesContainer,

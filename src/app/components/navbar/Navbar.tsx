@@ -7,7 +7,7 @@ import NavbarSidemenuToggle from "./NavbarSidemenuToggle";
 
 export default function Navbar() {
   return (
-    <header className="nav-header fixed left-0 top-0 z-[9999] h-24 w-full bg-transparent">
+    <header className="nav-header fixed left-0 top-0 z-[9999] h-24 w-full overflow-hidden bg-transparent">
       <NavbarBackground />
 
       <div className="relative z-20 flex h-full justify-between bg-left-bottom px-2 xs:px-4 md:px-8">

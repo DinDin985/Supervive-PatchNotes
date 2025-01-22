@@ -28,6 +28,11 @@ export interface CustomProps {
   marginVariant?: string;
 }
 
+export interface ConsumableChangesProps {
+  children: ReactNode[];
+  consumableImg: string;
+}
+
 type EquipmentChanges = {
   name: string;
   img: string;

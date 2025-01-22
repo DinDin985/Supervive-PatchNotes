@@ -86,7 +86,7 @@ export default function HunterChanges({
         </div>
       </div>
 
-      <div className={(twMerge("hidden"), midPatchUpdateVariant[variant])}>
+      <div className={twMerge("hidden", midPatchUpdateVariant[variant])}>
         <div className="mb-5 flex items-center p-2">
           <div className="relative mr-5 h-full lg:h-auto">
             <ImageEdgeBlur />

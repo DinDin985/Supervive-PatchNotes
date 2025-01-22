@@ -216,9 +216,16 @@ const config: Config = {
                 color: theme("colors.white"),
                 paddingLeft: theme("spacing.0"),
                 margin: theme("spacing.0"),
+                p: {
+                  margin: theme("spacing.0"),
+                },
+                ul: {
+                  margin: theme("spacing.0"),
+                },
               },
               lineHeight: theme("lineHeight.6"),
               paddingLeft: theme("spacing.6"),
+              marginBottom: theme("spacing.4"),
               marginTop: theme("spacing.0"),
             },
           },
@@ -263,6 +270,12 @@ const config: Config = {
             p: {
               marginBottom: theme("spacing.4"),
               lineHeight: theme("lineHeight.6"),
+            },
+            h2: {
+              marginBottom: theme("spacing.3"),
+            },
+            h3: {
+              fontSize: theme("fontSize.lg"),
             },
           },
         },
