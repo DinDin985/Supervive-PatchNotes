@@ -1,0 +1,655 @@
+---
+title: "JAN 22 - Leveling Rework + BIG Balance Patch Notes"
+cover-image: "/patch-notes/cover-images/season-zero.png"
+date: "1/22/2025"
+description: "No more per-day level cap, new ability upgrades, lots of balance changes, and more!"
+subdirectory: "patch-notes"
+---
+
+<Introduction img={"/patch-notes/cover-images/season-zero.png"}>
+  # JAN 22 - Leveling Rework + BIG Balance Patch Notes
+
+  ## No more per-day level cap, new ability upgrades, lots of balance changes, and more!
+
+  ### DinDin | 1/22/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Welcome to the second patch of Season Zero, Arc One, Beebo’s… etc, etc. As with every patch, we’re trying to 
+  synthesize all of your feedback into a set of big, experimental changes to improve the game, which we’ll then 
+  learn from and continue iterating on in future patches.
+
+  Something to note: making large, systemic changes ends up having cascading effects on other areas of the game 
+  (and bugs… so many bugs), of which we sometimes miss. So if you find strange interactions coming from these big 
+  changes, please let us know on our Steam forums, Discord, or our social channels.
+
+  Finally: a request we’ve heard from many of you is to get a sort of “state of the game” fireside chat to hear 
+  about where SUPERVIVE is heading in the long-term. Heard! We’re thinking about this internally as well, but would 
+  like to request a little time as we cook, iterate, and learn for the future. Maybe give us a month or so.
+</Summary>
+
+<PatchHighlights video={""} img={"/patch-notes/cover-images/season-zero.png"}>
+  This patch will showcase big changes from how leveling works to hunter changes. We are looking forward to making this 
+  game the best we can and we need your help. Send us any feedback both positive and negative so together we will make
+  this game even better.
+</PatchHighlights>
+
+<Custom title={"Battlepass EXP requirement reduction"}>
+  "Since this is our first battlepass, we’ve been watching progression/completion rates and are feeling like we 
+  tuned this thing too aggressively, so we’re reducing the required EXP to complete the pass by roughly ~50%. We 
+  think the average player who plays an average amount of games should be able to reasonably finish the pass.
+
+  Simultaneously, we’ve been mapping out our patch cadence and realized we miscalibrated when the battlepass-ending 
+  patch would land - so we need to bring it in a week. All up, this is still a significant ‘buff’ (ie. easier to 
+  complete the battlepass) but we’re being transparent that it’s also coming with one less week."
+
+  <Hr className="mb-5"/>
+
+  - Overall, it should take less than half the time to complete the Season Zero, Arc 1 battlepass than before
+  - You will need to login and play a game for your battlepass progress to adjust to this patch
+  - If you play around 50 hours total and complete most weekly and daily missions, you should be able to finish the battlepass
+  - The battlepass end date has been updated to end on April 9th >>> April 2nd
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Leveling Rework
+
+    "In an effort to remove some of our more 'rules-y' systems and establish clearer paths to victory, we're 
+    testing removing the per-day level cap, increasing the maximum level for all hunters, and increasing equipment 
+    upgrade power. What we're hoping to see is that teams have more understandable paths to building a lead (when in 
+    doubt: farm for levels and upgrades) and others can better understand how they're behind."
+
+    <Hr className="mb-5"/>
+
+    - You will no longer be level-capped depending on the day - instead, monsters will always give EXP, with higher-level monsters giving a lot more
+    - Maximum level has been increased from 9 >>> 15
+    - All abilities can now be leveled up to 3 >>> 4, with the special bonus unlocking at 4
+    - You now gain +10 ability power per level, with base ability power being reduced
+    - Base equipment ability power/health has been reduced to 66% of previous values, while upgrades have been increased to 200% of previous values
+  </SystemChanges>
+
+  <SystemChanges>
+    ## PVP EXP
+
+    "A TL;DR here is: you will now be immediately rewarded for sniping knocks on higher-level teams, which should make 
+    comebacks far more immediate (previously you had to stomp the knocked wisp for the EXP, which made it very hard to 
+    even take an advantage on a higher level team). Additionally, farming/picking on lower-level teams won’t slam you 
+    into a massive lobby advantage because they’ll give less EXP overall."
+
+    <Hr className="mb-5"/>
+
+    - A knock is defined as: when you take someone’s health down to 0 and put them into a wisp state. A death or kill is when that player goes into a deathbox state.
+    - EXP is now granted at the KNOCK state, rather than the KILL state
+    - There are new PVP EXP calculations where knocking targets above your level gives a lot of EXP, scaling down to very little EXP for knocking targets below your level (so try to pick that juicy high-level target for a comeback)
+    - Repeated knocks on the same victim diminish by 50% each time (no blood bags pls)
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Minions/PvE
+
+    "With a higher weight being placed on PvE farming, we’re making these guys a little easier to farm and solo."
+
+    <Hr className="mb-5"/>
+
+    Base Stats and Rewards
+      - Minions now spawn between level 6-15, rewards/level adjusted appropriately
+      - Minion backstab gone, except for Magma Brutes and Sand Brutes
+      - Minions now give 75% of the gold they used to give to account for more overall gold in the game due to more PvE farming
+    
+    Counter damage and vulnerable state
+      - Counter damage means the damage the monster takes when you counter them (that is, using a boop/displacement/crowd control effect on a monster when it’s winding up with that blue circle under it). Vulnerable state is when the monster takes 2X bonus damage for a period of time after being countered. If you didn’t know about these things, then your PvEing is about to get a lot faster!
+      - Vulnerable state duration increased from 3.5 >>> 5 seconds
+      - Squad leader counter damage up from 40% >>> 60% total health
+      - Corrupted Guardian (biome leaders that spawn after clearing all monsters in the area) counter damage up from 5% >> 30% total health
+      - Abyssal Hatchlings up from 5% >> 30% total health
+      - Meteor Beast counter damage is 5% (unchanged) total health
+      - Final Abyssal counter damage up from 5% >>> 10% total health
+  </SystemChanges>
+
+  <SystemChanges>
+    ## EXP Meteor Soul
+
+    <Hr className="mb-5"/>
+
+    - Level 14 & 15 now grant an ability point so you can take all your abilities to level 4
+    - If you acquire the EXP Meteor Soul at level 14, you'll instantly get 1 ability point
+    - If you acquire the EXP Meteor Soul at level 15, you'll instantly get 2 abilities points
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Arena
+
+    <Hr className="mb-5"/>
+
+    - Players begin at Level 15, with 1 ability point to spend on a Level 4 ability
+    - Will match Arena behavior with the old levels
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Day/Night 1 Revival Rules
+
+    "We’re trying to reduce the endless lemming-zerg that happens on day 1 (especially at high level play). 
+    This should at least make things more manageable if a team is trying to slam bodies into an objective. In the 
+    next patch we’ll also offer the ability to turn off this rule in custom games."
+
+    <Hr className="mb-5"/>
+
+    - Timer is now based on how many times your TEAM has used a respawn (25 > 30 > 35 > 40 > 45 > 50 seconds)
+    - Previously it was the same sequence, but it would only increase when you INDIVIDUALLY respawned
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Spell buffering changes
+
+    "Goal here is to better associate the output of a spell with the input. Currently, there are times where 
+    spells activate long enough after the button press such that it no longer feels a part of the action. This 
+    should also reduce the number of unintended spell casts."
+
+    <Hr className="mb-5"/>
+
+    - Ability buffering means: when you press a button and can’t fire an ability for some reason (eg. you’re crowd controlled, there’s an overriding input, etc), the game will ‘preserve’ that intent for a little bit and keep trying to fire the ability
+    - Lowered the default buffer window from 0.3 >>> 0.2 seconds
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Mana
+
+    "We’re asking you to fight a lot these days, which is resulting in a lot of sad third/fourth/fifth-partying 
+    shenanigans. So we’re trying to even the playing field for the fight-winning teams."
+
+    <Hr className="mb-5"/>
+
+    - Your mana is refilled upon knocking an enemy Hunter
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/beebo-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/beebo.png"}>
+      ## Beebo
+
+      #### 
+
+      ### "Everyone’s still figuring this guy out, so we don’t want to over-buff for lack of familiarity."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+            - Toughness increased from 3 >>> 3.5
+            - Base health increased by 50
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/Q.png"} abilityName={"(Q) - Beeb-omb"}>
+          - Increased damage at all levels by 10%
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/RMB.png"} abilityName={"(RMB) - Zeep Zeep"}>
+          - Fire Zeep’s damage-over-time now deals lethal damage
+          - Bugfix: Spell is no longer cast when leveled up
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/R.png"} abilityName={"(R) - Tonk Tonk"}>
+          - Bugfix: Kart is no longer instantly destroyed when spell is cast near terrain
+          - Bugfix: General Kart behavior should be a (somewhat) smoother ride
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+      ## Brall
+
+      #### 
+
+      ### "We want Brall to feel like an exciting, skill-expressive Hunter. These changes are targeted towards shifting away from LMBrall and reducing his oppressive mobility.
+
+      ### Historically, some of the worst feelings playing against Brall have come from him being able to repeatedly get value out of LMB without a whole lot of intentionality (SWOSH SWOSH SWOSH SWOSH). With this set of changes, we’re looking to introduce more mechanical skill-expression in both the “playing-as” and “playing-against” cases. Bralls will have to aim and track their targets better, whereas opponents will have more opportunity to use their movement options to dodge and weave."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/passive.png"} abilityName={"(Passive) - Blazing Spirit"}>
+          - Bonus damage from 3rd/4th consecutive LMBs removed. Previously, LMB was giving bonus damage on every swing after the 2nd.
+          - Empowered attack speed +100% >>> 0%
+        </HunterAbilityChanges>
+
+         <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/LMB.png"} abilityName={"(LMB) - Caldera, Molten Greatsword"}>
+          - Overall hitbox width reduced by 20%
+          - Sweet spot damage now applies to the entire edge of the hitbox >>> applies at the central tip of the hitbox
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/shift.png"} abilityName={"(Shift) - Flame Step"}>
+          - Flame Step no longer refunds all current charges when one charge comes off cooldown
+          - New Cooldown per charge: 10/6/6/6 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/R.png"} abilityName={"(R) - Volcanic Rebuk"}>
+          - No longer resets on Wisp execution
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/celeste-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/celeste.png"}>
+      ## Celeste
+
+      #### 
+
+      ### "These changes are intended to sharpen Celeste’s role as a space controller on top of giving her more sandbox tools where she can really affect the shape of the battlefield. For the Celeste mains out there that specifically like to duel, these RMB changes are intended to provide more mechanical interest and options."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/celeste/rmb.png"} abilityName={"(RMB) - Cryo Spear"}>
+          - Now does between 30% - 150% damage based on distance traveled
+          - Now slows between to 40% - 10% based on how close the target is]
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/celeste/shift.png"} abilityName={"(Shift) - Skate "}>
+          - LEVEL 4 UPGRADE: Now creates ice islands underneath Celeste when she dashes over abyss
+            - Repeatedly doing this over the abyss will reduce the lifetime of the ice islands
+            - This resets if Celeste hasn’t dashed over the abyss for at least 20 seconds
+        </HunterAbilityChanges>
+        
+         <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/celeste/Q.png"} abilityName={"(Q) - Frozen Barricade"}>
+          - Celeste can reactivate Frozen Barricade to freeze it in place
+            - Lasts for 6s when stopped
+          - +500 wall health at all levels
+          - Cast time decreased by 0.25 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/elluna-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/elluna.png"}>
+      ## Elluna
+
+      #### 
+
+      ### "With the earlier changes we made to Wisp burnout time, we wanted to give Elluna more options around her unique strength of picking up allies. We also remember there have been previous versions where Elluna had too much power in this respect. This is an attempt to give some of that back while still introducing meaningful windows for responses and counterplay. And for all the Brawllunas out there, check that level 4 upgrade on Righteous Root."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/shift.png"} abilityName={"(Air Dash) - Blessed Dash"}>
+          - [NEW] LEVEL 4 UPGRADE: Upon picking up an ally Wisp, if your cooldown is above 2 seconds, then set the cooldown to 2 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/Q.png"} abilityName={"(Q) - Moonlight’s Blessing"}>
+          - Heal is 500% effective on Wisps
+            - Depending on Moonlight Blessing’s ability level and your build, this heal is powerful enough to temporarily negate enemy stomps
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/RMB.png"} abilityName={"(RMB) - Righteous Root"}>
+          - [NEW] LEVEL 4 UPGRADE: Detonation radius increased by +100%
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/felix-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/felix.png"}>
+      ## Felix
+
+      #### 
+
+      ### "Everyone’s favorite stat-check benefits from the leveling rework more than others - especially when it comes to gaining bonus max HP (something he loves for his shield scaling). We’re preemptively adjusting."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Toughness reduced from 4.5 >>> 4
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+      ## Hudson
+
+      #### 
+
+      ### "After the great de-Hudsoning of last year, we’ve been slowly shifting power to areas where we think he should be strong - specifically when he’s set up and hunkered down (does anyone use that term anymore?)."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/LMB.png"} abilityName={"(LMB) - Minigun"}>
+          - Range has been reduced from 1300 >>> 1150 range
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/RMB.png"} abilityName={"(RMB) - Spin Barrels"}>
+          - Range has been increased from 1150 >>> 1300 range
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/jin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/jin.png"}>
+      ## Jin
+
+      #### 
+
+      ### "It’s worth calling out this mobility nerf is on top of the hotfix nerf we shipped last week where we removed his Q animation cancelling."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+         <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/LMB.png"} abilityName={"(LMB) - Ash’Gara Warblade"}>
+          - Nerfed the dash impulse on the charge by 10% - 40% based on timing
+          - Reduced damage by 5%
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/void-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/void.png"}>
+      ## Void
+
+      #### 
+
+      ### "These changes are intended to give Void more options in skirmishes. For Voids that like to duke it out or find themselves pushed by other hunters, the Void Snap changes are intended to give you more maneuverability to either disengage or follow-up. For the more utility-oriented Void players, we thought that sharpening the defensive output from this ability upgrade would help you find more reliable value."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/void/RMB.png"} abilityName={"(RMB) - Void Snap"}>
+          - Void is slowed for 25% less when casting Void Snap
+          - [NEW] LEVEL 4 UPGRADE: On cast, Void gains +50 Movement Speed for 2 seconds. On impact, Void gains another +100 Movement speed for 2 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/void/shift.png"} abilityName={"(Shift) - Swap"}>
+          - [NEW] LEVEL 4 UPGRADE: Void and his allies gain a 300HP shield whenever they enter the outgoing teleport zone. This applies to Wisps.
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/zeph-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/zeph.png"}>
+      ## Zeph
+
+      #### 
+
+      ### "We think bunnyhopping (that is: using well-timed jumps to preserve forward momentum) on Zeph is cool and it’s a mechanic we want to keep. At the same time, being able to do so continuously without consequence has proven to be too much power (note: we’re aware other Hunters can also bunnyhop but that change had complications, so if you know you know and we’ll nerf it next time). Admin, he’s doing it sideways! (if you understood this reference, congratulations you’re old as hell)"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Bunnyhoping"}>
+          - Each subsequent hop after the first is 90% as effective as the last in preserving forward momentum
+          - This ‘dampening’ resets after 6 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/coming-soon.png"}>
+      ## [NEW] Beebo’s Boombox
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Plays otherworldly music that makes everyone in its radius invulnerable
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/coming-soon.png"}>
+      ## [NEW] Thorn Shell
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Gain 10% damage reduction and 20% damage reflect for 2.5 seconds. Additionally, on activation gain an additional short burst (0.3s) of 75% damage reflect
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/avalanche.png"}>
+      ## Avalanche
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - They’re back and should no longer hit targets a few screens away from their path (lol)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/mega-avalanche.png"}>
+      ## Mega Avalanche
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - They’re back and should no longer hit targets a few screens away from their path (lol)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/power-shuffler.png"}>
+      ## Power Shuffler
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now self-destructs when it upgrades a non-Exotic into an Exotic
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/abyss-specialist.png"}>
+      ## Abyss Specialist
+
+      #### 
+    
+      ### "Tracking an internal cooldown of 30 seconds is tough - especially for something as critical as “will I have an extra dash over the abyss or not?” With this change, it’s much easier to track if you ‘can’ proc Abyss Specialist, while also clamping down on extreme abyss mobility. Very elegant."
+
+      <PowerSpecificChangesContainer>
+        - Now consumes 50% of your glider gas instead of using a 30 second internal cooldown (if you have no glider gas, it will not proc)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/fate-rewinder.png"}>
+      ## Fate Rewinder
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now only restores 50% of your previous HP, instead of all of it
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/replicator.png"}>
+      ## Replicator
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Cooldown increased from 90 seconds >>> 5 minutes
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/wisp-vacuum.png"}>
+      ## Wisp Vacuum
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Vacuum force on living players cut by 50%
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/little-helper.png"}>
+      ## Little Helper
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Death Grenade drop rate has been reduced
+        - PREVIOUSLY:
+          - 14% Anywhere But Here
+          - 42% Death Circle Grenade
+          - 42% Ethereal Smoke
+         
+        - NOW:
+          - 14% Anywhere But Here
+          - 14% Death Circle Grenade
+          - 28% EMP Grenade
+          - 42% Ethereal Smoke
+        
+        - Drop count is still 2 of the above items
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<ConsumableChangesContainer>
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/gnarled-heart.png"}>
+      ## Gnarled Heart
+
+      #### 
+    
+      ### "More farming, more gold, more Gnarl Hearts. While we always love a good Gnarl Heart into the “really silly endgame puzzle” play, we think it should be a hard-commit strategy to get the necessary gold."
+    <ConsumableSpecificChangesContainer>
+      - Increased price from 75,000 >>> 112,500 gold
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/emp-grenade.png"}>
+      ## EMP Grenade
+
+      #### 
+    
+      ### 
+    <ConsumableSpecificChangesContainer>
+      - Throw a ground-targeted grenade that shreds armor and slows in an area-of-effect
+      - Deals 1 damage on explosion
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/ascended-armor.png"}>
+      ## Ascended Armor
+
+      #### 
+    
+      ### 
+    <ConsumableSpecificChangesContainer>
+      - UI now shows Ascended progress towards next tier
+      - More differentiated audio ceremony when upgrading to each tier
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/broken-armor.png"}>
+      ## Broken Armor
+
+      #### 
+    
+      ### 
+    <ConsumableSpecificChangesContainer>
+      - Reverted to previous broken armor texture to differentiate more from Red Armor
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+</ConsumableChangesContainer>
+
+<Custom title={"Global Shop"}>
+  "The goal is to keep up with SUPERVIVE’s movement/combat pace and to make shopping a viable action more often."
+
+  <Hr className="mb-5"/>
+
+  - Drop duration lowered to 10 seconds at all times in the match (previously was 20 seconds in the early/midgame and 10 seconds at endgame).
+  - Power prices in Global Shop increased to 2,500/5,000/10,000/20,000 for Tier 1/2/3/Exotics
+  - Soulbound scroll price increased from 2,000 >>> 5,000 gold
+</Custom>
+
+<Custom title={"Map"}>
+  ## Academy
+
+  "A nerf to all you yimyams who were looting the academy, reading all the books, and then teleporting out."
+
+  <Hr className="mb-5"/>
+
+    ### Academy Anomaly
+      - The Anomaly will now be OFF at game start
+      - The Anomaly will turn ON at the beginning of Day 2
+      - Quality-of-life change: New player tooltip added to the anomaly
+
+  <Hr className="mb-5"/>
+
+  ## Wellspring
+
+  "Wellspring’s needed an update for a while. The area’s felt a little crowded with the different elements - vines, 
+  wind rings, abyss, geysers. The wind rings and the large amount of abyss also generally let you bypass needing to 
+  play around the geysers as the main traversal tool for the high ground surrounding it. We’re doubling down on this 
+  area’s namesake so this biome is giving its intended combat texture."
+
+  <Hr className="mb-5"/>
+
+   - Removed most Glide Rings from the biome
+   - Added a larger geyser at the center of Wellspring
+   - Reduce some of the abyss
+   - Better pathing from Desert traveling north into Wellspring
+</Custom>
+
+<Custom title={"Team Communications"}>
+  "SUPERVIVE is most fun when you work together. We’re exploring ways to make it easier to non-verbally coordinate with teammates."
+
+  <Hr className="mb-5"/>
+
+  ## Ping Updates
+
+  "Two goals - one is to add more fidelity to non-verbal ping communication so that you can communicate intent easier, 
+  and the other is to update ping voiceover to better match player intention."
+
+    - You can now double-press the ping button to issue a red "Enemy Here" ping
+    - "Let's Go Here" voiceover (VO) plays on default (ground) pings
+    - "I'm Going Here" VO now plays when the ping wheel's green arrow is used (used to play “Let’s Go Here”)
+
+  <Hr className="mb-5"/>
+
+  ## Contextual Ping Updates
+
+  - Ping your HP bar to print your current HP & Mana into the chat
+    - If your HP is below 50% your Hunter will also say "I'm hurt!"
+    - If your HP is above 50%, but your mana is below 33%, your Hunter will say "I'm out of mana!"
+  
+  - Ping your empty food to say "I need food!"
+  - Ping Vaults to say "Vault here!"
+  - Pinging Armor now correctly says "Loot here!"
+  - Updated chat messages associated with various contextual pings to improve clarity
+  
+  - Using "Anywhere But Here" scroll or Teleport Soul now plays "I'm teleporting!" VO (used to say “I’m recalling”)
+  
+  - You can now emote while dead to communicate important messages such as “Airhorn” to your teammates
+  - Emotes from dead Hunters have a radio effect on their audio to make clear that the person speaking is speaking from beyond their grave
+
+  <Hr className="mb-5"/>
+
+  ## Emotes
+
+  "We’ve added VO to the Thumbs Up and Thumbs Down emotes (unlocked early in Hunter’s Journey) with the intention of making them more effective communication tools. Consider using these to inform allies that you agree… or disagree."
+
+  - Thumbs Up and Thumbs Down emote VO
+    - “Thumbs Up” emote now plays “Roger That” VO
+    - “Thumbs Down” emote now plays “No thanks / Nope” VO
+
+  - Decreased the number of Emote audio instances that can play simultaneously
+</Custom>
+
+<Custom title={"Client"}>
+  Match History - Ally Record
+    - Match history now displays your allies names and provides a button to bring up their player context menu for invites and player reporting
+
+  Hunter Mastery Mission - Felix (Burned Out)
+    - No longer tracks number of knocks caused by Level 2 Ignite
+    - Instead, tracks number of times Level 2 Ignite is applied
+    - Refreshes of the same application do not count
+    - Thresholds are not changed in any way
+</Custom>
