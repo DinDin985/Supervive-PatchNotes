@@ -1,0 +1,649 @@
+---
+title: "[MUST READ] FEB 5 PATCH - Gold MATTERS + Mobility Adjustments + Discord Social"
+cover-image: "/patch-notes/cover-images/must-read-feb-5-patch-gold-matters-mobility-adjustments-discord-social.png"
+date: "2/5/2025"
+description: "Big strategic changes are coming with this patch, so read up on what’s important!"
+subdirectory: "patch-notes"
+---
+
+<Introduction img={"/patch-notes/cover-images/crysta.png"}>
+  # [MUST READ] FEB 5 PATCH - Gold MATTERS + Mobility Adjustments + Discord Social
+
+  ## Big strategic changes are coming with this patch, so read up on what’s important!
+
+  ### DinDin | 2/5/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Okay this is one of the largest patches we’ve shipped, ever. And for good reason - there’s a lot of work to do as we 
+  rebuild the entire strategic layer of SUPERVIVE toward a brighter future. Speaking to the why: when we launched 
+  SUPERVIVE into open beta, we quickly saw that new players just didn’t know where to go or what to do in our more 
+  open-ended game. So we spiked some short-term changes like quests and the day 1 revival rules to try to expose the 
+  base game more quickly—which netted out some improvements.
+
+  That said, we knew there would be knock-on effects for the entire state of the game, like the revival rules reducing 
+  the consequentiality of the early game, and that teams would still struggle to make strategic decisions once their 
+  basic quests were done.
+
+  Looking forward, we believe that SUPERVIVE needs a lot more strategic structure to work as a deep, competitive game. 
+  We think it’s important that players can intuit what to do next in the game to win, as well as feeling there are 
+  meaningful choices to make along the way. This all starts with having a strong, knowable game structure to evaluate 
+  how you’re doing, which we can then build off of. This is why we’re starting with gold mattering a lot more, as 
+  this is one of the cleanest benchmarks of progression that almost all players understand.
+
+  P.S. We’re still working on that fireside to talk about the state of the game (and where we’re bringing it), but 
+  need some time to bake our thoughts. Thanks!
+
+  - Also there is just an extreme amount of stuff in this patch you should read up on, including:
+  - You upgrade your equipment via gold at Basecamps, Boat Shops, and Wandering Shopkeepers
+  - You now drop half of your gold on death
+  - Powers below exotic are now soulbound
+  - Mobility adjustments across the Hunter roster
+  - You can link your Discord to import your friends list, send messages, and invite friends via Discord
+  - A new missions hub has been added to the lobby next to the queue button
+  - We are experimentally supporting controller gameplay
+
+</Summary>
+
+<PatchHighlights video={"https://www.youtube.com/embed/FAQbMFaiAGo"} img={""}>
+  We're back with another patch for Supervive and we're happy to showcase our new hunter Crysta.
+</PatchHighlights>
+
+<Custom title={"New Hunter: Crysta"}>
+  ![Crysta](/patch-notes/misc-images/crysta-full-body.png "Crysta")
+
+  "NOTE: In most regions you can get Crysta for free by participating in the Discord quest! Go check your Discord quests to see if you’re eligible."
+
+  <Hr className="mb-5"/>
+
+  - **(PASSIVE) - Reverberation**: Crysta’s abilities mark enemies that her basic attacks and ultimate can detonate.
+
+  - **(LMB) - Maybelle & Boo**: Fire a shot from your drone, dealing damage, and detonating Reverberation.
+
+  - **(RMB) - Flux Snare**: Fire an energy snare that does damage on the way out, then returns: pulling, dealing damage, and grounding targets it hits on the way back.
+
+  - **(SHIFT) - Double Dash**: A short dash with two charges. After every dash, Crysta shoots an empowered doubled basic attack, which can stagger monsters.
+
+  - **(Q) - Magireactive Burst**: Press to fire a damage zone to target location. Press again to detonate, dealing damage to enemies in the zone.
+
+  - **(R) - Nuclarite Salvo**: Fire a barrage of 5 energy beams at the target location, alternating over each shoulder, firing two projectiles on the last shot.
+</Custom>
+
+<Custom title={"Discord Social"}>
+  "We believe SUPERVIVE is best played with friends and so we’re partnering with Discord in order to make that 
+  easier for everyone. SUPERVIVE accounts can now be linked with Discord!"
+
+  <Hr className="mb-5"/>
+
+  - Linking your Discord account will allow you to do the following:
+    - See your Discord friends on your SUPERVIVE friends list
+    - You can send party invites to your Discord friends, and they can accept them from in-game and/or from Discord itself
+    - You can send Discord friend requests to your SUPERVIVE friends who have linked to Discord
+    - Message them while in-game and have those messages persist between Discord and SUPERVIVE
+      - NOTE: We do not have any access to your entire private DM history - our platform just acts as a data pipeline to Discord, who stores your messages on their platform
+
+  { /* Comment for spacing */}
+
+  - Display a rich social presence to Discord so friends can know how many minutes you are into your Squads game and when they can jump in.
+
+  { /* Comment for spacing */}
+
+  - You can unlink in the settings menu
+</Custom>
+
+<Custom title={"Ranked Party Restrictions"}>
+  "In the Beebo patch we changed matchmaking in Ranked to be based on a combination of both rank and your MMR. 
+  This has improved matches and ensured that players are being matched more consistently with people of similar 
+  ranks. Historically we’ve let GrandMaster players party with Bronze players, which as you can imagine can make 
+  fair matchmaking pretty difficult. You can continue to party with friends in normal games with no restrictions, 
+  but when it comes to earning RP, there are now limits to how far apart ranks can be within a party."
+
+  <Hr className="mb-5"/>
+
+  - The following is the full breakdown of allowed ranks (left is highest rank in your party, right is lowest rank allowed):
+    - Platinum & lower &lt;&gt; Bronze
+    - Diamond &lt;&gt; Gold
+    - Master &lt;&gt; Platinum
+    - GrandMaster+ &lt;&gt; Diamond
+
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Early Game Structure - Gold Matters
+
+    "A major theme of feedback we’ve heard from players across all skill bands (especially new ones) is that the early 
+    game of SUPERVIVE is really free-flowing, which results in an experience where it’s hard to know: am I doing the 
+    right things? Am I playing optimally or not?""
+
+    "The changes we made to the leveling structure (removing daily level caps) was the first step. We’re continuing 
+    on that path to both simplify our various ‘progression bars’ in the game, as well as having two key measuring 
+    sticks of power: levels and gold earned."
+
+    <Hr className="mb-5"/>
+
+    - You now upgrade your equipment at Shops with gold
+    - Monsters mostly drop gold (Chargers and Screamers occasionally drop potions)
+    - All purple chests now drop guaranteed gold - along with other stuff
+    - You can now shop at Base Camps, Boat Shops, or wandering Shopkeepers
+    - The Anywhere Shop has been disabled
+    - Cooking is gone
+    - You must purchase consumables (VIVE Brew, etc) at Shops or looted from enemy deathboxes
+
+    {/* Comment for spacing */}
+
+    - ‘Gold Score’ (a combination of ‘held gold’ and ‘spent gold’) has been added to the UI - this is shown in the top right, next to damage, and on the scoreboard next to Held Gold. You can use this score to roughly calibrate enemy strength in terms of what they’ve purchased for upgrades or compare farm rates with the rest of your team.
+
+    {/* Comment for spacing */}
+
+    - Various parts of the economy have been tuned for this new gold world (including Shop costs and how much gold monsters give)
+    - All boss monsters except biome bosses (the ones that spawn after you’ve cleared the zone) have had their EXP and gold rewards significantly increased
+      - EXP Increased about 2.5x
+      - Gold reward increased from ~600 gold to always giving 2,000 gold for every nearby ally
+
+    {/* Comment for spacing */}
+
+    - After the last night of the game, if there aren't any Shopkeepers in the game, one will be spawned at random and dropped onto the map after a short duration
+    - Also a reminder that if your team doesn’t own a Base Camp you can still upgrade and buy supplies at Boat Shops and wandering Shopkeepers.
+  </SystemChanges>
+
+  <SystemChanges>
+    ## More Consequence - Gold Drops
+
+    "A criticism of our day 1 revival rules is that there’s no early game consequence (valid). Trying to address that:"
+    
+    <Hr className="mb-5" />
+
+    - When you die, you lose 50% of your gold
+  </SystemChanges>
+
+  <SystemChanges>
+    ## EXP Changes
+
+    "One of the biggest pain points we’ve heard with the leveling changes is that it can take forever to get your ‘kit 
+    unlocked.’ Part of what we liked about adding additional levels is more space between the kit unlocked breakpoint 
+    and getting your ultimate, so we’re shifting EXP from 1, 2, and 3 to levels 4, 5, and 6 so you can unlock your kit 
+    faster but still take the same amount of time to get your ultimate."
+
+    "Attached to this, we overshot our changelist last patch in swinging the game too hard toward PvE farming, so we’re 
+    increasing the rewards of PvP (especially early game PvP) so those skirmishes matter in building a lead."
+    
+    <Hr className="mb-5" />
+
+    - EXP gained from knocking enemies has been increased across the board (when they are higher level, at-level, or below level)
+    - PvP knocks will grant a full level no matter what if you’re below level 3
+    - Opening boxes and vaults now give XP, which scales up with the phase of the game
+    - Level 1-6 EXP per-level requirements changed from 50/65/80/95/110/300 >>> 45/55/85/100/115/300
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Soulbound Powers (below Exotic)
+
+    "In our current gold-matters world, we’re seeing powers be deprioritized for the more guaranteed, reliable value of 
+    equipment upgrades (which you don’t lose when you die). We want players to be able to learn and appreciate the value 
+    of powers, so that starts with them being reliably accessible at least throughout a game session."
+
+    <Hr className="mb-5"/>
+
+    - All powers are soulbound, except exotics (meaning: powers don’t drop on death, only on team wipe)
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Monster Staggering
+
+    "What we mean by monster staggering: when there is a blue circle under the monster, hitting them with an ability 
+    will ‘stagger’ the monster, dealing a large % of their health as damage, and making them take bonus damage for a 
+    set period of time. With PvE playing a larger role in the game, we’re going to continue refining mechanics so they 
+    feel interesting."
+
+
+    <Hr className="mb-5"/>
+
+    - Monster stagger windows are increased by 1 second
+    - Monsters now become staggerable at set health thresholds
+    - Stagger damage has been lowered from 60% total health >>> 25% total health (but there are more windows)
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Pod Drop Speed Increased, Especially for Solo Pods
+
+    "In a world where split gold farming is more valuable, we’ve seen the desire for teams to split up even more in 
+    the early game. Basically this allows solo pods to break off and move further away from the main ‘team’ pod, faster."
+    
+    <Hr className="mb-5" />
+
+    - Team drop pod speed has been increased by +50%
+    - Solo pod drop speed has been increased by +200%.
+    - Detach from team pod time reduced from 1 >>> 0.5 seconds
+  </SystemChanges>
+
+   <SystemChanges>
+    ## Adding a little more build texture for where you put your early-to-midgame ability levels.
+
+    <Hr className="mb-5"/>
+
+    - All Hunters can upgrade their primary attack (LMB), which will either grant +10% damage per upgrade or +20% ability power ratio (meaning they scale with your ability power)
+  </SystemChanges>
+
+   <SystemChanges>
+    ## Mobility, Balance, and You
+
+    "We like that our action combat feels visceral and fast, but want to address cases that make you (or your target) 
+    feel out of control. These changes are targeted at making combat more predictable, knowable, and reactable by adding 
+    windowing—meaning clear windows or moments where you and your opponent can ‘see’ the next step in the combat flow and 
+    can micro-adjust, rather than just slamming out abilities.
+
+    Also to call out the addition of ‘winddown’ frames on Oath and Brall - we know that having mechanical optimizations for 
+    hyper-mobility is cool, but it creates an arms race where we either have to buff up the entire roster to match that level
+    of speed and fluidity (we’re already seeing unreactable engagements) or we have to hold the line with reductions so 
+    there’s some form of parity. We choose the latter.
+
+    Anyway, going to call out the changes we’ve made explicitly toward our goals of mobility balance, the details of which 
+    will then be noted under the Hunter’s total changelist."
+
+    <Hr className="mb-5"/>
+
+    - Joule’s Voltaic Spear (RMB) now spawns a lightning orb after a brief delay, rather than instantly, so she can’t instantly combo the two abilities for a free, unreactable dash reset
+    - Joule’s Thunderstorm (R) has had its cast time increased and has a landing indicator
+    - Kingpin’s level 4 dash (SHIFT) is less effective at resetting his shotgun (LMB) attack speed so he can’t instantly mow you down with a combo
+    - When Brall and Kingpin cast their big windup ability (Brall’s RMB or Kingpin’s Q) and then immediately dash to negate the cast-time of the ability, they are now restricted in how much they can turn/aim that ability
+    - Brall’s Tether Strike (Q) impulse force has been decreased, cooldown has been increased, and level 4 upgrade now refunds less cooldown when an enemy is hit. Additionally, the tether now breaks if Brall is stunned, and cannot be activated if Brall is rooted or grounded
+    - Oath and Brall now have ‘winddown’ frames on certain movement abilities, where they can’t immediately use their glider to sustain momentum
+    - Bishop’s Blast-Off! (R) now has a cast time wind-up and has had its velocity decreased
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/bishop-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/bishop.png"}>
+      ## Bishop
+
+      #### Empowered LMB increased damage & explosion radius, RMB level 4 upgrade changed, Q level 4 upgrade changed, R inital cast time increased and velocity decreased.
+
+      ### "We’re hearing feedback that Bishop’s talents don’t have a lot of diversity, so we’re adjusting the other options to be more attractive, and giving her a general buff. Regarding the ultimate change - we like biasing her ult usage more toward offensive engages and less defensive ‘get out of jail’ use."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/LMB.png"} abilityName={"(LMB) - Rocket Launcher - Big Rocket"}>
+          - Empowered shots now deal +20% more damage and have +10% explosion radius
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/RMB.png"} abilityName={"(RMB) - Displacement Charge"}>
+          - Level 4 upgrade now gives: -5 second cooldown and radius/impulse have been increased
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/Q.png"} abilityName={"(Q) - Haymaker"}>
+          - Level 4 upgrade now gives a shield for hitting multiple targets (up to 2) and reduces the cooldown by 1 second for each target hit
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/R.png"} abilityName={"(R) - Blast-off!"}>
+          - Initial cast time increased from 0.3 >>> 0.5 seconds
+          - Velocity decreased from 2500 >>> 2250
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+      ## Brall
+
+      #### Passive more easily identifiable, RMB quality of life changes, increased cast time, and execution slam multiplier & threshhold decreased, shift cooldown increased, Q cooldown increased, impulse force decreased, and level 4 upgrade reduced cooldown refund.
+
+      ### "Still does a lot of damage and is moving all over the place. We talked about the movement changes above, but to especially call out the winddown frames - we understand going from super-mobile Brall to this version might feel more restrictive, but we have to start clamping down on free movement to get to a more balanced world. Context on the RMB change: it’s an experiment where the spell is slower and heavier, but easier to aim—hopefully makes him feel rewarded for landing it, while being clearer to enemies."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - Brall’s Flame Step (SHIFT) and Adaptive Strike (RMB) dash now have ‘winddown’ frames where Brall can’t immediately enter a glider state to preserve extreme forward momentum
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/passive.png"} abilityName={"(Passive) - Blazing Spirit"}>
+          - Updated Blazing Spirit to be way more noticeable while also framing Brall more clearly
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/RMB.png"} abilityName={"(RMB) - Adaptive Strike"}>
+          - Cast time increased from 0.35 >>> 0.55 seconds
+          - Brall can now aim RMB freely
+          - Now has a warning icon overhead of the Brall when casting
+          - Now displays separate cast bars for press and hold vs. tap
+          - Execution Slam
+            - Execution multiplier decreased from 2x >>> 1.5x
+            - Execution threshold decreased from 45% >>> 35%
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/shift.png"} abilityName={"(Shift) - Flame Step"}>
+          - Cooldown increased from 10/6/6/6 >>> 11/9/7/6 seconds
+          - Casting Adaptive Strike (RMB) and then using Flame Step (SHIFT) now restricts how far you can turn while dashing
+            - This means you can flick your RMB a lot less if you try to use Shift to get around RMB’s cast time  
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/Q.png"} abilityName={"(Q) - Volcanic Rebuk"}>
+          - Impulse force decreased from 2150 >>>> 1900
+          - Cooldown increased from 14.5/12.5/10/10 >>> 18/16/14/12 seconds
+          - Level 4 Upgrade now refunds 50% >>> 33% remaining cooldown when an enemy is hit
+          - Tether now breaks if Brall is stunned
+          - Tether cannot be activated when Brall is Rooted or Grounded
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/ghost-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/ghost.png"}>
+      ## Ghost
+
+      #### Shift level 4 now grants movement speed.
+
+      ### 
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/shift.png"} abilityName={"(SHIFT) - Combat Slide"}>
+          - Level 4 Upgrade now grants a 2 second Movement Speed buff on dash end
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/kingpin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/kingpin.png"}>
+      ## Kingpin
+
+      #### Shift level 4 attack speed reset reduced.
+
+      ### "We’re keeping an eye on Kingpin, but for now just trying to curb his more extreme combos."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/kingpin/shift.png"} abilityName={"(Shift) - Brute Dash"}>
+          - Level 4 upgrade attack speed reset has been reduced from 100% >>> 50%
+          - Casting Primal Slam (Q) and then using Dash (SHIFT) now restricts how far you can turn while dashing
+            - This means you can flick your Q a lot less if you try to use Shift to get around Q’s cast time
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+   <HunterChanges imgBig={"/patch-notes/hunter-portraits/jin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/jin.png"}>
+      ## Jin
+
+      #### LMB damage reduced, Q death blow damage increased & execution damage scaling decreased, R cooldown increased.
+
+      ### "We felt like Jin did too much damage with his LMBs when sticking on targets and had access to his ultimate too frequently. We still want him to fulfill his role as an assassin so we’ve adjusted his Q to be slightly more consistent."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+         <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/LMB.png"} abilityName={"(LMB) - Ash’Gara Warblade"}>
+          - Damage reduced by 20%
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/LMB.png"} abilityName={"(Q) - Flip Slash / Death Blow"}>
+          - Red decals now display on both spells to better communicate hitboxes
+          - Death Blow base damage increased from 58/72/90/90 >>> 81/101/126/126
+          - Death Blow AP ratio scaling increased from 29%/36%/45%/45% >>> 38%/48%/60%/60%
+          - Death Blow execution damage scaling has been reduced from 100% &lt;&gt; 400% scaling to 100% &lt;&gt; 300% scaling from 0% to 80% missing health
+            - Death Blow should do more damage than before until around the 60% health mark
+            - Death Blow is slightly nerfed (~5%) to enemies below the 60% health mark
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/jin/R.png"} abilityName={"(R) - Feylight Clone"}>
+          - Cooldown increased from 40/35/30 >>> 45/40/35 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+   <HunterChanges imgBig={"/patch-notes/hunter-portraits/joule-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/joule.png"}>
+      ## Joule
+
+      #### RMB lighting orb now spawn after delay, shift explosion radius reduced, R cast time increased.
+
+      ### "Previously, Joule could snapcast her RMB and dash through it immediately knowing that it’d give her a reset. This change means that she’ll have to pause before committing. We know adding more windows to someone as lightning-fast as Joule may feel disruptive, but as we’ve said before, we need to start clamping down on these unreactable, hyper-fast actions to get to a readable, balanceable game state."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/RMB.png"} abilityName={"(RMB) - Voltaic Spear"}>
+          - Lightning orb now spawns instantly >>> after a 0.5 second delay
+            - NOTE: 0.5 seconds is the value we’re starting with. We still want Joule to feel like lightning, but we also want it to feel like there’s a breath for other players to react. This is a lever we’re looking to tune so tell us how you feel.
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/shift.png"} abilityName={"(SHIFT) - Lightning Strike"}>
+          - Dash explosion radius reduced from 200 >>> 160
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/R.png"} abilityName={"(R) - Thunderstorm"}>
+          - Cast time increased from 0.15 >>> 0.3 seconds
+          - Landing indicator added
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/oath-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/oath.png"}>
+      ## Oath
+
+      #### Shift reduced hyper mobility.
+
+      ### "We’ll just keep saying this: we know that having cool mechanical optimizations for hyper mobility is fun, but it sets the stage for a mobility arms-race where everyone needs to either be able to react to lightning fast engagements or have ones of their own. Gotta start somewhere."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - Oath’s Spin Dash (SHIFT) and Magnetic Hammer (LMB) attack now have ‘winddown’ frames where Oath can’t immediately enter a glider state to preserve extreme forward momentum
+        </HunterAbilityChanges>
+
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+  
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/shrike-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/shrike.png"}>
+      ## Shrike
+
+      #### LMB increased rate of fire, Q picking up ward makes you vulnerable and ward health doubled.
+
+      ### 
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+         <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - Bugfix: Fixed an issue where Shrike’s Disengage (SHIFT) would sometimes get overwritten when trying to bunnyhop
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/LMB.png"} abilityName={"(LMB) - Truetalon Rifle"}>
+          - Reduced cooldown from 1.7 >>> 1.5 seconds per shot (this increases her rate of fire)
+          - Proc-ing Raptor’s Mark (PASSIVE) can now stagger Monster
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/RMB.png"} abilityName={"(RMB) - Dive-Bomb"}>
+          - Should feel better to use
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/Q.png"} abilityName={"(Q) - Scout Hawk"}>
+          - Picking ward up makes you vulnerable and roots you now
+          - Doubled the health of the ward, and added health bar visuals
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/void-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/void.png"}>
+      ## Void
+
+      #### LMB damage scaling changed.
+
+      ### 
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/void/LMB.png"} abilityName={"(LMB) - Gravity Orb"}>
+          - Damage no longer scales continuously with time spent not firing. Instead, damage is binary (fully charged vs. uncharged)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+</HunterChangesContainer>
+
+<Custom title={"Consumables"}>
+  "We think the average SUPERVIVER-ian should be able to afford basic household goods, so we’ve asked vendors to lower 
+  prices and they listened (also they really upped their stock). One spicy one to note is that MOST WANTED is now 
+  available at the Shop - a hero play is just 3000 gold away."
+
+  <Hr className="mb-5"/>
+    Base Camp Shop Prices:
+      - Hypervive: 2000 >>> 1000 gold
+      - Jump Pad: 2000 >>> 3000 gold
+      - *NEW* Elixir of Health: 1500 gold
+      - *NEW* Elixir of Mana: 1500 gold
+      - *NEW* Elixir of Speed: 1500 gold
+      - *NEW* Most Wanted: 3000 gold
+      - *NEW* Ultravive: 5000 gold
+      - Deployable Base: 5000 gold
+      - Respawn Beacon (Unchanged): 8000 gold
+</Custom>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/abyssal-eye.png"}>
+      ## Abyssal Eye
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Holder can now see invisible units
+        - Only their vision cone can see invisible units
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/blinkstone.png"}>
+      ## Blinkstone
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Cooldown increased from 12.5 >>> 20 seconds
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/delicate-barrier.png"}>
+      ## Delicate Barrier
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Linger duration increased from 0.5 >>> 1 seconds
+        - Reduced damage decreased from 50% >>> 30%
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<ConsumableChangesContainer>
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/scan-grenade.png"}>
+      ## Scan Grenade
+
+      #### 
+    
+      ### "If you’re tired of getting bush cheesed, try one of these out."
+
+    <ConsumableSpecificChangesContainer>
+      - Can now be picked up off the ground
+      - Increased cast range by 500
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+</ConsumableChangesContainer>
+
+<Custom title={"Map"}>
+  ![Map](/patch-notes/misc-images/must-read-feb-5-patch-gold-matters-mobility-adjustments-discord-social/map.png "Map")
+
+  <Hr className="mb-5"/>
+
+  Ion Acres + Site 38
+    - Has received a Gameplay and Visual Update
+
+  New Map Area: Fortress (a sub-area of Chaos Steppes)
+    - Gameplay and Visual Update
+</Custom>
+
+<Custom title={"Client"}>
+
+  <Hr className="mb-5"/>
+
+  Practice While in Queue
+    - A common request from players has been that once you’re queued you’d like to be able to jump into Practice.
+    - We’ve added a new queueing option so you don’t need to re-queue from Practice Mode
+  
+  Custom Games
+    - You now have the ability to disable the Day 1 revival rules in Custom Games as a setting
+  
+  Tutorial
+    - Removed parts that are no longer accurate
+</Custom>
+
+<Custom title={"Team Communications/Coordination"}>
+  ![Team Communications/Coordination](/patch-notes/misc-images/must-read-feb-5-patch-gold-matters-mobility-adjustments-discord-social/team-communications-coordination.png "Team Communications/Coordination")
+
+  <Hr className="mb-5"/>
+
+  - "Fight!", "Group Up!", and "Help!" have been added to the ping wheel, now with new art
+</Custom>
+
+<Custom title={"Ally Camera"}>
+  "We have new Keybinds to have your camera look at your teammates"
+
+  <Hr className="mb-5"/>
+
+  - Holding F2, F3, F4 switches the camera to your ally location for P2, P3, and P4
+  - Keys are rebindable
+  - You still have control over your character while looking at your ally
+  - Will try and show ally deathbox if they're dead
+</Custom>
+
+<Custom title={"Voiceover (VO) Updates"}>
+
+  <Hr className="mb-5"/>
+
+  - Added Announcer VO for 4 and 3 squads remaining
+  - Increased Ability VO cooldowns across the board (e.g., Ghost players will hear "Firing Downrange!" less often)
+
+</Custom>
+
+<Custom title={"Experimental Controller Support"}>
+ "VERY EXPERIMENTAL. TRY AT YOUR OWN DISCRETION BUT MAYBE TRY IN PRACTICE MODE FIRST."
+
+  ![Experimental Controller Support](/patch-notes/misc-images/must-read-feb-5-patch-gold-matters-mobility-adjustments-discord-social/experimental-controller-support.png "Experimental Controller Support")
+
+  <Hr className="mb-5"/>
+    KNOWN ISSUES:
+      - The Controller is known not to work in the following areas:
+        - Out of Game
+        - Drop Phase (selecting drop location)
+        - When interacting with Shop UI / Death boxes
+        - Interacting with other HUD elements (when fully eliminated)
+</Custom>
+
+<Custom title={"Missions Hub"}>
+  "While some players are grinding ranked all day every day, for many other players Hunter’s Journey, Mastery, and 
+  the Battle Pass are the core of their progression experience. Daily and Weekly missions are one of the biggest 
+  sources of EXP and while we’ve had a missions tab, it was hard to notice and most players never really realized 
+  that they were there. We’ve created a new missions hub that highlights new missions available to you and should 
+  make it easier for you to identify things to do to level up faster."
+
+  <Hr className="mb-5"/>
+
+  - A new missions hub button has been added to the lobby
+  - When you have new missions it will light up with a notification
+  - When missions are complete, go back to the hub after your game to claim your rewards
+</Custom>
+
+<BugFixes>
+  - Void has received updated tooltips (thank you OmnipresentOatmeal!)
+  - Fixed an issue where Crystals that spawn in the second phase of Biome Soul Bosses would fall over and die on their own
+  - Mana Cloud: Updated activation VFX
+  - Hudson: If you hit an enemy with your ultimate, you are no longer yaw locked to face them
+  - Interact: Increased the interact buffer time from 0.2 >>> 0.5 second to make it easier to interact with things like sniper ward
+  - The Two-Way Tunnels and Beebo Hunter missions now progress if you get an assist while fulfilling the mission conditions, not just a knock (thank you for the suggestion Keldric Usugi!)
+</BugFixes>

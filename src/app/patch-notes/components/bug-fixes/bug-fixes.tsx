@@ -26,7 +26,7 @@ export default function BugFixes({
     <section
       id="Bug Fixes"
       className={twMerge(
-        "mx-auto mb-10 flex w-10/12 scroll-mt-24 flex-col",
+        "mx-auto mb-10 flex w-10/12 scroll-mt-28 flex-col",
         sectionVariantsKey
       )}
     >
