@@ -1,13 +1,11 @@
+import { MoreMenu } from "./MoreMenu";
 import NavbarLogo from "./NavbarLogo";
 
 export default function NavbarLinks() {
   const links = [
-    { name: "Account", url: "http://accounts.theorycraftgames.com/" },
-    { name: "Creators", url: "http://nexus.gg/supervive" },
-    { name: "Refer-a-friend", url: "http://accounts.theorycraftgames.com/" },
-    { name: "Twitch Drops", url: "https://drops.theorycraftgames.com/" },
-    { name: "Patch Notes", url: "/patch-notes" },
-    { name: "News", url: "/news" },
+    { name: "Patch Notes", href: "/patch-notes" },
+    { name: "Hunters", href: "/hunters" },
+    { name: "News", href: "/news" },
   ];
 
   return (
@@ -15,7 +13,7 @@ export default function NavbarLinks() {
       <NavbarLogo />
 
       <ul className="hidden h-full items-center justify-start 2xl:flex">
-        {links.map(({ name, url }, i) => {
+        {links.map(({ name, href }, i) => {
           return (
             <li
               key={i}
@@ -23,13 +21,15 @@ export default function NavbarLinks() {
             >
               <a
                 className="transition-all duration-300 hover:text-neon-mint"
-                href={url}
+                href={href}
               >
                 {name}
               </a>
             </li>
           );
         })}
+
+        <MoreMenu />
       </ul>
     </div>
   );
