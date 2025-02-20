@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function AbilitiesContainer({children}) {
-  return (
-    <div>{children}</div>
-  )
+export default function AbilitiesContainer({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div>{children}</div>;
 }
