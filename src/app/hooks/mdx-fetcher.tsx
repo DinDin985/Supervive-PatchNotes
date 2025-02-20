@@ -3,9 +3,18 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 import HunterIntro from "../../../draft/hunter-intro";
 import Hr from "../components/ui/hr";
-import NewsIntroduction from "../news/components/news-introduction/news-introduction";
+import AbilitiesContainer from "../hunters/components/abilities/abilities-container";
+import Ability from "../hunters/components/abilities/ability";
+import AbilitiesShowcase from "../hunters/components/abilities/ability-showcase";
+import Difficulty from "../hunters/components/introduction/difficulty";
+import Role from "../hunters/components/introduction/role";
+import Skins from "../hunters/components/skins";
 import NewsContent from "../news/components/news-content/news-content";
+import NewsIntroduction from "../news/components/news-introduction/news-introduction";
 import BugFixes from "../patch-notes/components/bug-fixes/bug-fixes";
+import ConsumableChanges from "../patch-notes/components/consumable-changes/consumable-changes";
+import ConsumableChangesContainer from "../patch-notes/components/consumable-changes/consumable-changes-container";
+import ConsumableSpecificChangesContainer from "../patch-notes/components/consumable-changes/consumable-specific-changes-container";
 import Custom from "../patch-notes/components/custom/custom";
 import EquipmentChanges from "../patch-notes/components/equipment-changes/equipment-changes";
 import EquipmentChangesContainer from "../patch-notes/components/equipment-changes/equipment-changes-container";
@@ -23,15 +32,49 @@ import PowerSpecificChangesContainer from "../patch-notes/components/power-chang
 import Summary from "../patch-notes/components/summary/summary";
 import SystemChanges from "../patch-notes/components/system-changes/system-changes";
 import SystemChangesContainer from "../patch-notes/components/system-changes/system-changes-containter";
-import ConsumableChanges from "../patch-notes/components/consumable-changes/consumable-changes";
-import ConsumableChangesContainer from "../patch-notes/components/consumable-changes/consumable-changes-container";
-import ConsumableSpecificChangesContainer from "../patch-notes/components/consumable-changes/consumable-specific-changes-container";
+import HunterIntroduction from "../hunters/components/introduction/hunter-introduction";
+
+const hunterOverviewsContentDir = path.join(
+  process.cwd(),
+  "src/app/hunters/content",
+);
 
 const patchNotesContentDir = path.join(
   process.cwd(),
   "src/app/patch-notes/content",
 );
+
 const newsContentDir = path.join(process.cwd(), "src/app/news/content");
+
+export async function getHunterOverviewBySlug(slug: string) {
+  const fileName = slug + ".mdx";
+  const filePath = path.join(hunterOverviewsContentDir, fileName);
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  const { frontmatter, content } = await compileMDX<{
+    title: string;
+    "cover-image": string;
+    date: string;
+    description: string;
+    subdirectory: string;
+  }>({
+    source: fileContent,
+    options: { parseFrontmatter: true },
+    components: {
+      Ability,
+      AbilitiesShowcase,
+      AbilitiesContainer,
+      Difficulty,
+      HunterIntroduction,
+      Role,
+      Skins,
+    },
+  });
+  return {
+    frontmatter,
+    content,
+    slug: path.parse(fileName).name,
+  };
+}
 
 export async function getPatchNotesPostBySlug(slug: string) {
   const fileName = slug + ".mdx";
@@ -99,6 +142,22 @@ export async function getNewsPostBySlug(slug: string) {
     content,
     slug: path.parse(fileName).name,
   };
+}
+
+export async function getHunterOverviews() {
+  const files = fs.readdirSync(hunterOverviewsContentDir);
+  const posts = await Promise.all(
+    files.map(
+      async (file) => await getPatchNotesPostBySlug(path.parse(file).name),
+    ),
+  );
+  return posts;
+}
+
+export function getAllHunterOverviewsSlug() {
+  const files = fs.readdirSync(hunterOverviewsContentDir);
+  const slugs = files.map((file) => ({ slug: path.parse(file).name }));
+  return slugs;
 }
 
 export async function getPatchNotesPosts() {

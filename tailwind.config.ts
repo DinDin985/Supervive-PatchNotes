@@ -230,6 +230,45 @@ const config: Config = {
             },
           },
         },
+        "hunter-difficulty": {
+          css: {
+            h2: {
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.xs"),
+              fontWeight: theme("fontWeight"),
+              letterSpacing: theme("letterSpacing.wide"),
+            },
+          },
+        },
+        "hunter-introduction": {
+          css: {
+            h1: {
+              fontWeight: theme("fontWeight.bold"),
+              fontStyle: "italic",
+              letterSpacing: theme("letterSpacing.wider"),
+              marginBottom: theme("spacing.1"),
+              textTransform: "uppercase",
+            },
+            h2: {
+              fontFamily: "'Quicksand', sans-serif",
+              marginBottom: theme("spacing.4"),
+            },
+            h3: {
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.sm"),
+            },
+          },
+        },
+        "hunter-role": {
+          css: {
+            h2: {
+              fontFamily: "'Quicksand', sans-serif",
+              fontSize: theme("fontSize.xs"),
+              fontWeight: theme("fontWeight"),
+              letterSpacing: theme("letterSpacing.wide"),
+            },
+          },
+        },
         "news-content": {
           css: {
             h1: {

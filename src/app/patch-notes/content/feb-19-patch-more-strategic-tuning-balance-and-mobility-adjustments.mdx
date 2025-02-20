@@ -1,0 +1,517 @@
+---
+title: "FEB 19 PATCH - More strategic tuning, balance, and mobility adjustments"
+cover-image: "/patch-notes/cover-images/season-zero.png"
+date: "2/19/2025"
+description: "Think of this as a continuation of our work from the previous patch"
+subdirectory: "patch-notes"
+---
+
+<Introduction img={"/patch-notes/cover-images/season-zero.png"}>
+  # FEB 19 PATCH - More strategic tuning, balance, and mobility adjustments
+
+  ## Think of this as a continuation of our work from the previous patch
+
+  ### DinDin | 2/19/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Welcome back. We know things have been hectic with last patch’s massive set of structural changes, so this patch 
+  we’re focused on follow-up: listening to feedback, smoothing out economic imbalances, and continuing our work on 
+  mobility. Let’s get to it!
+</Summary>
+
+<PatchHighlights video={""} img={"/patch-notes/cover-images/season-zero.png"}>
+  This part 2 of the previous patch has some new and exciting changes for lots of hunters and systems. Let us 
+  know your feedback!
+</PatchHighlights>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Early Game Structure - Gold Matters Pt. 2
+
+    "Now that Gold matters more and related changes have settled, we’re doing another pass to smooth purchasing out. 
+    In addition, we’re always thinking of ways to get you to use powers (they’re fun, we promise!) so testing out a 
+    low-scope way to provide even more power reliability through a ‘fixed’ power store that rotates hourly."
+
+    <Hr className="mb-5"/>
+
+    **Base Camps**
+      - Armor Repair costs cut in half
+      - Base Camp Shop now has a fixed/permanent set of 4 powers that randomly rotates every real-life hour
+        - Powers are randomly selected and can range from rune to purple (Epic) tier rarity
+        - Prices are fixed to 1000/1000/1500/2000 gold
+
+    <Hr className="mb-5"/>
+
+    **Shop and Trade**
+      - Base Camp and shopkeeper models have been updated to make shop destinations clearer
+      - Shop styling UI has been updated to better support the amount of inventory
+      - Gold requests and gold trading sound effects have been updated to address feedback that people miss the pop-up request for Gold on the left side of the screen
+      - Shop Icons and Airdrop shop icons have been updated to be larger and more noticeable
+
+    <Hr className="mb-5"/>
+
+    **Quests**
+      - Quests that gave Scrap >>> give 1,000 gold
+      - 2 new in-game quests have been added:
+        - Claim Meteor Soul
+        - Capture an enemy Basecamp
+      - Reward values for quests have been updated
+      - All 3 Starter Quests now unlock a "Chain" into another quest
+        - Brawlers >>> Wipe an enemy team
+        - Farm Minions >>> Claim Meteor Soul
+        - Unlock 1 Vault >>> Capture an enemy Basecamp
+  </SystemChanges>
+
+  <SystemChanges>
+    ## EXP Changes - Pt. 2
+
+    "You should be rewarded for taking team actions (so we’re doing that). We also don’t want games to feel so doomed 
+    if you’re really far behind, so attaching a stronger incentive to the comeback mechanic seems like a fine idea. 
+    Also remember: you can buy Most Wanted in the shop!"
+
+    <Hr className="mb-5"/>
+
+    Additional XP for In-Game Actions: These actions now grant XP to the instigator and nearby allies:
+      - Capturing enemy basecamps
+      - Capturing a neutral basecamp for the first time (this does not apply to deploying your basecamp again)
+      - Destroying a vault obelisk for the first time
+      - Using a UAV for the first time
+
+    <Hr className="mb-5"/>
+
+    Most Wanted catchup XP should now more effectively catch you up to the level floor of each phase
+      - For example: in the lategame, it should bring you up to at least level 13 if you complete it 
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Gold Bounties
+
+     "PvP success should still matter, even if your target’s got empty pockets."
+
+    <Hr className="mb-5"/>
+
+    - All kills now grant a flat 400 gold bounty bonus
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Mobility, Dash Jumps, and You
+
+    "Last patch we said we wanted to make combat more predictable, knowable, and reactable because mobility had 
+    gotten a little out of hand. Specifically: hard-to-react (or unreactable) engagements that can come from 
+    off-screen, or wild, careening dashes that make aggressive targets so hard to predict. Today we’re continuing 
+    the work by making jump dashes (and dash jumps) less explosive, which should lead to more predictability and 
+    depth in combat engagements (there’s also a silver lining here for Brall, Oath, and Jin players)."
+
+    <Hr className="mb-5"/>
+
+    **Jump > Dash:** 
+    - Short duration dashes (\<1) now have 15% reduced speed when used from a standstill. Longer and/or precision dashes (Celeste Dash, Joule Dash, Bishop Ult, Felix Ult, Beebo Ult) remain unaffected.
+  
+    <Hr className="mb-5"/>
+
+    **Jump > Dash > Glide:**
+    - Hunters still gain momentum from this combination, but braking now kicks in slightly faster. With this, we are removing the individual glide suppression (aka the gliding prevention that kicked in immediately after using certain abilities) that was on Brall, Oath, and Jin (we’ll note this in separate Hunter balance notes)
+
+    <Hr className="mb-5"/>
+
+    **Dash > Jump:**
+    - Dampening is now applied more consistently while Dashing, preventing free big jumps. Still worth doing, but shouldn’t be as crazy as it used to be.
+
+    <Hr className="mb-5"/>
+
+    **Glider:**
+    - Max glider gas increased by 25% to compensate for some of the mobility nerfs (we like mobility when it has risks or more readability)
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Solo Carry Potential
+
+    "Nobody likes to start with a caveat but there was a spicy version of this change we tested a few weeks back 
+    (FULL resets on kills) and lots of people didn’t like it. This is not that change.
+
+    Our goals remain the same though: let players dream of taking on outnumbered fights (we call them 1vNs) with 
+    the perfect play. We like this version because while it is appreciable power per knock, it’s not overwhelmingly so
+    and still keeps fights readable."
+
+    <Hr className="mb-5"/>
+
+    - PvP knocks will now grant a Heal and cooldown reset for your dash (SHIFT) ability
+    - Heal amounts vary depending on the Hunter’s dueling potential:
+      - Medium heal (500 heal): Beebo, Bishop, Celeste, Crysta, Elluna, Ghost, Myth, Shrike, Void, Zeph
+      - Small heal (250 heal): Brall, Felix, Hudson, Jin, Joule, Kingpin, Oath, Shiv
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Basic Attack (LMB) Leveling Removed
+
+    "In theory, introducing new things to upgrade should add more build diversity (upgrade my LMB or something else?), 
+    but since LMB upgrades were just raw power, the decision was rather flat for everyone (LMB-based Hunters upgraded 
+    it first at the cost of their cool abilities. Non-LMB-based Hunters upgraded it—surprise!—last). We hear your 
+    feedback this wasn’t it, so we’re reverting:"
+
+    <Hr className="mb-5"/>
+
+    - You can no longer upgrade your basic attack (LMB)
+    - Level 14 & 15 now gives health & ability power - no ability point
+    - Basic attack (LMB) damage has been normalized to old values (fully upgraded values)
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/beebo-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/beebo.png"}>
+      ## Beebo
+
+      #### Base Stats increased and Q can now revive and stomp wisps.
+
+      ### "a.) Beebo could use durability buffs, so here are durability buffs."
+
+      ### "b.) We had a long, philosophical discussion as to what degree of sentience is necessary to be held responsible for a life (both the taking and giving of), and came to the conclusion that a Beeb-omb is indeed a living, sentient capable of being held accountable for mortal outcomes, despite leading such short, brutal existences themselves (sometimes being hit by a bat in the middle of it). Maybe it gives them a deeper sense of purpose before blowing up. We like to think so."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Base health increased from 1060 >>> 1200
+          - Health gain per level increased from 62 >>> 72
+          - At max level this is about ~250 additional health
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/Q.png"} abilityName={"(Q) - Beeb-omb"}>
+          - Beeb-ombs can now revive ally wisps and stomp enemy wisps
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+      ## Brall
+
+      #### 
+
+      ### "See the mobility changes above!"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - Can now use glider immediately after using Flame Step (SHIFT) and Adaptive Strike (RMB)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/bishop-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/bishop.png"}>
+      ## Bishop
+
+      #### RMB cooldown increased.
+
+      ### "Bishop's new RMB upgrade from the previous patch has been gaining popularity in high-MMR play. We're reducing the uptime to lower its power."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/bishop/RMB.png"} abilityName={"(RMB) - Displacement Charge"}>
+          - Cooldown increased from 15/10/10/5 >>> 15/12.5/12.5/10
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/celeste-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/celeste.png"}>
+      ## Celeste
+
+      #### Base movement speed increased and Q health increased and cooldown decreased.
+
+      ### "We like how the last set of changes to Celeste made her more effective at controlling space and think we can go even further (SUPERVIVE needs all the space controllers it can get!)."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"Base Stats"}>
+          - Base movement speed increased from 415 >>> 445
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/celeste/Q.png"} abilityName={"(Q) - Frozen Barricade"}>
+          - Cooldown reduced from 25/20/15 >>> 20/17.5/15 seconds
+          - Health increased by 250 across all levels
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/crysta-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/crysta.png"}>
+      ## Crysta
+
+      #### Passive damage reduced, shift recharge time increased and level 4 refund decreased, RMB cooldown increased, and R damage increased.
+
+      ### "Crysta was looking very strong from release. We want to be cautious of overnerfing, but we're hitting damage across the board to bring her in line with the rest of the roster."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - BUGFIX: Fixed a bug where Crysta was getting Attack Speed when building Cooldown Reduction
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/passive.png"} abilityName={"(Passive) - Reverberation "}>
+          - Damage reduced from 51 (+32% ability power) >>> 48 base (+30% ability power)
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/shift.png"} abilityName={"(Shift) - Double Dash"}>
+          - Recharge time increased at higher levels from 15/11/7 >>> 15/12/9 seconds
+          - Level 4 refund on passive proc reduced from 100% >>> 50% of cooldown
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/RMB.png"} abilityName={"(RMB) - Flux Snare"}>
+          - Flux Snare cooldown adjusted from 9/8/7.5/7.5 >>> 9.5/8.5/7.5/7.5 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/R.png"} abilityName={"(R) - Nuclarite Salvo"}>
+          - Damage reduced from 45.5/50/55 (+23%/25%/27.5% ability power) >>> 41/45/50 (+20%/22%/24% ability power)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+      ## Hudson
+
+      #### Q health increased.
+
+      ### "Hudson’s Barbed Wire felt like it wasn’t living up to its fantasy as real zone control because teams would burn through it so quickly."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/Q.png"} abilityName={"(Q) - Barbed Wire"}>
+          - Health increased by 500 at all levels
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/jin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/jin.png"}>
+      ## Jin
+
+      #### 
+
+      ### "See the mobility changes above!"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={"General"}>
+          - Can now use glider immediately after using Dodge Roll (SHIFT)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/kingpin-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/kingpin.png"}>
+      ## Kingpin
+
+      #### Passive adjusted, LMB new shred affect, base damage decreased, and ability power decreased, and Q stun duration adjusted.
+
+      ### "When you first look at Kingpin, you probably think he’s more of a bruiser type who wants to trade blows and wear you down over a reasonable amount of time but NO he’s actually a big purple assassin who only wears SWORDS and AXES (no armor, imagine that if you will) and he GRABS you through the wall and STUFFS you into your deathbox with a self-confirmed kill combination. Crazy!!!"
+
+      ### "I’ll stop the anti-Kingpin propaganda now, but we do think he’s too explosive and kill-reliable for what his thematic premise is (and what we think is reasonable), so we’re moving that power away and into his bruiser archetype who controls the battlefield and sets up plays."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/kingpin/passive.png"} abilityName={"(Passive) - Feed the Beast"}>
+          - Grants +30 maximum health per stack >>> +2.5% maximum health per stack (yes this is sort of a buff)
+          - Stacks were unlimited >>> now capped at 10 stacks maximum
+          - Kingpin lost half stacks on death >>> now drops 1 stack each time Kingpin is knocked
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/kingpin/LMB.png"} abilityName={"(LMB) - Scattergun"}>
+          - [NEW] Shots fired at 0 bloom/spread now shred additional armor (+67%)
+          - Base Damage from 37 >>> 30
+          - Ability Power Ratio 0.096 >>> 0.08
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/kingpin/Q.png"} abilityName={"(Q) - Primal Slam"}>
+          - Stun duration adjusted from 1.4 >>> 1/1.1/1.2/1.4 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/oath-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/oath.png"}>
+      ## Oath
+
+      #### 
+
+      ### "See the mobility changes above!"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={""} abilityName={""}>
+          - Can now use glider immediately after using Spin Dash (SHIFT) and Magnetic Hammer (LMB)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/void-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/void.png"}>
+      ## Void
+
+      #### LMB base damage increased.
+
+      ### "We unintentionally nerfed Void while simplifying his LMB damage calculations last patch, so now we’re buffing him intentionally."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/void/LMB.png"} abilityName={"(LMB) - Gravity Orb"}>
+          - Uncharged base damage increased from 205 >>> 212
+          - Charged base damage increased from 256 >>> 265
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<EquipmentChangesContainer>
+  <EquipmentChanges equipmentImg={"/patch-notes/misc-images/coming-soon.png"}>
+      ## Power Specialist
+
+      #### 
+
+      ### Updating this now that normal Powers are Soulbound.
+
+      <EquipmentSpecificChangesContainer>
+        - Now grants more power cooldown per stack, and stacks up to 4 times
+        - No longer has a transformation effect
+      </EquipmentSpecificChangesContainer>
+  </EquipmentChanges>
+</EquipmentChangesContainer>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/abyss-specialist.png"}>
+      ## Abyss Specialist
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - No longer is abusable by swapping slots
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/express-delivery.png"}>
+      ## Express Delivery
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Turn speed and charge up speed increased
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/two-way-teleporter.png"}>
+      ## Two-Way Teleporter
+
+      #### 
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Cast time reduced from 1.5 >>> 0.75 seconds
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<ConsumableChangesContainer>
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/gnarled-heart.png"}>
+      ## Gnarled Heart
+
+      #### 
+    
+      ###
+    
+    <ConsumableSpecificChangesContainer>
+      - Now is a consumable
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/spike-wall.png"}>
+      ## Spike Wall
+
+      #### 
+    
+      ### Somewhere in these patch notes we said SUPERVIVE needs all the space controllers it can get, and I am happy to say we still believe that, a few paragraphs down. Buildables are another way to create and hold space, but 3 seconds is too long in SUPERVIVE time so… yeah. I guess that’s the patch note.
+    
+    <ConsumableSpecificChangesContainer>
+      - Build time reduced from 3 >>> 2 seconds
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+</ConsumableChangesContainer>
+
+<Custom title={"Missions"}>
+  "Removal of the Global Shop made these a lot less accessible, so we're making them easier to complete."
+
+  <Hr className="mb-5"/>
+
+  - Seasonal Two-Way Tunnel mission changed from "Get a Knock after taking a Two-Way Tunnel” >>> “Take a Two-Way Tunnel"
+  - Seasonal Fan mission changed from "Place a Deployable Fan" >>> "Use any Deployable Fan”
+</Custom>
+
+<Custom title={"Progression"}>
+  "In a world defined by FUNNELS and reducing FRICTION and CONVERSION (marketing jokes, haha) it may seem 
+  counterintuitive to add more clicks to getting rewards, but we’ve been hearing feedback from players not knowing 
+  at all what rewards they’re getting and where they’re coming from.
+
+  We give you a lot of cool stuff, and there’s even more cool stuff to be gotten if you know how to get it. So we’re 
+  now giving you notifications as to where to claim your cool stuff, which should help with attribution and let you 
+  know where the cool stuff is."
+
+  <Hr className="mb-5"/>
+
+  - You now need to “Click to Claim” Hunter’s Journey, Battlepass, and Hunter Mastery Rewards
+    - There are bright notifications drawing you to where you need to click to claim your rewards
+</Custom>
+
+<Custom title={"Team Communication/Coordination"}>
+  "We’re trying a new kind of emote, intended to aid communication (especially when you or an ally prefer not to use voice chat)."
+
+  <Hr className="mb-5"/>
+
+  **Quick Comms Emotes for all**
+
+  - These emotes are granted to all accounts, display text instead of an image, and trigger voiceover (VO) from the Hunter you’re playing. They can be equipped to your emote wheel from the Loadout like normal emotes:
+    - Yes
+    - No
+    - Thanks
+    - Sorry
+
+  - Try responding to allied pings (“Let’s go here,” “Group up,” “Fight,” etc.) with “Yes” or “No.” Let’s start a conversation :)
+
+  <Hr className="mb-5"/>
+
+  **Voiceover (VO) Updates**
+
+  - Ability upgraded/Ultimate Unlocked
+  - Added player-only voice lines for most Hunters that react to leveling up an ability
+  - Recall/Teleport Cancel
+    - Canceling your recall or teleport now tells your allies “Never mind!” so that they don’t get baited into a move you decided was a bad idea
+
+  <Hr className="mb-5"/>
+
+  **Emote Keybinds**
+  - You can now bind emotes to hot keys
+  - The settings will reflect your current loadout
+</Custom>
+
+<BugFixes>
+  - Red chest shopkeepers no longer unintentionally offer Equipment upgrades alongside Red choices
+  - New stealth sound effect when played in fog-of-war:
+    - New Enemy Stealth Enter sound effect
+    - New Enemy Stealth Loop sound effect
+    - New Enemy Stealth Exit sound effect
+  - Bugfix: All will play in fog-of-war now (Enter and Exit used to not play)
+  - Vaults have an increased vault lockpicking minimum hitbox size. Sweet spot size unchanged.
+  - The text “Staggerable” for enemy monsters has been changed >>> “Weak to Spells”
+  - Training dummy (Shrike) health increased by 10x
+  - Killing the training dummy no longer grants XP
+  - Golden Screamers no longer give 5x the intended rewards
+  - Countering minions stops them from casting their spells again
+  - Brush Baby (those weird little ghost guys who run out of the brush and you pop them for loot) rewards are actually fixed
+</BugFixes>

@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.ts", "mdx-components.tsx", "src/app/not-found.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.ts", "mdx-components.tsx", "src/app/not-found.tsx", "src/app/hunters/hunter-example.mdx"],
   "exclude": ["node_modules"]
 }
