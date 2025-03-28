@@ -15,13 +15,14 @@ export default function HunterIntroduction({
       </div>
 
       <div className="prose prose-hunter-introduction mb-5 px-5">
-        {children.map((element, i) => {
-          return i <= 2 ? <div key={i}>{element}</div> : null;
-        })}
+        {Array.isArray(children) &&
+          children.map((element, i) => {
+            return i <= 2 ? <div key={i}>{element}</div> : null;
+          })}
       </div>
 
       <div className="flex w-full px-5">
-        {children.map((element, i) => {
+        {Array.isArray(children) && children.map((element, i) => {
           return i >= 3 ? (
             <div className="mr-4" key={i}>
               {element}
