@@ -1,0 +1,401 @@
+---
+title: "MARCH 5 PATCH - Saros arrives, leveling adjustments, and Hunter balance"
+cover-image: "/patch-notes/cover-images/march-5-patch-saros-arrives-leveling-adjustments-and-hunter-balance.png"
+date: "3/5/2025"
+description: "Saros arrives, leveling adjustments, and Hunter balance"
+subdirectory: "patch-notes"
+---
+
+<Introduction img={"/patch-notes/cover-images/march-5-patch-saros-arrives-leveling-adjustments-and-hunter-balance.png"}>
+  # MARCH 5 PATCH - Saros arrives, leveling adjustments, and Hunter balance
+
+  ## Saros arrives, leveling adjustments, and Hunter balance
+
+  ### DinDin | 3/5/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Hallo SUPERVIVERs. Today’s patch is on the lighter side as we’re cooking on a number of changes that will have a 
+  large impact on the shape of the game. Does that sound vague? Maybe a little provocative? Good! Want to help out? 
+  You should join us on [our Discord](https://discord.com/invite/supervive "discord.gg") to get into our beta playtests and see what’s on the horizon. We’re excited for 
+  these changes, but just want to make sure they’re well-baked. Anyway, enough about that, let’s do the patch notes.
+</Summary>
+
+<PatchHighlights video={"https://www.youtube.com/embed/5Tb1RBrvXvY"} img={""}>
+  
+</PatchHighlights>
+
+<Custom title={"New Hunter: Saros, The Elite Solar Soldier"}>
+  ![Saros](/patch-notes/misc-images/saros-full-body.png "Saros")
+
+  <Hr className="mb-5"/>
+
+  - **(PASSIVE) - Ionized**: Using solar abilities empowers Saros. When he becomes Ionized, he gains move speed, mana regen, and increased rate of fire with Sunspear’s Rifle.
+
+  - **(LMB) - Sunspear’s Rifle**:  Fire a bolt of sunfire, dealing 70 (+45%) damage. Deals less damage up close and full damage after 900 units. Charge with RMB to fire a stronger shot that burns 100 mana. Kills grant 100 mana. Hits with uncharged Sunspear’s Rifle builds mana.
+
+  - **(RMB) - Charge Sunfire**: HOLD to charge up your Sunspear’s Rifle (LMB), after charging PRESS Sunspear’s Rifle (LMB) to fire super charged shots. Each shot is Empowered when you have 100 mana. Empowered shots apply 2.5s of Anti-Heal. Empowered damage is applied in an area-of-effect when hitting Nova Orb (Q).
+
+  - **(SHIFT) - Dive Slash**: Dash in with a light attack. Then recast to heavy slash, dealing damage and knocking back enemies. Hitting Slash grants bonus dash for a short duration. Can be used on Nova Orb (Q). This ability resets when hitting enemies with the explosion from Nova Orb (Q).
+
+  - **(Q) - Nova Orb**: Throw a sunfire orb that grows as it travels. Orb will burn nearby enemies, dealing damage over time and slowing them. After a short arm time, shoot the orb to detonate it, dealing damage and shredding armor in an area-of-effect. Explosion hits Ionize Saros for a short duration. Explosion hits fully reset Dive Slash (SHIFT). Orb can be kicked into enemies using Dive Slash (SHIFT).
+
+  - **(R) - Eclipse Portal**: Fire a projectile that, upon hitting a wall, creates a portal to the other side of that wall. If a portal would be made near another portal, the existing portal duration is refreshed and extended instead. Entering the portal Ionizes Saros. Allies that use the portal are temporarily buffed, gaining mana over time and movespeed for a short duration. Only goes on cooldown if you create or refresh a portal.
+</Custom>
+
+<Custom title={"Grandmaster+ Premade Restrictions"}>
+  "We've been seeing a lot of feedback on Ranked, specifically that organized, premade squads tend to run the lobbies and 
+  it's really difficult for solo players to progress as they go higher.
+
+  Late last year, we added premade restrictions at the top to address this feedback, but saw negative responses from 
+  players not being able to play with their friends, so we walked it back. It's a rock and a hard place! But now that 
+  we've seen both realities, we think it's better on the interim that we go back to premade restrictions. That said, we 
+  can be sharper about those restrictions and, along with a lot of the ranked tunings we've been doing the past couple 
+  months, we can better target only the top of the ladder.
+
+  Worth calling out we do have more longer-term changes in the future. We're still keeping an eye out!
+
+  P.S. If you love organized, competitive play, we’ve also been supporting and promoting community tournaments [on our 
+  Discord](https://discord.com/invite/supervive "discord.gg") - many of which have in-game currency or cash prizes! Go check them out and sign up."
+
+  <Hr className="mb-5"/>
+
+  - Squads Grandmaster+ ranked players will now be restricted to duo or solo only when queueing for Ranked Squads games
+    - This will not apply to Duos Grandmaster+ players (we are not applying premade restrictions on Duos ranked)
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Ally Recall
+
+    <Hr className="mb-5"/>
+
+    - If your team does not own a base camp, you can press the recall button (default keybind: B) to recall to your closest ally instead
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Leveling adjustments/EXP Changes - Pt. 3
+
+    "As we saw our leveling/farming changes play out on live, we think we pushed possible power differentials (that is: 
+    how far apart two teams can be in terms of ‘raw power’ via levels, gear, stats, etc) too far. There’s a balance to 
+    be struck between “farming feels good” vs. “perma-farming is mandatory” somewhere in these changes."
+
+    <Hr className="mb-5"/>
+
+    - Soft level caps are back so you’re not perma-farming - if you reach a level breakpoint for the day, you'll earn 20% the exp you would normally earn from monsters (and never less than 1 EXP)
+    - When at the level breakpoint, you still gain reduced EXP but do not count as a “split EXP” target. What this means is if you’re killing monsters while at the level breakpoint with a low level ally, they will get full EXP as if they were solo
+    - AP per Level decreased from +10 >>> +5 per level
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Shop & Equipment
+
+    "Related to the above, we’re walking back our previous changes that made upgrade levels have a larger impact on the game."
+
+    <Hr className="mb-5"/>
+
+    - Equipment stats now start with +50% more base value (ie. 100 ability power >>> 150 ability power)
+    - Equipment upgrades grant 20 >>> 10 ability power per upgrade
+    - Upgrade prices have been reduced by 25% to account for upgrades being less impactful
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Heal/Dash Knock Reset - Hunter-Specific Tuning
+
+    "Now that the Heal/Dash reset change has settled a bit and we’re seeing good results, we’re going back and updating 
+    the Hunters that get less value from their kits due to this change. We’ll call those out in their respective Hunter 
+    sections.
+
+    On the other side, we also need to pull back some of the strength on this mechanic for Hunters that abused this the most. 
+    To document all of this:"
+
+    <Hr className="mb-5"/>
+
+    - Hunters with multiple dashes (dash charges) only get 1 charge of their dash back on Knock
+      - Affects: Brall, Bishop, Crysta, Myth, Beebo, Felix
+      - Exception: Joule no longer receives Dash refresh on Knock
+
+    - Shrike has additional benefits for knocking enemies, Ghost has a new passive
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Monsters
+
+    "Those lava monsters…"
+
+    <Hr className="mb-5"/>
+
+    - Magma Brute
+      - Damage mitigation decreased from 90% >>> 50%
+
+    - Corrupted Guardians
+      - Now drop 1000 Gold instead of a Power
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/beebo-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/beebo.png"}>
+      ## Beebo
+
+      #### Q now grants movement speed to beebo and nearby allies.
+
+      ### "Last patch we said bombs are sentient and have power over life and death—this patch we realized all sentient things yearn for company (and not just being smashed into enemies), so we’re giving Beebo and his friends reasons to hang out with the Bee-bombs before their inevitable explosive demise."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/Q.png"} abilityName={"(Q) - Bee-bomb"}>
+          - Allies and Beebo now gain +20% movement speed near the bomb
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/celeste-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/celeste.png"}>
+      ## Celeste
+
+      #### 
+
+      ### "While it’s a defining feature of Celeste’s ultimate that she has to ‘earn’ the full channel, it’s making her so predictable for experienced players to play around that we’d like to add just a smidge of variability for her to play some mind games."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/celeste/R.png"} abilityName={"(R) - Chilling Finale"}>
+          - Reactivating this ability early in the last 0.75 seconds of the spell now deals 33% less damage and stuns for 33% less duration
+          - Always displays an indicator on the floor and the detonation hitbox will always hit according to that indicator. Enemies will always see the full wind up but Celeste no longer needs to be near the floor to hit targets.
+            - This removes the ability to catch people off-guard by falling from extremely high up
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/elluna-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/elluna.png"}>
+      ## Elluna
+
+      #### 
+
+      ### "This might be too good, but… let’s see."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/shift.png"} abilityName={"(Shift) - Lunar Air Dash"}>
+          - Level 4 now refreshes the cooldown entirely upon wisp pickup, up from 2 seconds
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/ghost-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/ghost.png"}>
+      ## Ghost
+
+      #### New passive and shift air mobility change.
+
+      ### "New passive!"
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/passive.png"} abilityName={"(Passive) - Combat Rush"}>
+          - Whenever Ghost lands a non-LMB ability on an enemy, gain +8% Omnivamp for 3.5 seconds (this can stack)
+          - This stacks twice when you attach a grenade on an enemy (the attach and detonate both count as separate ability hits)
+          - Lasts for 3.5 seconds, and wears off all at once (not one stack at a time)
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/shift.png"} abilityName={"(Shift) - Combat Slide"}>
+          - Can now be tapped in the air for 2/3 of the distance of the full hold
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/hudson-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/hudson.png"}>
+      ## Hudson
+
+      #### Shift cooldown increased and partially refunds cooldown on hit.
+
+      ### "Someone make a montage reel of Hudson just body slamming people to death, please."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/hudson/shift.png"} abilityName={"(Shift) - Hover Jets"}>
+          - Cooldown increased from 11/9.5/8/8 -> 12.5/11/9.5/9.5 seconds
+          - Hover Jets now refunds Hudson 25% of the cooldown per enemy hit when you dash into them
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/joule-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/joule.png"}>
+      ## Joule
+
+      #### RMB cast time increased, Shift and R is no longer incorporeal.
+
+      ### "Joule is too strong. Also we know that incorporeal >>> ignores projectiles nerf really nukes Joule’s use of Thunderstorm to just instantly get out of all dangerous situations, but maybe that’s a good thing."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/RMB.png"} abilityName={"(RMB) - Voltaic Spear"}>
+          - Cast time increased from 0.25 >>> 0.33 seconds
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/shift.png"} abilityName={"(Shift) - Surge "}>
+          - Surge now grant “INCORPOREAL” >>> “IGNORES PROJECTILES”
+            - This means anything other than a projectile can still hit Joule
+            - Stuns, Roots, Grounds, and Glider cancel the state
+        </HunterAbilityChanges>
+
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/joule/R.png"} abilityName={"(R) - Thunderstorm "}>
+          - Surge and Thunderstorm now grant “INCORPOREAL” >>> “IGNORES PROJECTILES”
+            - This means anything other than a projectile can still hit Joule
+            - Stuns, Roots, Grounds, and Glider cancel the state
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/shrike-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/shrike.png"}>
+      ## Shrike
+
+      #### 
+
+      ### "As our premiere sniper, Shrike struggles to pick off multiple enemies in a row, especially if she can’t two-shot someone reliably. Given the dash/heal reset benefits a long-range sniper less than others, we felt we could buff up her lethality once she gets rolling."
+
+      <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+      <HunterAbilityChangesContainer>
+        <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/shrike/LMB.png"} abilityName={"(LMB) - Truetalon Rifle"}>
+          - Whenever Shrike knocks an enemy, her next shot is empowered with +150% Armor Shred
+          - Lasts for 6 seconds or when she fires her next LMB (whichever is first)
+        </HunterAbilityChanges>
+      </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/abyss-specialist.png"}>
+      ## Abyss Specialist
+
+      #### Tier changed.
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now Legendary (Tier 4 - Gold)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/hover-wings.png"}>
+      ## Hover Wings
+
+      #### Tier changed.
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now Legendary (Tier 4 - Gold)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+
+  <PowerChanges powerImg={"/patch-notes/power-icons/glider-jets.png"}>
+      ## Glider Boost
+
+      #### Tier changed.
+    
+      ###
+
+      <PowerSpecificChangesContainer>
+        - Now Legendary (Tier 4 - Gold)
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<ConsumableChangesContainer>
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/elixir-of-health.png"}>
+      ## Elixir of Health
+
+      #### Now grants ability omnivamp and healing tweaked.
+
+      ### ""
+    <ConsumableSpecificChangesContainer>
+      - Out-of-combat health regens faster and scales off of max health (instead of flat amount)
+      - Now grants in-combat Omnivamp on non-LMB abilities
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/elixir-of-mana.png"}>
+      ## Elixir of Mana
+
+      #### Gives mana refund on LMB hit.
+
+      ###
+    <ConsumableSpecificChangesContainer>
+      - Now also gives mana refund on LMB hit (only can trigger once every 0.5s)
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+
+  <ConsumableChanges consumableImg={"/patch-notes/consumable-icons/elixir-of-vision.png"}>
+      ## [NEW] Elixir of Vision
+
+      #### Gives vision to invisable units.
+
+      ###
+    <ConsumableSpecificChangesContainer>
+      - Consume to be able to see invisible units for 90s
+    </ConsumableSpecificChangesContainer>
+  </ConsumableChanges>
+</ConsumableChangesContainer>
+
+<Custom title={"Team Communication/Coordination"}>
+
+  <Hr className="mb-5"/>
+
+  - Pings:
+    - Added chat messages for each of the ping wheel options
+
+  - Emote regulation:
+    - You can no longer bind emotes to the same keys as movement inputs
+    - Emotes now rate-limited
+</Custom>
+
+<Custom title={"Patron Pack + SUPERVIVER Pack Buff"}>
+
+  <Hr className="mb-5"/>
+
+  - Increased the number of Hunters granted from 4 to 5 (thanks for the heads up, carlos carbonara!)
+</Custom>
+
+<Custom title={"Cosmetics"}>
+  "There’s no change here, but some of you may have noticed we’ve slowed a bit on shipping cosmetics. This is deliberate! 
+  We heard your feedback that our battlepass contents could be better, so we’ve been reshuffling our skin development 
+  pipeline to beef it up for our next season debut. Stay tuned!"
+
+  <Hr className="mb-5"/>
+</Custom>
+
+<Custom title={"Errata"}>
+  "For changes that weren’t reflected in previous patch notes. Listen, we’re not deliberately hiding stuff, we’re just 
+  bad at documentation."
+
+  <Hr className="mb-5"/>
+
+  ### Quests
+
+  #### "Quest rewards are now slightly higher than before and are now standardized to be shared across teammates (was true for some Quests, but not others)"
+
+  - Brawlers - 2,000 gold per player
+  - Team Wipe - 2,000 gold per player
+  - Vault - 500 gold per player
+  - Take Enemy Basecamp - 2,000 gold per player
+  - Farm Minions - 500 gold per player
+  - Biome Soul - 2,000 gold per player
+  - Megaboar - 1,000 gold per player
+  - Supply Drop - unchanged
+</Custom>
+
+<BugFixes>
+  - Beebo RMB Super Zeep mission (A Zeep Too Far): changed from "Get Knocks with Super Zeep'" to "Get Knocks/Assists on units recently hit by Super Zeep"
+  - Gold Pickups: Gold pickups are now vacuumed from 300 range and the audio ceremony has been updated
+  - Minimap/Megamap: Icon visual pass to standardize points of interest and make them pop more
+  - Team HUD: Updated to make it clearer at a glance whether a teammate is dead or alive
+  - Team Eliminated: Audio cue updated
+  - XP Books: Audio cue updated
+</BugFixes>

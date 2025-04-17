@@ -69,7 +69,7 @@ export default function TableOfContents() {
               className={`${visibleSection === section.id ? "text-neutral-100" : "text-neutral-300"} flex text-sm`}
               key={i}
             >
-              <a href={`#${section.id}`}>
+              <a className="flex" href={`#${section.id}`}>
                 <span className="mr-1">-</span>
                 {section.id}
               </a>

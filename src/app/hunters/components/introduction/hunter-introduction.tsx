@@ -22,13 +22,14 @@ export default function HunterIntroduction({
       </div>
 
       <div className="flex w-full px-5">
-        {Array.isArray(children) && children.map((element, i) => {
-          return i >= 3 ? (
-            <div className="mr-4" key={i}>
-              {element}
-            </div>
-          ) : null;
-        })}
+        {Array.isArray(children) &&
+          children.map((element, i) => {
+            return i >= 3 ? (
+              <div className="mr-4" key={i}>
+                {element}
+              </div>
+            ) : null;
+          })}
       </div>
     </div>
   );

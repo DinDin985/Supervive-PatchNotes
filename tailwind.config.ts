@@ -316,6 +316,11 @@ const config: Config = {
             h3: {
               fontSize: theme("fontSize.lg"),
             },
+            h4: {
+              color: theme("colors.neutral.300"),
+              fontWeight: theme("fontWeight.light"),
+              marginBottom: theme("spacing.3"),
+            },
           },
         },
         "patch-equipment-changes": {

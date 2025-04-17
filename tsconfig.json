@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.ts", "mdx-components.tsx", "src/app/not-found.tsx", "src/app/hunters/hunter-example.mdx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.ts", "mdx-components.tsx", "src/app/not-found.tsx", "src/app/hunters/hunter-example.mdx", "src/app/patch-notes/content/march-5-patch-saros-arrives-leveling-adjustments-and-hunter-balance.mdx"],
   "exclude": ["node_modules"]
 }
