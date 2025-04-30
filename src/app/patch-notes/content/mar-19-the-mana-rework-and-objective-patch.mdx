@@ -1,0 +1,357 @@
+---
+title: "MAR 19 - The Mana Rework and Objectives Patch"
+cover-image: "/patch-notes/cover-images/march-5-patch-saros-arrives-leveling-adjustments-and-hunter-balance.png"
+date: "3/19/2025"
+description: "Bosses spawn mechanics updated, mana reworked, ability haste reworked, and Hunter balance!"
+subdirectory: "patch-notes"
+---
+
+<Introduction img={"/patch-notes/cover-images/march-5-patch-saros-arrives-leveling-adjustments-and-hunter-balance.png"}>
+  # MAR 19 - The Mana Rework and Objectives Patch
+
+  ## Bosses spawn mechanics updated, mana reworked, ability haste reworked, and Hunter balance!
+
+  ### DinDin | 3/19/2025
+
+</Introduction>
+
+<Summary authorName={"DinDin"} authorImg={""}>
+  Hello hello SUPERVIVERS and welcome back to another patch. This one might seem small in word count, but each line means 
+  a lot, so read everything! All of it!!! Thematically, I’d say our orientation is toward making the game and combat state 
+  of SUPERVIVE more intuitive, action-oriented, and appreciable. This is just step one toward that goal, and our next patch 
+  - the launch of Arc 2! - should feel like a significant evolution for SUPERVIVE, so stay tuned.
+
+  P.S. Also, fireside chat is coming next patch as well to talk about where we are and where we’re going. Thanks for your 
+  patience!
+</Summary>
+
+<MidPatchUpdates title={""}>
+
+</MidPatchUpdates>
+
+<PatchHighlights video={""} img={""}>
+  
+</PatchHighlights>
+
+<Custom title={""}>
+  ""
+
+  <Hr className="mb-5"/>
+
+  - 
+</Custom>
+
+<SystemChangesContainer>
+  <SystemChanges>
+    ## Bosses, Signaling and Spawning
+
+    "Currently bosses are easy to miss for a variety of reasons. We want to make them more consistent in delivery, ceremony, 
+    & timing to see if it helps you plan and strategize around them. Basically, we want you to always know (and be thinking 
+    about) when Bosses will arrive, where Bosses will land, and how to stay informed of a Boss’s location and health so you 
+    can contest them."
+
+    <Hr className="mb-5"/>
+
+    - All Bosses ride into the world on meteors and have an updated schedule
+    - At the start of a night, meteors launch and take 45 seconds to land
+      - Night 1: 3 Night Bosses (two with exotics, and one with a legendary)
+        - A third night boss will now also spawn at a set spawn point
+
+      - Night 2: Meteor Beasts (which drop souls)
+      - Night 3: Nothing
+      - Night 4: Endgame Boss (which drop powerful endgame buffs or items)
+        - Endgame boss map icon now shows which one it is
+        - Endgame boss spawn rate adjusted to from 90% >>> 100%
+
+    { /* Comment for spacing */}
+
+    - Meteor mechanism now additionally projects where they will spawn on the map, so you don't need to guess / infer where they'll be
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Bosses, Acquisition/Stealing
+
+    "Philosophically I’d say we prefer more action-oriented plays, like securing the last hit on a monster to claim a buff
+    versus standing around mashing F on a pedestal."
+
+    <Hr className="mb-5"/>
+
+    - Meteor Boss soul pedestal removed
+    - Whoever lands the killing blow on the Meteor Boss gets the soul instantly for their team
+    - Whoever lands the killing blow on Endgame Bosses also gets all of the rewards automatically placed into their inventory (if your inventory is full, it goes on the ground because you clearly didn’t want it)
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Bosses, Rewards
+
+    <Hr className="mb-5"/>
+
+    - Landing the killing blow on Soul Warden instantly respawns all of your dead allies, in addition to dropping an extra Orb of Life and Mobile Respawn Beacon
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Revival Mechanics
+
+    "We’re trying to clean up early teamfights so they’re less clown-y, without pushing revival timers too far."
+
+    <Hr className="mb-5"/>
+
+    - Revival timers increased by 5 seconds
+  
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Ability Haste/Dash Haste Separation
+
+    "Ability Haste is just too strong in SUPERVIVE, specifically because anyone who stacks it gets high uptime on their 
+    abilities and lots of extra mobility (because their dash is also an ability). This makes Ability Haste a must-take on 
+    a lot of Hunters - even LMB-focused ones who should be inclined to chase movement speed. So now we’re asking that you 
+    trade something for ability spam versus incredible dash mobility, and giving more value to leveling up your boots early."
+
+    <Hr className="mb-5"/>
+
+    - Ability Haste reduces all cooldowns >>> just ability cooldowns
+    - Introducing a new stat: Dash Haste, which reduces just dash cooldowns
+    - Tech Blade & Tech Helmet base ability haste has been increased from 15% >>> 20% + 1% per tier
+    - Quickblade & Bladed Helmet base stats:
+      - 30 movement speed + 2/level >>> 15 movement speed + 1/level
+      - 0% Dash Haste + 0%/level >>> 10% Dash Haste + 1%/level
+    
+    - Boot base stats:
+      - 5 movement speed + 6/level >>> 5 movement speed + 10/level
+      - 0% Dash Haste + 0/level >>> 0% Dash Haste + 2%/level
+  
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Air Dash Speed
+
+    "In our effort to pull mobility back (and make it more appreciable), we nerfed air dashing (that is: jumping and using 
+    a dash) in a number of ways to make it less of a “yeet” and more of a dash. Now with our ability haste/dash haste 
+    separation to reduce mobility overall, we think we can revert one nerf that felt the worst."
+
+    <Hr className="mb-5"/>
+
+    - Air Dash Speed multiplier increased from 0.85 >>> 1.0 (meaning it no longer applies a small amount of friction when using an air dash)
+
+  </SystemChanges>
+
+  <SystemChanges>
+    ## Mana ‘Rework’
+
+    "Oh mana. We’ve gotten a lot of feedback on mana through the years, like, “How come some Hunters seem to need mana,
+    while others don’t?” or more directly: “Why does it exist?” Just to answer for the current state of things, mana may 
+    not be the most well-implemented stat in SUPERVIVE, but it does add some build diversity for a few Hunters and is 
+    generally unoffensive.
+
+    That said, we know mana can be a lot more interesting as a stat and, if done right, could feel like a universally 
+    valuable optional stat rather than a per-Hunter required one. So with this patch we’re trying a new version of mana 
+    that might feel closer to energy or stamina: your abilities use mana to cast (per usual), but your mana regen is 
+    halted for 4 seconds after spending any mana. We’ve also significantly boosted everyone’s mana regeneration (provided 
+    they haven’t used an ability in the past 4 seconds), and removed mana regeneration from items (and decreased the +max 
+    mana stat).
+    
+    Zooming out, the way we think about it is we want mana to be a short-term resource that gates you on the total number 
+    of actions you can take per fight rotation (and then you’ll need to find moments to regenerate), rather than being a 
+    long-term resource that you occasionally have to manage by going back to a basecamp and chugging a billion brews (or 
+    just negating all up).
+
+    You can also build max mana as a stat to increase your total ability casts in a fight, but not to the point where 
+    you’re ignoring mana forever. This shouldn’t feel very restrictive (if anything, it may be too generous), but let’s 
+    start here!"
+
+    <Hr className="mb-5"/>
+
+    - Base mana regen 1.5 >>> 11 per second
+      - Bonus mana regen per level 0 >>> 2.6 per second
+      - The result is: at level 1, it takes 12 seconds to fully regenerate your mana, and at level 15, it takes 6 seconds. Previously it was 1.5 to 3.5 minutes.
+    
+    - Mana regen is paused for 4 seconds after spending any mana
+    - Mana Equipment has been changed to give 150 + 7.5/level max mana + 1.5 + 0.1/level mana regen >>> 100+ 5/level max mana + NO mana regen
+
+  </SystemChanges>
+</SystemChangesContainer>
+
+<HunterChangesContainer>
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/beebo-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/beebo.png"}>
+    ## Beebo
+
+    #### Q health reduced, RMB damage increased and upgrades changed.
+
+    ### "I’m not going to continue writing fan-fiction about the Beeb-omb supremacy and how sentience has made them more frail as they grappled with the fragility of their lives and existence, but imagine I did and I hope you are emotionally moved. From a balance perspective, we’re trying to give some counterplay to the case of Beebo planting a bomb and holding a bat threateningly (forever) while the bomb tanks a billion damage. We’re also trying to make Slingshot Beebo a little more appealing and skill-expressive."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/Q.png"} abilityName={"(Q) - Beeb-omb"}>
+        - Bomb health reduced from 1600/1600/1600/1600 >> 1000/1133/1266/1400
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/beebo/RMB.png"} abilityName={"(RMB) - Slingshot"}>
+        - Damage increased by 25%
+        - Level 2 upgrade: +25% damage
+        - Level 3 upgrade: -50% cooldown
+        - Level 4 upgrade: Slingshot ammo cycles 40% faster
+        - Heal Zeep makes a tree if not collected
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/brall-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/brall.png"}>
+    ## Brall
+
+    #### RMB, Shift, and Q Mana cost reduced.
+
+    ### 
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/RMB.png"} abilityName={"(RMB) - Adaptive Strike"}>
+        - Mana cost reduced from 25 >>> 20
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/shift.png"} abilityName={"(Shift) - Flame Step"}>
+        - Mana cost reduced from 20 >>> 15
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/brall/Q.png"} abilityName={"(Q) - Feysteel Chain"}>
+        - Mana cost reduced from 20 >>> 15
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/crysta-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/crysta.png"}>
+    ## Crysta
+
+    #### Passive mana recovery reduced, RMB and R mana cost reduced.
+
+    ### 
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/passive.png"} abilityName={"(Passive) - Reverberation"}>
+        - Mana recovery on landing hits reduced from 30 >>> 15
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/RMB.png"} abilityName={"(RMB) - Flux Snare"}>
+        - Mana cost reduced from 30 >>> 20
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/crysta/R.png"} abilityName={"(R) - Nuclarite Salvo"}>
+        - Mana cost reduced from 60 >>> 50
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/elluna-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/elluna.png"}>
+    ## Elluna
+
+    #### LMB mana recovery reduced.
+
+    ###
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/elluna/LMB.png"} abilityName={"(LMB) - Crescent Bolt"}>
+        - Mana recovery on landing hits reduced from 20/10 (empowered/unempowered) >>> 10/5
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/felix-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/felix.png"}>
+    ## Felix
+
+    #### Level 1 ignite now lethal, Passive damage over time duration reduced.
+
+    ### "It always felt a little rules-y that Felix’s level 1 Ignite was non-lethal, so we’re shifting power around so it can be lethal."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/felix/passive.png"} abilityName={"(Passive) - Ignite"}>
+        - Level 1 Ignite is now lethal
+        - Level 1 and 2 damage-over-time duration reduced from 5.25 >>> 3 seconds
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/ghost-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/ghost.png"}>
+    ## Ghost
+
+    #### Passive omivamp reduced.
+
+    ### "LIL’ STRONG."
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/ghost/passive.png"} abilityName={"(Passive) - Combat Rush"}>
+        - Omnivamp bonus reduced from 8% >>> 6% per stack
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/saros-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/saros.png"}>
+    ## Saros
+
+    #### RMB no longer gains mana back on-hit on monsters.
+
+    ### 
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/saros/RMB.png"} abilityName={"(RMB) - Charge Sunfire"}>
+        - Saros no longer gains mana back for hitting monsters with Charge Sunfire (RMB), just Hunters
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+
+  <HunterChanges imgBig={"/patch-notes/hunter-portraits/zeph-full-body-cropped.png"} imgSmall={"/patch-notes/hunter-icons/zeph.png"}>
+    ## Zeph
+
+    #### LMB mana recovery reduced, RMB and Q mana cost reduced.
+
+    ###
+
+    <Hr className="hidden w-11/12 mb-8 lg:block" />
+
+    <HunterAbilityChangesContainer>
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/zeph/LMB.png"} abilityName={"(LMB) - Windslinger"}>
+        - Mana recovery on landing hits reduced from 20/10 (hitting Hunters/Monsters) >>> 10/5
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/zeph/RMB.png"} abilityName={"(RMB) - Mending Breez"}>
+        - Mana cost reduced from 40 >>> 25
+      </HunterAbilityChanges>
+
+      <HunterAbilityChanges abilityImg={"/patch-notes/hunter-abilities/zeph/Q.png"} abilityName={"(Q) - Vortex Charm"}>
+        - Mana cost reduced from 40 >>> 30
+      </HunterAbilityChanges>
+    </HunterAbilityChangesContainer> 
+  </HunterChanges>
+</HunterChangesContainer>
+
+<PowerChangesContainer>
+  <PowerChanges powerImg={"/patch-notes/power-icons/ricochet-shot.png"}>
+      ## [NEW] Ricochet Shot
+
+      #### 
+    
+      ### "Trying to give more tools for Hunters to fight clumps (of other Hunters or monsters), especially those without strong area-of-effect abilities."
+
+      <PowerSpecificChangesContainer>
+        - This passive power makes your LMB attacks spawn a homing ricochet projectile that bounces to nearby enemies up to 6 times, dealing damage
+      </PowerSpecificChangesContainer>
+  </PowerChanges>
+</PowerChangesContainer>
+
+<BugFixes>
+  - Base Camp Recaller: Added a visual to the Base Camp when it is being recalled (you’ll know it when you see it)
+  - Added Final Boss Icons
+  - Hudson’s Dash properly resets on kill
+</BugFixes>
